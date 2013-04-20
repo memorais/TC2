@@ -1,0 +1,27 @@
+\select@language {brazil}
+\contentsline {chapter}{Resumo}{}{chapter*.3}
+\contentsline {chapter}{Abstract}{}{chapter*.4}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{8}{chapter.abstract.1}
+\contentsline {section}{\numberline {1.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{8}{section.abstract.1.1}
+\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{9}{section.abstract.1.2}
+\contentsline {section}{\numberline {1.3}Objetivo}{10}{section.abstract.1.3}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Texto}{11}{section.abstract.1.4}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{12}{chapter.abstract.2}
+\contentsline {section}{\numberline {2.1}A World Wide Web}{12}{section.abstract.2.1}
+\contentsline {section}{\numberline {2.2}Navegadores}{13}{section.abstract.2.2}
+\contentsline {section}{\numberline {2.3}HTML5}{15}{section.abstract.2.3}
+\contentsline {chapter}{\numberline {3}WebP}{17}{chapter.abstract.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{17}{section.abstract.3.1}
+\contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{18}{section.abstract.3.2}
+\contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{18}{section.abstract.3.3}
+\contentsline {section}{\numberline {3.4}A API libwebp}{19}{section.abstract.3.4}
+\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{21}{chapter.abstract.4}
+\contentsline {section}{\numberline {4.1}JPEG 2000}{21}{section.abstract.4.1}
+\contentsline {section}{\numberline {4.2}JPEG XR}{22}{section.abstract.4.2}
+\contentsline {chapter}{\numberline {5}Proposta}{23}{chapter.abstract.5}
+\contentsline {section}{\numberline {5.1}Objetivos}{23}{section.abstract.5.1}
+\contentsline {section}{\numberline {5.2}Projeto}{24}{section.abstract.5.2}
+\contentsline {section}{\numberline {5.3}Ambiente de Desenvolvimento}{25}{section.abstract.5.3}
+\contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{25}{section.abstract.5.4}
+\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{28}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{29}{chapter.abstract.6}

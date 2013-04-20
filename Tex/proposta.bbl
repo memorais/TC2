@@ -1,0 +1,121 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.52 }
+
+\bibitem[Bloomberg 2012]{BloombergGameChangers}
+\abntrefinfo{Bloomberg}{BLOOMBERG}{2012}
+{BLOOMBERG. Bloomberg game changers: Marc andreesen.
+2012.
+Acessado em: 2012-09-03.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.bloomberg\-.com\-/video\-/67758394$>$}{http://www.bloomberg.com/video/67758394}.}
+
+\bibitem[Communications 2008]{WebStory}
+\abntrefinfo{Communications}{COMMUNICATIONS}{2008}
+{COMMUNICATIONS, C.~W. How the web began.
+2008.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/public\-.web\-.cern\-.ch\-/public\-/en\-/about\-/WebStory-en\-.html$>$}{http://public.web.cern.ch/public/en/about/WebStory-en.html}.}
+
+\bibitem[Curbera e Weerawarana 2001]{WebServices}
+\abntrefinfo{Curbera e Weerawarana}{CURBERA; WEERAWARANA}{2001}
+{CURBERA, W. A.~N. F.; WEERAWARANA, S. Web services: Why and how.
+IBM T.J. Watson Research Center, 2001.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/researcher\-.ibm\-.com\-/files\-/us-bth\-/nagy\-.pdf$>$.}
+
+\bibitem[Dufaux, Sullivan e Ebrahimi 2009]{HDPhoto}
+\abntrefinfo{Dufaux, Sullivan e Ebrahimi}{DUFAUX; SULLIVAN; EBRAHIMI}{2009}
+{DUFAUX, F.; SULLIVAN, G.; EBRAHIMI, T. The jpeg xr image coding standard
+  [standards in a nutshell].
+IEEE Computer Society, 2009.}
+
+\bibitem[Google 2010]{WebPStudy}
+\abntrefinfo{Google}{GOOGLE}{2010}
+{GOOGLE. Comparative study of webp, jpeg and jpeg 2000.
+2010.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/developers\-.google\-.com\-/speed\-/webp\-/docs\-/c\underline{\
+  }study$>$.}
+
+\bibitem[Google 2012]{WebFaster}
+\abntrefinfo{Google}{GOOGLE}{2012a}
+{GOOGLE. \emph{Make the Web Faster}. 2012.
+Dispon{\'\i}vel em: $<$https:\-/\-/developers\-.google\-.com\-/speed\-/$>$.}
+
+\bibitem[Google 2012]{WebPLossyStudy}
+\abntrefinfo{Google}{GOOGLE}{2012b}
+{GOOGLE. Webp compression study.
+2012.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/developers\-.google\-.com\-/speed\-/webp\-/docs\-/webp\underline{\
+  }study$>$.}
+
+\bibitem[Grosskurth e Godfrey 2005]{ArchitectureWebBrowsers}
+\abntrefinfo{Grosskurth e Godfrey}{GROSSKURTH; GODFREY}{2005}
+{GROSSKURTH, A.; GODFREY, M.~W. A reference architecture for web browsers.
+IEEE Computer Society, 2005.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/ieeexplore\-.ieee\-.org\-/ielx5\-/10097\-/32336\-/01510168\-.pdf$>$}{http://ieeexplore.ieee.org/ielx5/10097/32336/01510168.pdf}.}
+
+\bibitem[Group]{JPEG}
+\abntrefinfo{Group}{GROUP}{}
+{GROUP, J. P.~E. \emph{Joint Photographic Experts Group, JPEG2000}.}
+
+\bibitem[Implement WebP image support 2010]{FirefoxBug}
+\abntrefinfo{Implement\ldots}{IMPLEMENT\ldots}{2010}
+{IMPLEMENT WebP image support. 2010.
+Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
+  }bug\-.cgi?id=600919$>$.}
+
+\bibitem[Muizelaar 2011]{WebPCritica}
+\abntrefinfo{Muizelaar}{MUIZELAAR}{2011}
+{MUIZELAAR, J. \emph{Críticas ao WebP}. 2011.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
+
+\bibitem[Sharp 2011]{HTML5Intro}
+\abntrefinfo{Sharp}{SHARP}{2011}
+{SHARP, B. L. .~R. \emph{Introducing HTML 5}. Second edition. [S.l.]: New
+  Riders, 2011. 11-15~p.}
+
+\bibitem[StatCounter 2012]{BrowserStats}
+\abntrefinfo{StatCounter}{STATCOUNTER}{2012}
+{STATCOUNTER. \emph{StatCounter Browsers GlobalStat}. 2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/gs\-.statcounter\-.com\-/$>$}{http://gs.statcounter.com/}.}
+
+\bibitem[Taivalsaari e Mikkonen 2011]{WebAppPlataform}
+\abntrefinfo{Taivalsaari e Mikkonen}{TAIVALSAARI; MIKKONEN}{2011}
+{TAIVALSAARI, A.; MIKKONEN, T. The web as an application platform: The saga
+  continues.
+IEEE Computer Society, 2011.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/ieeexplore\-.ieee\-.org\-/ielx5\-/6068192\-/6068309\-/06068340\-.pdf$>$}{http://ieeexplore.ieee.org/ielx5/6068192/6068309/06068340.pdf}.}
+
+\bibitem[W3C 2012]{W3Cfacts}
+\abntrefinfo{W3C}{W3C}{2012a}
+{W3C. Facts about w3c.
+2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.w3\-.org\-/Consortium\-/facts$>$}{http://www.w3.org/Consortium/facts}.}
+
+\bibitem[W3C 2012]{HTML5spec}
+\abntrefinfo{W3C}{W3C}{2012b}
+{W3C. Html5: A vocabulary and associated apis for html and xhtml.
+Editor's Draft 1 September 2012, 2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/dev\-.w3\-.org\-/html5\-/spec\-/single-page\-.html$>$}{http://dev.w3.org/html5/spec/single-page.html}.}
+
+\bibitem[W3Schools 2012]{W3schools}
+\abntrefinfo{W3Schools}{W3SCHOOLS}{2012}
+{W3SCHOOLS. \emph{Browser Statistics}. October 2012.
+Acessado em: 2012-09-03.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.w3schools\-.com\-/browsers\-/browsers\underline{\
+  }stats\-.asp$>$}{http://www.w3schools.com/browsers/browsers_stats.asp}.}
+
+\end{thebibliography}

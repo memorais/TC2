@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proposta.aux
+The style file: abnt-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: abnt-options.bib
+Database file #2: proposta.bib
+Warning--entry type for "JPEG" isn't style-file defined
+--line 123 of file proposta.bib
+Warning--string name "http://www.jpeg.org/jpeg2000/index.html" is undefined
+--line 126 of file proposta.bib
+Warning--I didn't find a database entry for "HDPhoto"
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliografico abnt-alf.bst versao 1.52           |
+| Implementa a NBR6023, NBR10520 e NBR10523               |
+| Em caso de duvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+You've used 18 entries,
+            6523 wiz_defined-function locations,
+            1254 strings with 11237 characters,
+and the built_in function-call counts, 39362 in all, are:
+= -- 6134
+> -- 277
+< -- 1112
++ -- 1275
+- -- 90
+* -- 1759
+:= -- 3863
+add.period$ -- 64
+call.type$ -- 19
+change.case$ -- 125
+chr.to.int$ -- 18
+cite$ -- 16
+duplicate$ -- 5565
+empty$ -- 934
+format.name$ -- 417
+if$ -- 7809
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 279
+newline$ -- 97
+num.names$ -- 75
+pop$ -- 487
+preamble$ -- 1
+purify$ -- 57
+quote$ -- 0
+skip$ -- 5822
+stack$ -- 1
+substring$ -- 1449
+swap$ -- 1228
+text.length$ -- 23
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 116
+width$ -- 0
+write$ -- 237
+(There were 3 warnings)

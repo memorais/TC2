@@ -1,0 +1,34 @@
+\select@language {brazil}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{4}{chapter.1}
+\contentsline {chapter}{\numberline {2}Op\IeC {\c c}\IeC {\~o}es da classe}{6}{chapter.2}
+\contentsline {chapter}{\numberline {3}Partes}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Folha de rosto e capa}{8}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Comandos e \texttt {\char 92\relax folhaderosto} e \texttt {\char 92\relax capa}}{8}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Folha de rosto personalizada}{9}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Folha de aprova\IeC {\c c}\IeC {\~a}o}{9}{section.3.2}
+\contentsline {subsection}{Mais sobre o comando \texttt {\char 92\relax assinatura}}{10}{section*.1}
+\contentsline {section}{\numberline {3.3}Resumo e abstract}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Lista de s\IeC {\'\i }mbolos, siglas, etc}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Anexos e ap\IeC {\^e}ndices}{12}{section.3.5}
+\contentsline {section}{\numberline {3.6}\IeC {\'I}ndice remissivo}{13}{section.3.6}
+\contentsline {chapter}{\numberline {4}Formata\IeC {\c c}\IeC {\~a}o}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Numera\IeC {\c c}\IeC {\~a}o das p\IeC {\'a}ginas}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Cabe\IeC {\c c}alhos de p\IeC {\'a}gina}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}T\IeC {\'\i }tulo de cap\IeC {\'\i }tulos e se\IeC {\c c}\IeC {\~o}es}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}T\IeC {\'\i }tulo de anexos e ap\IeC {\^e}ndices}{15}{section.4.4}
+\contentsline {section}{\numberline {4.5}Espa\IeC {\c c}amento entrelinhas}{16}{section.4.5}
+\contentsline {subsection}{Ambientes \texttt {espacosimples}, \texttt {espacoememeio} e \texttt {espacoduplo}}{17}{section*.2}
+\contentsline {subsection}{O comando {\char 92\relax espaco\char 123\relax \textit {palavra ou n\IeC {\'u}mero}\char 125\relax }}{17}{section*.2}
+\contentsline {section}{\numberline {4.6}Cita\IeC {\c c}\IeC {\~o}es longas}{17}{section.4.6}
+\contentsline {section}{\numberline {4.7}Fontes}{18}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Fontes do t\IeC {\'\i }tulo de cap\IeC {\'\i }tulos e se\IeC {\c c}\IeC {\~o}es}{18}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Op\IeC {\c c}\IeC {\~a}o de classe times}{19}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Fontes da folha de rosto}{19}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Fontes do cabe\IeC {\c c}alho de p\IeC {\'a}gina}{20}{subsection.4.7.4}
+\contentsline {chapter}{Ap\^endice{} A{} -$\mskip -\thinmuskip $-{} Um resumo das normas}{21}{chapter.appendix.A}
+\contentsline {section}{\numberline {A.1}NBR 14724: estrutura e algumas descri\IeC {\c c}\IeC {\~o}es}{21}{section.appendix.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Elementos pr\IeC {\'e}-textuais}{21}{subsection.appendix.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Elementos textuais}{22}{subsection.appendix.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Elementos p\IeC {\'o}s-textuais}{22}{subsection.appendix.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Formas de apresenta\IeC {\c c}\IeC {\~a}o}{23}{subsection.appendix.A.1.4}
+\contentsline {section}{\numberline {A.2}Outras normas}{24}{section.appendix.A.2}

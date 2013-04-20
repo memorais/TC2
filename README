@@ -1,0 +1,6 @@
+Arquivos relevantes:
+proposta.tex -> Proposta no formato LaTeX.
+proposta.bib -> Referências no formato bibTeX.
+compila.sh -> Script para compilar o trabalho e as referências.
+Diretórios:
+Tex -> Diretório de trabalho onde ocorre a compilação e o PDF do trabalho é gerado.
