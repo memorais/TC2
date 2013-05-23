@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.52 }
+\abntbstabout{1.53 }
 
 \bibitem[Bloomberg 2012]{BloombergGameChangers}
 \abntrefinfo{Bloomberg}{BLOOMBERG}{2012}
