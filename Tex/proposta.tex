@@ -429,16 +429,20 @@ Toda orquestração do processo de compilação é baseada no arquivo moz.build 
 O Firefox é desenvolvido na linguagem de programação C++ e utiliza os conceitos de orientação à objetos de forma massiva. A criação do decodificador passou primeiramente por uma avaliação dos outros decodificadores de imagem já existentes dentro do Firefox, mais especificamente o nsJPEGDecoder para decodificação de imagens JPEG e o nsPNGDecoder para decodificação de imagens PNG. Para a implementação foi necessário criar uma nova classe para a decodificação do formato WEBP que herdasse a classe Decoder original do Firefox. A classe Decoder por sua vez parte da premissa que os seguintes métodos precisam ser implementados:
 
 \begin{itemize}
-        \item void InitInternal\(\)
-        \item void WriteInternal\(const char* aBuffer, uint32_t aCount\)
-        \item void FinishInternal\(\)
+        \item void InitInternal
+        \item void WriteInternal
+        \item void FinishInternal
 \end{itemize}
 
 De uma forma bastante simples, estes métodos são uma espécie de gancho que servem para inicializar o processo de decodificação, realizar efetivamente a decodificação e finalizar o processo para a classe Decoder. O processo de inicialização é utilizado para repassar o \ingles{buffer} da imagem para o decodificador responsável através do método InitInternal. De posse da imagem a decodificação é efetivamente realizada pelo método WriteInternal. O acionamento do método FinishInternal siginifica para o Firefox que a imagem já foi devidamente decodificada e não há mais nada a ser realizado.
 
-Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O buffer resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Black}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox.
+Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O buffer resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Black}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox após a execução do método FinishInternal.
+
+Como se pode observar em nenhum momento é necessário saber quais são os algoritmos utilizados para realizar a decodificação. Toda esta complexidade fica encapsulada dentro da libwebp que é instrumentada pelas classes criadas para realizar o processo.
 
 \section{Implementação do codificador}
+
+Descrever a implementação do codificador.
 
 \section{Resultados Obtidos}
 Resultados obtidos com a implementação realizada.
