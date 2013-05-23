@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  23 MAY 2013 14:24
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  23 MAY 2013 15:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -835,10 +835,10 @@ Cap\'{\i }tulo 5.
 ] <parte1.png, id=364, 934.49126pt x 339.2675pt>
 File: parte1.png Graphic file (type png)
  <use parte1.png>
-Package pdftex.def Info: parte1.png used on input line 339.
+Package pdftex.def Info: parte1.png used on input line 338.
 (pdftex.def)             Requested size: 467.24449pt x 169.63333pt.
 
-Overfull \hbox (12.00038pt too wide) in paragraph at lines 339--340
+Overfull \hbox (12.00038pt too wide) in paragraph at lines 338--339
  [][] 
  []
 
@@ -846,26 +846,26 @@ Overfull \hbox (12.00038pt too wide) in paragraph at lines 339--340
 File: parte2.png Graphic file (type png)
 
 <use parte2.png>
-Package pdftex.def Info: parte2.png used on input line 356.
+Package pdftex.def Info: parte2.png used on input line 355.
 (pdftex.def)             Requested size: 465.23698pt x 171.64082pt.
 
-Overfull \hbox (9.99287pt too wide) in paragraph at lines 356--357
+Overfull \hbox (9.99287pt too wide) in paragraph at lines 355--356
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--382
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 []\OT1/ptm/m/n/12 Ferramenta uti-li-zada para ge-ren-ci-a-mento das re-fer[]enc
 ias des-cri-tas na
  []
 
 
-Overfull \hbox (28.102pt too wide) in paragraph at lines 371--391
+Overfull \hbox (28.102pt too wide) in paragraph at lines 370--390
  [][] 
  []
 
 [25 <./parte2.png>]
-Overfull \hbox (5.58447pt too wide) in paragraph at lines 397--398
+Overfull \hbox (5.58447pt too wide) in paragraph at lines 396--397
 []\OT1/ptm/m/n/12 De uma ma-neira ge-ral, o n[]ucleo a ser al-te-rado para im-p
 le-men-tar a codifica[][]ao e decodifica[][]ao
  []
@@ -873,50 +873,56 @@ le-men-tar a codifica[][]ao e decodifica[][]ao
 <Arquitetura.png, id=388, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
  <use Arquitetura.png>
-Package pdftex.def Info: Arquitetura.png used on input line 401.
+Package pdftex.def Info: Arquitetura.png used on input line 400.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
 
 [26 <./Arquitetura.png>] <BuildSystem.png, id=393, 387.4475pt x 316.18124pt>
 File: BuildSystem.png Graphic file (type png)
 
 <use BuildSystem.png>
-Package pdftex.def Info: BuildSystem.png used on input line 424.
+Package pdftex.def Info: BuildSystem.png used on input line 423.
 (pdftex.def)             Requested size: 174.34976pt x 142.28024pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28 <./BuildSystem.png>]
-Cap\'{\i }tulo 6.
-(./proposta.bbl [29
+[27]
+Overfull \hbox (2.37144pt too wide) in paragraph at lines 439--440
+\OT1/ptm/m/n/12 da cha-mada do m[]etodo Web-PI-Dec-Ge-tRGB da classe de-code.h 
+do WEBP, cap-tura as informa[][]oes
+ []
 
-] [30
+[28 <./BuildSystem.png>] [29]
+Cap\'{\i }tulo 6.
+(./proposta.bbl [30
+
+] [31
 
 ])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 447.
-[31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 447.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+[32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 447.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 447.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
-(rerunfilecheck)             Checksum: 373A729238DCC358A5815E349BFA8029;2401.
+(rerunfilecheck)             Checksum: A21ED946DDB1DEF91DDCF1D8B2DB7FC0;2401.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 447.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
  ) 
 Here is how much of TeX's memory you used:
- 6915 strings out of 495039
- 102161 string characters out of 3181249
+ 6922 strings out of 495039
+ 102201 string characters out of 3181249
  195769 words of memory out of 3000000
  9826 multiletter control sequences out of 15000+200000
- 32512 words of font info for 61 fonts, out of 3000000 for 9000
+ 35171 words of font info for 67 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
  30i,13n,41p,1243b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -926,10 +932,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 w/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposta.pdf (32 pages, 398539 bytes).
+Output written on proposta.pdf (33 pages, 402211 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 103 named destinations out of 1000 (max. 500000)
  294 words of extra memory for PDF output out of 10000 (max. 10000000)
 

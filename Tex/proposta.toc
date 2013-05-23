@@ -25,8 +25,8 @@
 \contentsline {section}{\numberline {5.3}Ambiente de Desenvolvimento}{25}{section.abstract.5.3}
 \contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{25}{section.abstract.5.4}
 \contentsline {section}{\numberline {5.5}Sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}{27}{section.abstract.5.5}
-\contentsline {section}{\numberline {5.6}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{27}{section.abstract.5.6}
-\contentsline {section}{\numberline {5.7}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{28}{section.abstract.5.7}
-\contentsline {section}{\numberline {5.8}Resultados Obtidos}{28}{section.abstract.5.8}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{29}{chapter.abstract.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{30}{chapter.abstract.6}
+\contentsline {section}{\numberline {5.6}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{28}{section.abstract.5.6}
+\contentsline {section}{\numberline {5.7}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{29}{section.abstract.5.7}
+\contentsline {section}{\numberline {5.8}Resultados Obtidos}{29}{section.abstract.5.8}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{30}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{31}{chapter.abstract.6}

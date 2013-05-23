@@ -256,7 +256,6 @@ As funções utilizadas para criação do codificador serão as seguintes:
 A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela é peça fundamental para implementação do projeto.
 
 
-
 \chapter{Trabalhos Relacionados}
 
 Neste capítulo são apresentadas alguns desenvolvimentos e projetos que se assemelham ao assunto deste trabalho, evidenciando soluções distintas e suas características.
@@ -417,7 +416,7 @@ O sistema de compilação ou o \ingles{build system} do Firefox é o mesmo utili
 
 Na primeira fase o \ingles{autoconf} é invocado para que as características do sistema e do compilador utilizados possam ser determinadas. Aqui também é realizada toda verificação por dependências necessárias para realização do \ingles{build}. A segunda fase na verdade é a aplicação da configuração encontrada na primeira fase para todo o código fonte existente que será compilado. A terceira e última fase é onde ocorre efetivamente a compilação do código, baseando-se nas configurações definidas nas fases anteriores. Desta forma o processo pode ser definido como uma árvore, caso qualquer uma das fases falhe, a próxima etapa não será iniciada.
 
-Toda orquestração do processo de compilação é baseada no arquivo moz.build existente dentro de cada diretório que contém um fonte a ser compilado ou a ser exportado como referência (arquivos de cabeçalho por exemplo). A sintaxe de definição do arquivo moz.build obedece as regras regidas pela linguagem Python. Na figura X.X é possível observar como a hierarquia está montada e como cada software está envolvido dentro do processo. Como existem várias linguagens de programação existentes dentro do Firefox, a fase de preparação fica responsável por acionar o compilador correto para cada fonte.
+Toda orquestração do processo de compilação é baseada no arquivo moz.build existente dentro de cada diretório que contém um fonte a ser compilado ou a ser exportado como referência (arquivos de cabeçalho por exemplo). A sintaxe de definição do arquivo moz.build obedece as regras regidas pela linguagem Python. Na figura 5.4 é possível observar como a hierarquia está montada e como cada software está envolvido dentro do processo. Como existem várias linguagens de programação existentes dentro do Firefox, a fase de preparação fica responsável por acionar o compilador correto para cada fonte.
 
 \begin{figure}[h]
   \centering
@@ -425,13 +424,21 @@ Toda orquestração do processo de compilação é baseada no arquivo moz.build 
   \caption{Estrutura do sistema de compilação do Firefox}
 \end{figure}
 
-\section{Implementação do codificador}
-
-Descrever implementação do codificador
-
 \section{Implementação do decodificador}
 
-Descrever implementação do decodificador
+O Firefox é desenvolvido na linguagem de programação C++ e utiliza os conceitos de orientação à objetos de forma massiva. A criação do decodificador passou primeiramente por uma avaliação dos outros decodificadores de imagem já existentes dentro do Firefox, mais especificamente o nsJPEGDecoder para decodificação de imagens JPEG e o nsPNGDecoder para decodificação de imagens PNG. Para a implementação foi necessário criar uma nova classe para a decodificação do formato WEBP que herdasse a classe Decoder original do Firefox. A classe Decoder por sua vez parte da premissa que os seguintes métodos precisam ser implementados:
+
+\begin{itemize}
+        \item void InitInternal\(\)
+        \item void WriteInternal\(const char* aBuffer, uint32_t aCount\)
+        \item void FinishInternal\(\)
+\end{itemize}
+
+De uma forma bastante simples, estes métodos são uma espécie de gancho que servem para inicializar o processo de decodificação, realizar efetivamente a decodificação e finalizar o processo para a classe Decoder. O processo de inicialização é utilizado para repassar o \ingles{buffer} da imagem para o decodificador responsável através do método InitInternal. De posse da imagem a decodificação é efetivamente realizada pelo método WriteInternal. O acionamento do método FinishInternal siginifica para o Firefox que a imagem já foi devidamente decodificada e não há mais nada a ser realizado.
+
+Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O buffer resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Black}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox.
+
+\section{Implementação do codificador}
 
 \section{Resultados Obtidos}
 Resultados obtidos com a implementação realizada.
