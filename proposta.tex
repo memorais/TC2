@@ -33,11 +33,15 @@
 \newcommand{\bibTeX}{bib\kern-.13ex\TeX}
 
 \begin{resumo}
-O desempenho de técnicas de codificação multimidia está melhorando constantemente em termos de taxa de compressão, funcionalidades de código, algoritmos, e robustez contra erros mesmo em um ritmo mais lento em relação ao que estávamos acostumados até há uma década atrás. Um dos últimos \ingles{codecs} que é esperado para melhorar este cenário é o algoritmo WebP lançado recentemente pela empresa Google, cujo objetivo principal é fornecer imagens com uma maior taxa de compressão, mas sem perda de qualidade. Naturalmente, o novo formato se torna pouco utilizado até que todos os navegadores dêem suporte. Dado o cenário atual, este Trabalho de Conclusão propõe disseminar a utilização do \ingles{codec} WebP através da implementação do codificador e decodificador deste formato no navegador Mozilla Firefox.
+O desempenho de técnicas de codificação multimidia está melhorando constantemente em termos de taxa de compressão, funcionalidades de código, algoritmos, e robustez contra erros mesmo em um ritmo mais lento em relação ao que estávamos acostumados até há uma década atrás. Um dos últimos \ingles{codecs} que é esperado para melhorar este cenário é o algoritmo WebP lançado recentemente pela empresa Google, cujo objetivo principal é fornecer imagens com uma maior taxa de compressão, mas sem perda de qualidade. 
+
+Naturalmente, o novo formato se torna pouco utilizado até que todos os navegadores dêem suporte. Dado o cenário atual, este Trabalho de Conclusão propõe disseminar a utilização do \ingles{codec} WebP através da implementação do codificador e decodificador deste formato no navegador Mozilla Firefox.
 \end{resumo}
 
 \begin{abstract}
-Performance of multimedia coding techniques are constantly improving in terms of compression ratio, code features, algorithms, and robustness against errors even at a slower pace compared to what we were used to a decade ago. One of the last codecs that is expected to improve this scenario is the algorithm WebP recently released by Google company, whose main goal is to provide images with higher compression ratio but without loss quality. Naturally, the format becomes rarely used until all browsers give support. Given the current scenario, this paper provides to spread the use of codec WebP through the implementation of encoder and decoder of this format in Mozilla Firefox browser.
+Performance of multimedia coding techniques are constantly improving in terms of compression ratio, code features, algorithms, and robustness against errors even at a slower pace compared to what we were used to a decade ago. One of the last codecs that is expected to improve this scenario is the algorithm WebP recently released by Google company, whose main goal is to provide images with higher compression ratio but without loss quality. 
+
+Naturally, the format becomes rarely used until all browsers give support. Given the current scenario, this paper provides to spread the use of codec WebP through the implementation of encoder and decoder of this format in Mozilla Firefox browser.
 \end{abstract}
 
 \onehalfspacing
@@ -91,7 +95,8 @@ O trabalho desenvolvido será ser entregue à comunidade do Firefox, mas sua apl
 
 \section{Organização do Texto}
 
-\begin{comment}%
+Será o última coisa a ser escrita, pois depende da finalização dos demais capítulos.
+%\begin{comment}
 %Este trabalho está estruturado em seis capítulos. O primeiro capítulo apresenta uma introdução sobre o formato WebP, bem como a motivação e os objetivos deste %trabalho. Já no capítulo 2, a fundamentação teórica está exposta apresentando as tecnologias que possuem ligação direta com a implementação desenvolvida neste %trabalho. Alguns trabalhos relacionados ao assunto estão apresentados no quarto capítulo. E para finalizar, é descrita a solução proposta e os comentários finais, nos %capítulos 5 e 6, respectivamente.
 %
 %Este documento está estruturado em seis capítulos. O primeiro capítulo apresenta uma introdução inicial sobre o formato WebP, bem como a motivação e os objetivos %deste trabalho.
@@ -103,7 +108,7 @@ O trabalho desenvolvido será ser entregue à comunidade do Firefox, mas sua apl
 
 A internet hoje em dia se fundamenta nos princípios da \ingles{World Wide Web} ou somente \ingles{Web} como é conhecida. Os usuários se conectam na rede mundial de computadores e utilizam as páginas da \ingles{Web} para realizar todo e qualquer tipo de ação dentro da rede, desde conversar com seus amigos e familiares até realizar compras em uma página de \ingles{e-commerce}.
 
-A \ingles{World Wide Web} foi inventada no CERN (Centro Europeu de Pesquisa Nuclear), com principal objetivo de servir como suporte para a consulta e comunicação interna dos projetos de pesquisa\cite{WebStory}. A ideia inicial era utilizar hipertextos, os quais funcionariam também como \ingles{hiperlinks} e fariam ligações para demais páginas contendo outro tipo de informação. Toda plataforma desenvolvida internamente dentro do CERN para a \ingles{Web} foi posteriormente disponibilizada ao domínio público, sem cobrança de royalties sob qualquer parte. Mais tarde Tim Berners-Lee, o fundador da \ingles{Web} dentro do CERN, criou a o \ingles{World Wide Web Consortium} com o intuito de definir padrões de utilização e interoperabilidade entre tecnologias dentro da rede. Conhecido também como W3C, é composto por funcionários de diversas empresas que trabalham em período integral para manter e evoluir os padrões especificados pela organização \cite{W3Cfacts}.
+A \ingles{World Wide Web} foi inventada no CERN (Centro Europeu de Pesquisa Nuclear), com principal objetivo de servir como suporte para a consulta e comunicação interna dos projetos de pesquisa \cite{WebStory}. A ideia inicial era utilizar hipertextos, os quais funcionariam também como \ingles{hiperlinks} e fariam ligações para demais páginas contendo outro tipo de informação. Toda plataforma desenvolvida internamente dentro do CERN para a \ingles{Web} foi posteriormente disponibilizada ao domínio público, sem cobrança de royalties sob qualquer parte. Mais tarde Tim Berners-Lee, o fundador da \ingles{Web} dentro do CERN, criou a o \ingles{World Wide Web Consortium} com o intuito de definir padrões de utilização e interoperabilidade entre tecnologias dentro da rede. Conhecido também como W3C, é composto por funcionários de diversas empresas que trabalham em período integral para manter e evoluir os padrões especificados pela organização \cite{W3Cfacts}.
 
 Além de ser utilizada por pessoas, a \ingles{Web} também é utilizada para comunicação entre sistemas. Efetivamente são computadores acessando outros computadores para realizarem a troca de informações, podendo ser em tempo real ou não. Como os padrões definidos tem suas especificações abertas, a \ingles{Web} também se torna uma ótima ferramenta para integrar sistemas diferentes em plataformas diferentes. Hoje em dia os chamados \ingles{Web-Services} são utilizados juntamente com os conceitos de Orientação a Objetos para integração entre sistemas. A comunicação utilizando os \ingles{Web-Services} se baseia nos princípios e padrões especificados pelo W3C para a \ingles{Web} \cite{WebServices}.
 
