@@ -252,6 +252,7 @@ A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que o
 De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções foram utilizadas para criação do decodificador:
 
 \begin{itemize}
+	\item WebPIDecGetRGB
 	\item WebPGetDecoderVersion
 	\item WebPGetInfo
 	\item WebPDecodeRGB
@@ -264,6 +265,7 @@ De acordo com a avaliação feita no código fonte e nas definições da bibliot
 As funções utilizadas para criação do codificador foram as seguintes:
 
 \begin{itemize}
+	\item WebPMemoryWrite
 	\item WebPGetEncoderVersion
 	\item WebPEncodeRGB
 	\item WebPEncodeRGBA
@@ -322,7 +324,7 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \section{O Primeiro Patch}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, haviam problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que ainda estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, haviam problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que ainda estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32 que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
 
 Quando foi falado publicamente do nosso interesse em conduzir uma nova implementação, Vikas Arora, entrou em contato conosco e se colocou a disposição para auxiliar na correção do seu \ingles{patch} anterior ou na elaboração de um novo, também realizando a implementação do processo de codificação do formato WebP.
 
@@ -411,7 +413,7 @@ As principais ferramentas utilizadas para o desenvolvimento deste trabalho estã
 			\hline
 			GCC		& Coleção de compiladores GNU. Foram utilizados os compiladores de C e C++. \\
 			\hline
-			Firebug		& Extenção para o Firefox que é utilizada para inúmeras atividades de depuração e estatística do navegador.
+			Firebug		& Extenção para o Firefox que é utilizada para inúmeras atividades de depuração e estatística do navegador. \\
 			\hline
 		\end{tabular}
 		}
@@ -477,7 +479,7 @@ Antes de realizar a implementação do codificador dentro do Firefox, foi precis
         \caption{Estruturas fundamentais para o codificador WebP.
         \label{tbl:padc}}{
                 \vspace{0.3cm}
-                \begin{tabular}{|l|p{14cm}|}
+                \begin{tabular}{|l|p{10cm}|}
                 \hline
                         \textbf{Estrutura} & \textbf{Descrição} \\
                         \hline
