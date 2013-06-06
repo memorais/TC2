@@ -247,9 +247,9 @@ A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossl
 
 \section{A API libwebp}
 
-A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho, serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
+A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho, foram utilizadas os cabeçalhos para codificação e decodificação (encode.h e decode.h). Também foi necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
 
-De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções serão utilizadas para criação do decodificador:
+De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções foram utilizadas para criação do decodificador:
 
 \begin{itemize}
 	\item WebPGetDecoderVersion
@@ -261,7 +261,7 @@ De acordo com a avaliação feita no código fonte e nas definições da bibliot
 	\item WebPDecodeBGRA
 \end{itemize}
 
-As funções utilizadas para criação do codificador serão as seguintes:
+As funções utilizadas para criação do codificador foram as seguintes:
 
 \begin{itemize}
 	\item WebPGetEncoderVersion
@@ -271,7 +271,7 @@ As funções utilizadas para criação do codificador serão as seguintes:
 	\item WebPEncodeBGRA
 \end{itemize}
 
-A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela é peça fundamental para implementação do projeto.
+A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela foi peça fundamental para implementação do projeto.
 
 
 \chapter{Trabalhos Relacionados}
@@ -282,6 +282,7 @@ Neste capítulo são apresentadas alguns desenvolvimentos e projetos que se asse
 %	\item x264 Biblioteca para codificação e decodificação de imagem e áudio.
 	\item JPEG 2000 Atualização do padrão JPEG para compressão de imagens.
 	\item JPEG XR Alternativa mais leve ao JPEG 2000 para compressão de imagens.
+	\item Primeiro patch com suporte a decodificação do WebP no Firefox.
 \end{itemize}
 
 %\section{Biblioteca x264}
@@ -319,8 +320,11 @@ O formato JPEG XR suporta a compressão de imagens com e sem perda de qualidade.
 
 Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 11.0, Adobe AIR 3.0, Sumatra PDF 2.1, Windows Imaging Component, .NET Framework 3.0, Windows Vista, Windows 7, Windows 8, Internet Explorer 9, Internet Explorer 10, porém não é comumente utilizado em sites da \ingles{Internet}.\cite{HDPhoto}
 
-\section{Patch do cara}
-%\begin{comment} TODO %\end{comment}
+\section{O Primeiro Patch}
+
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, haviam problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que ainda estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+
+Quando foi falado publicamente do nosso interesse em conduzir uma nova implementação, Vikas Arora, entrou em contato conosco e se colocou a disposição para auxiliar na correção do seu \ingles{patch} anterior ou na elaboração de um novo, também realizando a implementação do processo de codificação do formato WebP.
 
 \chapter{Descrição do Projeto}
 
@@ -403,6 +407,12 @@ As principais ferramentas utilizadas para o desenvolvimento deste trabalho estã
 			\hline
 			DIA		& Ferramenta utilizada para o desenho de diagramas. \\
 			\hline
+			GDB		& Depurador utilizado no desenvolvimento da implementação do trabalho. \\
+			\hline
+			GCC		& Coleção de compiladores GNU. Foram utilizados os compiladores de C e C++. \\
+			\hline
+			Firebug		& Extenção para o Firefox que é utilizada para inúmeras atividades de depuração e estatística do navegador.
+			\hline
 		\end{tabular}
 		}
 \end{table}
@@ -411,7 +421,7 @@ As principais ferramentas utilizadas para o desenvolvimento deste trabalho estã
 
 A arquitetura de desenvolvimento do Mozilla Firefox permite a extensão de funcionalidades na renderização de imagens sem a necessidade de alteração de grandes porções de código já existente. É uma arquitetura bem modular e com baixo acoplamento, o que permite a fácil integração de novos componentes quando necessário. 
 
-De uma maneira geral, o núcleo a ser alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Uma vez que o codificador e o decodificador estejam prontos, será necessário fazer alterações neste módulos para que o navegador possa nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
+De uma maneira geral, o núcleo alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Com o codificador e o decodificador implementados, foi necessário fazer alterações neste módulos para que o navegador possa nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
 
 \begin{figure}[h]
   \centering
@@ -419,7 +429,7 @@ De uma maneira geral, o núcleo a ser alterado para implementar a codificação 
   \caption{Diagrama dos componentes e suas relações}
 \end{figure}
 
-Também serão necessárias pequenas alterações em outros pontos como por exemplo a definição do \ingles{mime-type} para o formato WebP que deve ser acrescentado dentro do Firefox, mas estas não caracterizam mudança significativas de forma que a maior parte do trabalho será realizada em cima do núcleo de manipulação de imagens do navegador, conforme mostrado no diagrama dos componentes.
+Também foram necessárias pequenas alterações em outros pontos como por exemplo a definição do \ingles{mime-type} para o formato WebP que foi acrescentado dentro do Firefox, mas estas não caracterizaram mudanças significativas de forma que a maior parte do trabalho foi realizada em cima do núcleo de manipulação de imagens do navegador, conforme mostrado no diagrama dos componentes.
 
 \section{Sistema de compilação do Firefox}
 
@@ -460,7 +470,50 @@ Como se pode observar em nenhum momento é necessário saber quais são os algor
 
 \section{Implementação do codificador}
 
-Descrever a implementação do codificador.
+Antes de realizar a implementação do codificador dentro do Firefox, foi preciso entender a biblioteca de codificação da libwebp. O próprio cabeçalho principal da biblioteca (encode.h) é a documentação para o processo de codificação. Existem 3 tipos de estruturas fundamentais para o codificador. Abaixo o detalhamento destas estruturas e a sua respectiva função.
+
+\begin{table}[ht]
+        \centering
+        \caption{Estruturas fundamentais para o codificador WebP.
+        \label{tbl:padc}}{
+                \vspace{0.3cm}
+                \begin{tabular}{|l|p{14cm}|}
+                \hline
+                        \textbf{Estrutura} & \textbf{Descrição} \\
+                        \hline
+                        WebPPicture		& É a estrutura principal do codificador contendo o \ingles{buffer} da imagem, informações da altura e largura, tipo de codificação (RGB ou YUV) e outros dados relevantes. \\
+                        \hline
+                        WebPConfig		& Conjunto de dados de configuração e recursos para a imagem, como por exemplo se há ou não a opção de transparência (\ingles{alpha}), qualidade da imagem e etc.  \\
+                        \hline
+                        WebPMemoryWriter	& É responsável por realizar a manipulação de dados dentro de uma estrutura WebPPicture. A escrita de qualquer segmento de \ingles{buffer} dentro de uma WebPPicture depende desta estrutura. \\
+                        \hline
+                \end{tabular}
+                }
+\end{table}
+
+O processo de codificação da libwebp possui vários recursos adicionais que não foram citados dentro deste trabalho por não terem sido utilizados no desenvolvimento do codificador.
+
+Assim como no desenvolvimento do decodificador, a criação do codificador passou por uma avaliação dos outros codificadores que já estão implementados no navegador. Como a implementação do nsPNGEncoder estava mais organizada e bem documentada, ela serviu como base para criação do codificador WebP. A classe principal criada para o processo de codificação deveria herdar a classe imgIEncoder do Firefox. Como premissa da classe pai, todos os métodos a seguir precisaram ser implementados para o codificador nsWEBPEncoder:
+
+\begin{itemize}
+	\item InitFromData
+	\item StartImageEncode
+	\item GetImageBufferUsed
+	\item GetImageBuffer
+	\item AddImageFrame
+	\item EndImageEncode
+	\item Close
+	\item Available
+	\item Read
+	\item ReadSegments
+	\item IsNonBlocking
+	\item AsyncWait
+	\item CloseWithStatus
+\end{itemize}
+
+Dos 13 métodos listados a interação com a libwebp foi criada dentro dos métodos StartImageEncode, AddImageFrame e EndImageEncode. Tudo começa no método orquestrador InitFromData, ele é o primeiro método a ser chamado e a sua função é receber o \ingles{buffer} do chamador. A partir dai o método IniFromData executa o método StartImageEncode que é responsável por inicializar as estruturas de dados WebPPicture, WebPConfig e WebPMemoryWriter. O método AddImageFrame possui uma iteração que lê linha a linha do \ingles{buffer} e realiza a construção da codificação através do método WebPMemoryWrite da libwebp. Este método faz a gravação dos dados dentro da estrutura WebPPicture que é efetivamente a imagem no formato WebP. O último método chamado é o EndImageEncode que realiza a liberação da memória utilizada por todo o processo de codificação.
+
+Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem já está devidamente codificada no formato WebP.
 
 \section{Resultados Obtidos}
 Resultados obtidos com a implementação realizada.
