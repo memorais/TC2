@@ -275,6 +275,53 @@ As funções utilizadas para criação do codificador foram as seguintes:
 
 A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela foi peça fundamental para implementação do projeto. A versão da libwebp utilizada dentro do trabalho foi a 0.3.0.
 
+\section{Estudo de caso do WebP}
+
+Com o objetivo de mostrar os ganhos do formato de imagem WebP com relação ao formato JPEG e o formato PNG, mostramos a seguir uma série de 3 pares de imagens diferentes, uma no seu formato original e a outra já convertida para o WebP e os detalhes com relação ao tamanho final e os recursos utilizados em cada um dos casos. As imagens foram retiradas aleatoriamente da internet e convertidas utilizando o conversor padrão fornecido juntamente com a libwebp.
+
+O primeiro caso é de uma paisagem montanhosa cuja a largura é de 1150 pixels e a altura de 863 pixels. A imagem na figura X está no formato JPEG e seu tamanho original é de 430K. O processo de conversão desta imagem para WebP levou exatos 0,428 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. Após a conversão para o formato WebP, como pode ser visto na figura Y, a imagem resultante foi reduzida para 228K, aproximadamente 46,98\% de ganho na compressão.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem1JPEG.png}
+  \caption{Imagem no formato JPEG com tamanho de 430K}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem1WEBP.png}
+  \caption{Imagem no formato WebP com tamanho de 228K}
+\end{figure}
+
+Como o primeiro caso retrata uma imagem com tamanho consideravelmente pequeno, fizemos uma avaliação com uma imagem maior para verificar se o comportamento do formato WebP é alterado. A imagem mostrada na figura Z está também no formato JPEG e possui largura de 4928 pixels e a altura de 3264 pixels. O tamanho original da imagem é de 6996K. O processo de conversão desta imagem para WebP levou 5098 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem no formato WebP, como pode ser visto na figura V, foi reduzida para 1008K. Neste segundo caso o ganho foi maior ainda, uma redução de 85,59\% com relação a imagem original.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem2JPEG.png}
+  \caption{Imagem no formato JPEG com tamanho de 6996K}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem2WEBP.png}
+  \caption{Imagem no formato WebP com tamanho de 1008K}
+\end{figure}
+
+O último caso é uma imagem no formato PNG que utiliza o recurso de transparência (\ingles{alpha}), ela possui largura de 1353 pixels por 1034 pixels de altura. A imagem no formato original tem tamanho de 840K e o processo de conversão para o formato WebP levou 0,328 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem resultante tem tamanho de 56K, uma redução de 93,33\% com relação ao tamanho original. O ganho maior neste caso pode ser explicado pelo próprio recurso de transparência que tem compressão mais eficiente no formato WebP, e pelo pequeno número de cores na imagem o que também acaba favorecendo os algoritmos do WebP. Todos os casos acima sofreram compressão do tipo \ingles{lossy}.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem3AlphaPNG.png}
+  \caption{Imagem com \ingles{alpha} no formato PNG com tamanho de 840K}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem3AlphaWEBP.png}
+  \caption{Imagem com \ingles{alpha} no formato WebP com tamanho de 56K}
+\end{figure}
+
+
 \chapter{Trabalhos Relacionados}
 
 Neste capítulo são apresentadas alguns desenvolvimentos e projetos que se assemelham ao assunto deste trabalho, evidenciando soluções distintas e suas características.
