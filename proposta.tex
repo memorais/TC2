@@ -136,15 +136,15 @@ De acordo com as estatísticas de mercado apresentadas na Tabela 2.1, os navegad
 	    	\hline
 			\textbf{2013} & \textbf{Internet Explorer} & \textbf{Firefox} &\textbf{Chrome} & \textbf{Safari} & \textbf{Opera} \\
 			\hline
-			May			& 12.6\% & 27.7\% & 52.9\% 4.0\%	1.6 % \\
+			May			& 12.6\% & 27.7\% & 52.9\% & 4.0\%	& 1.6\% \\
 			\hline
-			April		& 12.7\% & 27.9\% & 52.7\% 4.0\%	1.7 % \\
+			April		& 12.7\% & 27.9\% & 52.7\% & 4.0\%	& 1.7\% \\
 			\hline
-			March		& 13.0\% & 28.5\% & 51.7\% 4.1\%	1.8 % \\
+			March		& 13.0\% & 28.5\% & 51.7\% & 4.1\%	& 1.8\% \\
 			\hline
-			February	& 13.5\% & 29.6\% & 50.0\% 4.1\%	1.8 % \\
+			February	& 13.5\% & 29.6\% & 50.0\% & 4.1\%	& 1.8\% \\
 			\hline
-			January		& 14.3\% & 30.2\% & 48.4\% & 4.2\%	1.9 % \\
+			January		& 14.3\% & 30.2\% & 48.4\% & 4.2\%	& 1.9\% \\
 			\hline
 			
 			\textbf{2012} & \textbf{Internet Explorer} & \textbf{Firefox} &\textbf{Chrome} & \textbf{Safari} & \textbf{Opera} \\
@@ -378,7 +378,7 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \section{O Primeiro Patch}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, haviam problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que ainda estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32 que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32 que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
 
 Quando foi falado publicamente do nosso interesse em conduzir uma nova implementação, Vikas Arora, entrou em contato conosco e se colocou a disposição para auxiliar na correção do seu \ingles{patch} anterior ou na elaboração de um novo, também realizando a implementação do processo de codificação do formato WebP.
 
