@@ -50,15 +50,15 @@ Naturally, the format becomes rarely used until all browsers give support. Given
 
 \section{Contextualização}
 
-Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da internet é a chamada WWW, ou \ingles{World Wide Web} onde usuários acessam páginas da \ingles{Web} escritas em uma linguagem específica definida por uma organização internacional (W3C), que é renderizada através de um software chamado de navegador. O usuário então pode ler as informações descritas ali, e acessar os demais conteúdos da página através de seus \ingles{hiperlinks} de uma maneira fácil e intuitiva.
+Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da internet é a chamada WWW, ou \ingles{World Wide Web}, na qual usuários acessam páginas da \ingles{Web} escritas em uma linguagem específica definida por uma organização internacional (W3C), que é renderizada através de um software chamado de navegador. O usuário, então, pode ler as informações descritas ali, e acessar os demais conteúdos da página através de seus \ingles{hiperlinks} de uma maneira fácil e intuitiva.
 
-Com a crescente evolução dos meios de comunicação, a necessidade de total interatividade do usuário com as páginas aumenta cada vez mais. Uma página da \ingles{Web} não é somente texto como era nos primórdios, ela é composta de uma série de diferentes atores como folhas de estilo, imagens e vídeos. Estes atores existem para aumentar a facilidade no uso e causar uma experiência mais agradável para o usuário final.
+Com a crescente evolução dos meios de comunicação, a necessidade de total interatividade do usuário com as páginas aumenta cada vez mais. Uma página da \ingles{Web} não é somente texto como era nos primórdios, ela é composta de uma série de diferentes atores, tais como folhas de estilo, imagens e vídeos. Estes atores existem para aumentar a facilidade no uso e proporcionar uma experiência mais agradável para o usuário final.
 
-Apesar da mudança na necessidade dos usuários da \ingles{Web}, nenhuma alteração realmente significativa foi feita no protocolo HTTP, cuja última revisão (1.1) ocorreu no ano de 1999, e na linguagem HTML que sofreu seu último ajuste em maio de 2000. Essencialmente a tecnologia implementada atualmente é a mesma criada no início dos anos 90 e apesar de sofrerem pequenas revisões pós criação, continuam não atendendo totalmente as demandas que surgem. Um fator que comprova este fato é a diversidade de tecnologias paralelas (\ingles{plugins}) não oficiais que foram criadas para preencher estas lacunas, o \ingles{Flash}, o \ingles{JavaFX} e o \ingles{Silverlight} são algumas das tecnologias que ilustram este cenário. Outro fator importante é que mesmo com o advento nas tecnologias de comunicação, nem todas as pessoas têm acesso a esta evolução. Seja por uma questão econômica ou mesmo pela falta de infraestrutura, nem toda população do planeta pode contar com aquilo que há de mais moderno.
+Apesar da mudança na necessidade dos usuários da \ingles{Web}, poucas alteração foram feitas no protocolo HTTP, cuja última revisão (1.1) ocorreu no ano de 1999, e na linguagem HTML que sofreu seu último ajuste em maio de 2000. Essencialmente a tecnologia implementada atualmente é a mesma criada no início dos anos 90 e apesar de sofrerem pequenas revisões pós criação, continuam não atendendo totalmente as demandas que surgem. Um fator que comprova este fato é a diversidade de tecnologias paralelas (\ingles{plugins}) não oficiais que foram criadas para preencher estas lacunas. O \ingles{Flash}, o \ingles{JavaFX} e o \ingles{Silverlight} são algumas das tecnologias que ilustram este cenário. Outro fator importante é que mesmo com o avanço das tecnologias de comunicação, nem todas as pessoas têm acesso a esta evolução. Seja por uma questão econômica ou mesmo pela carência de infraestrutura. 
 
-Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário com as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}, criado para ser utilizado principalmente na \ingles{Web}. Este formato é capaz de comprimir aproximadamente 39\% mais que a melhor solução utilizada hoje que é o formato JPEG, e apresentar imagens com o mesmo nível de qualidade visual \cite{WebPStudy}. O suporte à renderização de imagens \ingles{WebP} está implementado atualmente apenas nos navegadores Chrome e Opera.
+Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}, criado para ser utilizado principalmente na \ingles{Web}. Este formato é capaz de comprimir aproximadamente 39\% mais que a melhor solução utilizada hoje que é o formato JPEG, e apresentar imagens com o mesmo nível de qualidade visual \cite{WebPStudy}. O suporte à renderização de imagens \ingles{WebP} está implementado atualmente apenas nos navegadores Chrome e Opera.
 
-Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200, como pode-se observar na figura a seguir:
+Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200, como pode-se observar na figura 1.1:
 
 \begin{figure}[h]
   \centering
@@ -80,18 +80,18 @@ Apesar de não existir nenhuma diretiva da W3C para qual método de compressão 
 
 A necessidade pela busca da informação cresceu exponencialmente de alguns anos pra cá. O crescente avanço tecnológico, trazendo consigo a popularização dos smartphones e a facilidade no acesso à informação, contribuiu de forma expressiva para que cada vez mais as pessoas estejam conectadas em todos os lugares. Da mesma forma que a disponibilidade dessas informações e o acesso à elas deve ser feito de forma cada vez mais rápida.
 
-O desenvolvimento do codificador e decodificador do formato \ingles{WebP} no \ingles{Mozilla Firefox}, trará de imediato a melhora no tempo de resposta na exibição das imagens dentro do navegador, visto que o tamanho dos arquivos no servidor será reduzido. Se considerar que mais de 60\% do tamanho total de um \ingles{website} são imagens, os benefícios podem ser substanciais. É importante ressaltar que a utilização em massa deste novo formato contribui na diminuição do trafego de rede na internet de maneira global, isso resulta diretamente em maior vazão para outros recursos que possuem um maior consumo de banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
+O desenvolvimento do codificador e decodificador do formato \ingles{WebP} no \ingles{Mozilla Firefox}, trará de imediato a melhora no tempo de resposta na exibição das imagens dentro do navegador, visto que o tamanho dos arquivos no servidor será reduzido. Se considerar que mais de 60\% do tamanho total de um \ingles{website} são imagens, os benefícios podem ser substanciais. É importante ressaltar que a utilização em massa deste novo formato contribui, consequentemente, na diminuição do trafego de rede na internet de maneira global, isso resulta diretamente em maior vazão para outros recursos que possuem um maior consumo de banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
 
-Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Google}, na qual substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome. Diminuindo a utilização de banda dirária:
+Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com Stephen Konig (Google Product Manager):
 \begin{citacao}
 	\ingles{By converting PNGs and JPEGs to WebP, the Chrome Web Store was able to reduce image sizes by about 30\% on averag. Given the number of requests Chrome Web Store serves, this adds up to several terabytes of savings every day. (Stephen Konig, Google Product Manager)}.
 \end{citacao}
 
 \section{Objetivo}
 
-O objetivo principal deste trabalho é desenvolver uma solução na qual habilite o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
+O objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
 
-O trabalho desenvolvido será ser entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não é o alvo principal. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas sim em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
+O trabalho desenvolvido foi entegue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não foi o foco principal. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas sim em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
 
 \section{Organização do Texto}
 
@@ -134,7 +134,26 @@ De acordo com as estatísticas de mercado apresentadas na Tabela 2.1, os navegad
 		\vspace{0.3cm}
 		\begin{tabular}{|l|l|l|l|l|l|}
 	    	\hline
+			\textbf{2013} & \textbf{Internet Explorer} & \textbf{Firefox} &\textbf{Chrome} & \textbf{Safari} & \textbf{Opera} \\
+			\hline
+			May			& 12.6\% & 27.7\% & 52.9\% & 4.0\%	& 1.6\% \\
+			\hline
+			April		& 12.7\% & 27.9\% & 52.7\% & 4.0\%	& 1.7\% \\
+			\hline
+			March		& 13.0\% & 28.5\% & 51.7\% & 4.1\%	& 1.8\% \\
+			\hline
+			February	& 13.5\% & 29.6\% & 50.0\% & 4.1\%	& 1.8\% \\
+			\hline
+			January		& 14.3\% & 30.2\% & 48.4\% & 4.2\%	& 1.9\% \\
+			\hline
+			
 			\textbf{2012} & \textbf{Internet Explorer} & \textbf{Firefox} &\textbf{Chrome} & \textbf{Safari} & \textbf{Opera} \\
+			\hline
+			December	& 16.4\% & 32.2\% & 44.1\% & 4.2\% & 2.1\% \\
+			\hline
+			November	& 15.1\% & 31.2\% & 46.3\% & 4.4\% & 2.0\% \\
+			\hline
+			October		& 16.1\% & 31.8\% & 44.9\% & 4.3\% & 2.0\% \\
 			\hline
 			September	& 16.4\% & 32.2\% & 44.1\% & 4.2\% & 2.1\% \\
 			\hline
@@ -143,17 +162,6 @@ De acordo com as estatísticas de mercado apresentadas na Tabela 2.1, os navegad
 			July		& 16.3\% & 33.7\% & 42.9\% & 3.9\% & 2.1\% \\
 			\hline
 			June		& 16.7\% & 34.4\% & 41.7\% & 4.1\% & 2.2\% \\
-			\hline
-			May			& 18.1\% & 35.2\% & 39.3\% & 4.3\% & 2.2\% \\
-			\hline
-			April		& 18.3\% & 35.8\% &	38.3\% & 4.5\% & 2.3\% \\
-			\hline
-			March		& 18.9\% & 36.3\% &	37.3\% & 4.4\% & 2.3\% \\
-			\hline
-			February	& 19.5\% & 36.6\% &	36.3\% & 4.5\% & 2.3\% \\
-			\hline
-			January		& 20.1\% & 37.1\% &	35.3\% & 4.3\% & 2.4\% \\
-			\hline
 		\end{tabular}
 		}
 \end{table}
@@ -173,26 +181,26 @@ A interface gráfica de um navegador possui diversos elementos que são comuns, 
 	\item Barra de endereços para digitação de URL;
 	\item Botão de Home para levar o usuário para a página inicial;
 	\item Botões de Voltar e Avançar para as páginas que já foram visualizadas;
-	\item Botão de Favoritos;
+	\item Botão de Favoritos para guardar URLs de interesse do usuário.
 	\item Botão de Atualizar e Parar, para atualizar e cancelar, respectivamente, o carregamento de páginas.
 \end{itemize}
 
-A concorrência existente entre as empresas e os produtos oferecidos atualmente, se dá principalmente pela velocidade de navegação e a utilização dos recursos computacionais. A cada dia, surgem novos padrões e estudos de novas tecnologias relacionadas, que possibilitam que os navegadores tenham um melhor desempenho na execução das suas funções. Um exemplo é o HTML5, que tem como objetivo tornar o conteúdo das páginas mais dinâmico, deixando de lado o conceito do \ingles{browser} que apenas realiza a apresentação do documento, mas que interaja como uma aplicação única através dos recursos e ferramentas \cite{WebAppPlataform}.
+A concorrência existente entre as empresas e os produtos oferecidos atualmente, se dá principalmente pela velocidade de navegação e a utilização dos recursos computacionais. A cada dia, surgem novos padrões e estudos de novas tecnologias relacionadas, que possibilitam que os navegadores tenham um melhor desempenho na execução das suas funções. Um exemplo é o HTML5, que tem como objetivo tornar o conteúdo das páginas mais dinâmico, deixando de lado o conceito do navegador que apenas realiza a apresentação do documento, mas que interaja como uma aplicação única através dos recursos e ferramentas disponibilizadas \cite{WebAppPlataform}.
 
 \section{HTML5}
 
 Em 1998 o W3C decidiu que eles não iriam mais continuar o desenvolvimento da linguagem da \ingles{Web} até então, a HTML \ingles{(HyperText Markup Language)}. Ao invés disto eles iriam trabalhar em um novo formato o qual acreditavam ser o futuro da \ingles{Web}, assim nasceu a linguagem XHTML \ingles{(Extensible HyperText Markup Language)} que se fundamentava nos princípios da XML \ingles{(Extensible Markup Language)}. Desta forma a revisão 4.01 da HTML foi congelada, e os esforços se direcionaram para a evolução da XHTML que em sua versão 2.0 trazia além de muitas mudanças revolucionárias, a quebra de toda compatibilidade das aplicações escritas nas versões anteriores da especificação.
 
-Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores. Este grupo é conhecido como WHATWG (\ingles{Web Hypertext Application Technology Working Group}). A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, adotou a versão do grupo WHATWG como base para a nova versão do HTML e começou a trabalhar na quinta revisão, e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML. Este processo de desenvolvimento da nova versão passou a ser desenvolvida simultaneamente, pelo W3C e o grupo WHATWG.
+Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores. Este grupo é conhecido como WHATWG (\ingles{Web Hypertext Application Technology Working Group}). A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, adotou a versão do grupo WHATWG como base para a nova versão do HTML e começou a trabalhar na quinta revisão, e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML. Este processo de desenvolvimento da nova versão passou a ser desenvolvida simultaneamente, pelo W3C e pelo grupo WHATWG.
 
-Por trás do HTML5 há uma série de princípios de design definidos. De uma forma resumida, pode-se citar três principais princípios\cite{HTML5Intro}:
+Por trás do HTML5 há uma série de princípios de design definidos. De uma forma resumida, pode-se citar três princípios principais \cite{HTML5Intro}:
 \begin{itemize}
-		\item Interoperabilidade entre os navegadores - Possuir o mesmo comportamento em todos os navegadores, independente de plataforma e tecnologia;
-		\item Definição de tratamento de erros - Maneira que os navegadores devem reagir à marcações inválidas;
+		\item Interoperabilidade entre os navegadores: Possuir o mesmo comportamento em todos os navegadores, independente de plataforma e tecnologia;
+		\item Definição de tratamento de erros: Maneira que os navegadores devem reagir à marcações inválidas;
 		\item Evoluir a linguagem para facilitar a criação de conteúdo \ingles{Web}.
 \end{itemize}
 
-O HTML5 possui como paradigma ser livre de \ingles{plugins}, que são considerados atualmente como os vilões dos navegadores. Os \ingles{plugins}, apesar de adicionar novos elementos e componentes ao navegador, trazem consigo uma série de problemas:
+O HTML5 possui como paradigma ser livre de \ingles{plugins}, que são considerados atualmente como os vilões dos navegadores. Os \ingles{plugins}, apesar de adicionar novos elementos e componentes ao navegador, trazem consigo uma série de problemas, tais como:
 
 \begin{itemize}
 		\item Nem sempre podem ser instalados;
@@ -273,7 +281,53 @@ As funções utilizadas para criação do codificador foram as seguintes:
 	\item WebPEncodeBGRA
 \end{itemize}
 
-A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela foi peça fundamental para implementação do projeto.
+A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela foi peça fundamental para implementação do projeto. A versão da libwebp utilizada dentro do trabalho foi a 0.3.0.
+
+\section{Estudo de caso do WebP}
+
+Com o objetivo de apresentar os ganhos de compressão do formato de imagem WebP em relação aos formatos JPEG e PNG, é mostrado a seguir uma série de 3 pares de imagens diferentes, uma em seu formato original e a outra já convertida para o WebP, os detalhes com relação ao tamanho final do arquivo e os recursos utilizados em cada um dos casos. As imagens foram retiradas aleatoriamente da internet e convertidas utilizando o conversor padrão fornecido juntamente com a libwebp.
+
+O primeiro caso é de uma paisagem montanhosa cuja a largura é de 1150 pixels e a altura de 863 pixels. A imagem na figura 3.3 está no formato JPEG e seu tamanho original é de 430K. O processo de conversão desta imagem para WebP levou exatos 0,428 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. Após a conversão para o formato WebP, como pode ser visto na figura 3.4, a imagem resultante foi reduzida para 228K, aproximadamente 46,98\% de ganho na compressão.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem1JPEG.png}
+  \caption{Imagem no formato JPEG com tamanho de 430K}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem1WEBP.png}
+  \caption{Imagem no formato WebP com tamanho de 228K}
+\end{figure}
+
+Como o primeiro caso retrata uma imagem com tamanho consideravelmente pequeno, foi feita uma avaliação com uma imagem maior para verificar se o comportamento do formato WebP é alterado. A imagem mostrada na figura 3.5 também está no formato JPEG e possui largura de 4928 pixels e a altura de 3264 pixels. O tamanho original da imagem é de 6996K. O processo de conversão desta imagem para WebP levou 5098 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem no formato WebP, como pode ser visto na figura 3.6, foi reduzida para 1008K. Neste segundo caso o ganho foi maior ainda, uma redução de 85,59\% com relação a imagem original.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem2JPEG.png}
+  \caption{Imagem no formato JPEG com tamanho de 6996K}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem2WEBP.png}
+  \caption{Imagem no formato WebP com tamanho de 1008K}
+\end{figure}
+
+O último caso é uma imagem no formato PNG que utiliza o recurso de transparência (\ingles{alpha}), ela possui largura de 1353 pixels por 1034 pixels de altura. A imagem no formato original tem tamanho de 840K conforme mostra a figura 3.7, e o processo de conversão para o formato WebP levou 0,328 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem resultante tem tamanho de 56K, uma redução de 93,33\% com relação ao tamanho original como pode ser visto na figura 3.8. O ganho maior neste caso pode ser explicado pelo próprio recurso de transparência que tem compressão mais eficiente no formato WebP, e pelo pequeno número de cores na imagem o que também acaba favorecendo os algoritmos do WebP. Todos os casos estudados sofreram compressão do tipo \ingles{lossy}.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem3AlphaPNG.png}
+  \caption{Imagem com \ingles{alpha} no formato PNG com tamanho de 840K}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{Imagem3AlphaWEBP.png}
+  \caption{Imagem com \ingles{alpha} no formato WebP com tamanho de 56K}
+\end{figure}
 
 
 \chapter{Trabalhos Relacionados}
@@ -324,7 +378,7 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \section{O Primeiro Patch}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, haviam problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que ainda estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32 que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32 que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
 
 Quando foi falado publicamente do nosso interesse em conduzir uma nova implementação, Vikas Arora, entrou em contato conosco e se colocou a disposição para auxiliar na correção do seu \ingles{patch} anterior ou na elaboração de um novo, também realizando a implementação do processo de codificação do formato WebP.
 
@@ -413,7 +467,7 @@ As principais ferramentas utilizadas para o desenvolvimento deste trabalho estã
 			\hline
 			GCC		& Coleção de compiladores GNU. Foram utilizados os compiladores de C e C++. \\
 			\hline
-			Firebug		& Extenção para o Firefox que é utilizada para inúmeras atividades de depuração e estatística do navegador. \\
+			Firebug		& Extensão para o Firefox que é utilizada para inúmeras atividades de depuração e estatística do navegador. \\
 			\hline
 		\end{tabular}
 		}

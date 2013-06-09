@@ -14,18 +14,19 @@
 \BOOKMARK [1][-]{section.abstract.3.2}{Mozilla Firefox e o WebP}{chapter.abstract.3}% 14
 \BOOKMARK [1][-]{section.abstract.3.3}{Especifica\347\343o do Container WebP}{chapter.abstract.3}% 15
 \BOOKMARK [1][-]{section.abstract.3.4}{A API libwebp}{chapter.abstract.3}% 16
-\BOOKMARK [0][-]{chapter.abstract.4}{Trabalhos Relacionados}{}% 17
-\BOOKMARK [1][-]{section.abstract.4.1}{JPEG 2000}{chapter.abstract.4}% 18
-\BOOKMARK [1][-]{section.abstract.4.2}{JPEG XR}{chapter.abstract.4}% 19
-\BOOKMARK [1][-]{section.abstract.4.3}{O Primeiro Patch}{chapter.abstract.4}% 20
-\BOOKMARK [0][-]{chapter.abstract.5}{Descri\347\343o do Projeto}{}% 21
-\BOOKMARK [1][-]{section.abstract.5.1}{Objetivos}{chapter.abstract.5}% 22
-\BOOKMARK [1][-]{section.abstract.5.2}{Projeto}{chapter.abstract.5}% 23
-\BOOKMARK [1][-]{section.abstract.5.3}{Ambiente de Desenvolvimento}{chapter.abstract.5}% 24
-\BOOKMARK [1][-]{section.abstract.5.4}{Modelagem e Arquitetura}{chapter.abstract.5}% 25
-\BOOKMARK [1][-]{section.abstract.5.5}{Sistema de compila\347\343o do Firefox}{chapter.abstract.5}% 26
-\BOOKMARK [1][-]{section.abstract.5.6}{Implementa\347\343o do decodificador}{chapter.abstract.5}% 27
-\BOOKMARK [1][-]{section.abstract.5.7}{Implementa\347\343o do codificador}{chapter.abstract.5}% 28
-\BOOKMARK [1][-]{section.abstract.5.8}{Resultados Obtidos}{chapter.abstract.5}% 29
-\BOOKMARK [0][-]{chapter.abstract.6}{Conclus\365es e Trabalhos Futuros}{}% 30
-\BOOKMARK [0][-]{chapter.abstract.6}{Refer\352ncias Bibliogr\341ficas}{}% 31
+\BOOKMARK [1][-]{section.abstract.3.5}{Estudo de caso do WebP}{chapter.abstract.3}% 17
+\BOOKMARK [0][-]{chapter.abstract.4}{Trabalhos Relacionados}{}% 18
+\BOOKMARK [1][-]{section.abstract.4.1}{JPEG 2000}{chapter.abstract.4}% 19
+\BOOKMARK [1][-]{section.abstract.4.2}{JPEG XR}{chapter.abstract.4}% 20
+\BOOKMARK [1][-]{section.abstract.4.3}{O Primeiro Patch}{chapter.abstract.4}% 21
+\BOOKMARK [0][-]{chapter.abstract.5}{Descri\347\343o do Projeto}{}% 22
+\BOOKMARK [1][-]{section.abstract.5.1}{Objetivos}{chapter.abstract.5}% 23
+\BOOKMARK [1][-]{section.abstract.5.2}{Projeto}{chapter.abstract.5}% 24
+\BOOKMARK [1][-]{section.abstract.5.3}{Ambiente de Desenvolvimento}{chapter.abstract.5}% 25
+\BOOKMARK [1][-]{section.abstract.5.4}{Modelagem e Arquitetura}{chapter.abstract.5}% 26
+\BOOKMARK [1][-]{section.abstract.5.5}{Sistema de compila\347\343o do Firefox}{chapter.abstract.5}% 27
+\BOOKMARK [1][-]{section.abstract.5.6}{Implementa\347\343o do decodificador}{chapter.abstract.5}% 28
+\BOOKMARK [1][-]{section.abstract.5.7}{Implementa\347\343o do codificador}{chapter.abstract.5}% 29
+\BOOKMARK [1][-]{section.abstract.5.8}{Resultados Obtidos}{chapter.abstract.5}% 30
+\BOOKMARK [0][-]{chapter.abstract.6}{Conclus\365es e Trabalhos Futuros}{}% 31
+\BOOKMARK [0][-]{chapter.abstract.6}{Refer\352ncias Bibliogr\341ficas}{}% 32

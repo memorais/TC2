@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposta.aux
 The style file: abnt-alf.bst
@@ -13,53 +13,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: proposta.bib
 Warning--entry type for "JPEG" isn't style-file defined
---line 123 of file proposta.bib
+--line 122 of file proposta.bib
 Warning--string name "http://www.jpeg.org/jpeg2000/index.html" is undefined
---line 126 of file proposta.bib
+--line 125 of file proposta.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-alf.bst versao 1.53           |
+| Estilo bibliografico abnt-alf.bst versao 1.52           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
 You've used 19 entries,
-            6522 wiz_defined-function locations,
-            1257 strings with 11346 characters,
-and the built_in function-call counts, 40430 in all, are:
+            6523 wiz_defined-function locations,
+            1258 strings with 11366 characters,
+and the built_in function-call counts, 40233 in all, are:
 = -- 6189
 > -- 328
 < -- 1112
 + -- 1295
 - -- 105
-* -- 1833
+* -- 1831
 := -- 3981
 add.period$ -- 67
 call.type$ -- 20
 change.case$ -- 140
 chr.to.int$ -- 19
 cite$ -- 17
-duplicate$ -- 5630
-empty$ -- 1017
+duplicate$ -- 5600
+empty$ -- 987
 format.name$ -- 487
-if$ -- 8066
+if$ -- 8006
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 312
+missing$ -- 297
 newline$ -- 102
 num.names$ -- 80
-pop$ -- 531
+pop$ -- 516
 preamble$ -- 1
 purify$ -- 62
 quote$ -- 0
-skip$ -- 5876
+skip$ -- 5861
 stack$ -- 1
 substring$ -- 1479
-swap$ -- 1270
+swap$ -- 1240
 text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0

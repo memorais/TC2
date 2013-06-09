@@ -285,7 +285,7 @@ A documentação da biblioteca libwebp é bem simples e direta mas oferece diver
 
 \section{Estudo de caso do WebP}
 
-Com o objetivo de mostrar os ganhos do formato de imagem WebP com relação ao formato JPEG e o formato PNG, é mostrado a seguir uma série de 3 pares de imagens diferentes, uma no seu formato original e a outra já convertida para o WebP e os detalhes com relação ao tamanho final e os recursos utilizados em cada um dos casos. As imagens foram retiradas aleatoriamente da internet e convertidas utilizando o conversor padrão fornecido juntamente com a libwebp.
+Com o objetivo de apresentar os ganhos de compressão do formato de imagem WebP em relação aos formatos JPEG e PNG, é mostrado a seguir uma série de 3 pares de imagens diferentes, uma em seu formato original e a outra já convertida para o WebP, os detalhes com relação ao tamanho final do arquivo e os recursos utilizados em cada um dos casos. As imagens foram retiradas aleatoriamente da internet e convertidas utilizando o conversor padrão fornecido juntamente com a libwebp.
 
 O primeiro caso é de uma paisagem montanhosa cuja a largura é de 1150 pixels e a altura de 863 pixels. A imagem na figura 3.3 está no formato JPEG e seu tamanho original é de 430K. O processo de conversão desta imagem para WebP levou exatos 0,428 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. Após a conversão para o formato WebP, como pode ser visto na figura 3.4, a imagem resultante foi reduzida para 228K, aproximadamente 46,98\% de ganho na compressão.
 
@@ -301,7 +301,7 @@ O primeiro caso é de uma paisagem montanhosa cuja a largura é de 1150 pixels e
   \caption{Imagem no formato WebP com tamanho de 228K}
 \end{figure}
 
-Como o primeiro caso retrata uma imagem com tamanho consideravelmente pequeno, foi feita uma avaliação com uma imagem maior para verificar se o comportamento do formato WebP é alterado. A imagem mostrada na figura 3.5 está também no formato JPEG e possui largura de 4928 pixels e a altura de 3264 pixels. O tamanho original da imagem é de 6996K. O processo de conversão desta imagem para WebP levou 5098 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem no formato WebP, como pode ser visto na figura 3.6, foi reduzida para 1008K. Neste segundo caso o ganho foi maior ainda, uma redução de 85,59\% com relação a imagem original.
+Como o primeiro caso retrata uma imagem com tamanho consideravelmente pequeno, foi feita uma avaliação com uma imagem maior para verificar se o comportamento do formato WebP é alterado. A imagem mostrada na figura 3.5 também está no formato JPEG e possui largura de 4928 pixels e a altura de 3264 pixels. O tamanho original da imagem é de 6996K. O processo de conversão desta imagem para WebP levou 5098 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem no formato WebP, como pode ser visto na figura 3.6, foi reduzida para 1008K. Neste segundo caso o ganho foi maior ainda, uma redução de 85,59\% com relação a imagem original.
 
 \begin{figure}[h]
   \centering
