@@ -54,7 +54,7 @@ Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da 
 
 Com a crescente evolução dos meios de comunicação, a necessidade de total interatividade do usuário com as páginas aumenta cada vez mais. Uma página da \ingles{Web} não é somente texto como era nos primórdios, ela é composta de uma série de diferentes atores, tais como folhas de estilo, imagens e vídeos. Estes atores existem para aumentar a facilidade no uso e proporcionar uma experiência mais agradável para o usuário final.
 
-Apesar da mudança na necessidade dos usuários da \ingles{Web}, poucas alteração foram feitas no protocolo HTTP, cuja última revisão (1.1) ocorreu no ano de 1999, e na linguagem HTML que sofreu seu último ajuste em maio de 2000. Essencialmente a tecnologia implementada atualmente é a mesma criada no início dos anos 90 e apesar de sofrerem pequenas revisões pós criação, continuam não atendendo totalmente as demandas que surgem. Um fator que comprova este fato é a diversidade de tecnologias paralelas (\ingles{plugins}) não oficiais que foram criadas para preencher estas lacunas. O \ingles{Flash}, o \ingles{JavaFX} e o \ingles{Silverlight} são algumas das tecnologias que ilustram este cenário. Outro fator importante é que mesmo com o avanço das tecnologias de comunicação, nem todas as pessoas têm acesso a esta evolução. Seja por uma questão econômica ou mesmo pela carência de infraestrutura. 
+Apesar da mudança na necessidade dos usuários da \ingles{Web}, poucas alteração foram feitas no protocolo HTTP, cuja última revisão (1.1) ocorreu no ano de 1999, e na linguagem HTML que sofreu seu último ajuste em maio de 2000. Essencialmente a tecnologia implementada atualmente é a mesma criada no início dos anos 90 e apesar de sofrerem pequenas revisões pós criação, continuam não atendendo totalmente as demandas que surgem. Um fator que comprova este fato é a diversidade de tecnologias paralelas (\ingles{plugins}) não oficiais que foram criadas para preencher estas lacunas. O \ingles{Flash}, o \ingles{JavaFX} e o \ingles{Silverlight} são algumas das tecnologias que ilustram este cenário. Outro fator importante é que mesmo com o avanço das tecnologias de comunicação, nem todas as pessoas têm acesso a esta evolução. Seja por uma questão econômica ou mesmo pela carência de infraestrutura. Existe atualmente o desenvolvimento da quinta versão para a linguagem HTML, que apesar de ainda não possuir uma versão final, já tem uma grande popularidade na Internet, e conta com o suporte de todos os principais navegadores \cite{W3schoolsHTML5}.
 
 Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}, criado para ser utilizado principalmente na \ingles{Web}. Este formato é capaz de comprimir aproximadamente 39\% mais que a melhor solução utilizada hoje que é o formato JPEG, e apresentar imagens com o mesmo nível de qualidade visual \cite{WebPStudy}. O suporte à renderização de imagens \ingles{WebP} está implementado atualmente apenas nos navegadores Chrome e Opera.
 
@@ -66,15 +66,15 @@ Os estudos mais recentes mostram que a capacidade de compressão do formato \ing
   \caption{Comparação do tamanho das imagens e porcentagem de compressão \protect\cite{WebPStudy}}
 \end{figure}
 
-Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \protect\cite{BrowserStats}, como ilustra a Figura 1.2.
+Embora a implementação do suporte ao \ingles{WebP} esteja disponível somente para dois navegadores (Chrome e Opera), estes constituem um percentual de uso de cerca de 42,38\% de todos os navegadores utilizados dentro da internet nos dias de hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 62,14\%, já que cerca de 19,76\% dos navegadores utilizados hoje são Mozilla Firefox \protect\cite{BrowserStats}, como ilustra a Figura 1.2.
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.5]{BrowserCounter.png}
+    \includegraphics[scale=0.6]{BrowserCounter_2013.jpg}
   \caption{Percentual de utilização dos Navegadores na Web \cite{BrowserStats}}
 \end{figure}
 
-Apesar de não existir nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão, e não se sabe se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de 52\% de suporte dentro dos navegadores da internet também fará com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o façam em virtude da pressão exercida pela maioria.
+Apesar de não existir nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão, e não se sabe se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de aproximadamente 63\% de suporte dentro dos navegadores da internet também fará com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o façam em virtude da pressão exercida pela maioria.
 
 \section{Motivação}
 
@@ -82,14 +82,16 @@ A necessidade pela busca da informação cresceu exponencialmente de alguns anos
 
 O desenvolvimento do codificador e decodificador do formato \ingles{WebP} no \ingles{Mozilla Firefox}, trará de imediato a melhora no tempo de resposta na exibição das imagens dentro do navegador, visto que o tamanho dos arquivos no servidor será reduzido. Se considerar que mais de 60\% do tamanho total de um \ingles{website} são imagens, os benefícios podem ser substanciais. É importante ressaltar que a utilização em massa deste novo formato contribui, consequentemente, na diminuição do trafego de rede na internet de maneira global, isso resulta diretamente em maior vazão para outros recursos que possuem um maior consumo de banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
 
-Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com Stephen Konig (Google Product Manager):
+Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com o Gerente de Produto do Google, Stephen Konig \cite{ChromiumBlog}:
 \begin{citacao}
-	\ingles{By converting PNGs and JPEGs to WebP, the Chrome Web Store was able to reduce image sizes by about 30\% on averag. Given the number of requests Chrome Web Store serves, this adds up to several terabytes of savings every day. (Stephen Konig, Google Product Manager)}.
+	\ingles{By converting PNGs and JPEGs to WebP, the Chrome Web Store was able to reduce image sizes by about 30\% on average. Given the number of requests Chrome Web Store serves, this adds up to several terabytes of savings every day.}
 \end{citacao}
 
 \section{Objetivo}
 
 O objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
+
+A implementação do decodificador irá permitir ao usuário acessar e exibir, através do navegador, qualquer imagem que estiver no formato WebP. Já o codificador, irá possibilitar que \ingles{sites} desenvolvidos utilizando tecnologia HTML5, e que possuam a funcionalidade \ingles{canvas}, possam gerar gráficos no formato WebP através do próprio navegador, sem que seja necessário a utilização de software adicional.
 
 O trabalho desenvolvido foi entegue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não foi o foco principal. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas sim em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
 
@@ -386,8 +388,8 @@ Quando foi falado publicamente do nosso interesse em conduzir uma nova implement
 
 \section{Objetivos}
 
-Conforme apresentado na seção 1.3, o objetivo deste trabalho é contribuir com o desenvolvimento de uma solução para codificação e decodificação do formato de imagem WebP para o browser Mozilla Firefox. 
-Pretende-se, realizar em tempo de execução, a renderização de imagens do formato WebP através da utilização do Mozilla Firefox, possibilitando que o navegador realize a leitura e exibição deste formato de imagem para o usuário. %\begin{comment}Inicialmente será realizado um estudo da biblioteca do formato WebP, na qual é disponibilizada pelo Google. %\end{comment}
+Conforme apresentado na seção 1.3, o objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox.
+Pretende-se, realizar em tempo de execução, a renderização de imagens do formato WebP através da utilização do Mozilla Firefox, possibilitando que o navegador realize a leitura e exibição deste formato de imagem para o usuário. 
 
 A motivação do desenvolvimento desta solução, conforme descrito na seção 1.2, se dá pelo fato do formato WebP já se encontrar em um estado avançado de desenvolvimento e maturidade, e já estar recebendo suporte nativo dos browsers Google Chrome e Opera. 
 
