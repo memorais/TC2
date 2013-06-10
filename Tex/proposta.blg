@@ -13,9 +13,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: proposta.bib
 Warning--entry type for "JPEG" isn't style-file defined
---line 122 of file proposta.bib
-Warning--string name "http://www.jpeg.org/jpeg2000/index.html" is undefined
---line 125 of file proposta.bib
+--line 131 of file proposta.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -27,45 +25,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 19 entries,
+You've used 20 entries,
             6523 wiz_defined-function locations,
-            1258 strings with 11366 characters,
-and the built_in function-call counts, 40233 in all, are:
-= -- 6189
-> -- 328
-< -- 1112
-+ -- 1295
-- -- 105
-* -- 1831
-:= -- 3981
-add.period$ -- 67
-call.type$ -- 20
-change.case$ -- 140
-chr.to.int$ -- 19
-cite$ -- 17
-duplicate$ -- 5600
-empty$ -- 987
-format.name$ -- 487
-if$ -- 8006
+            1268 strings with 11579 characters,
+and the built_in function-call counts, 45384 in all, are:
+= -- 7028
+> -- 343
+< -- 1310
++ -- 1498
+- -- 110
+* -- 2070
+:= -- 4476
+add.period$ -- 72
+call.type$ -- 21
+change.case$ -- 146
+chr.to.int$ -- 20
+cite$ -- 18
+duplicate$ -- 6404
+empty$ -- 1047
+format.name$ -- 510
+if$ -- 8946
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 297
-newline$ -- 102
-num.names$ -- 80
-pop$ -- 516
+missing$ -- 312
+newline$ -- 110
+num.names$ -- 85
+pop$ -- 547
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 65
 quote$ -- 0
-skip$ -- 5861
+skip$ -- 6665
 stack$ -- 1
-substring$ -- 1479
-swap$ -- 1240
-text.length$ -- 23
+substring$ -- 1692
+swap$ -- 1446
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 123
+while$ -- 133
 width$ -- 0
-write$ -- 251
-(There were 2 warnings)
+write$ -- 268
+(There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 JUN 2013 16:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  9 JUN 2013 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,110 +795,105 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 [8
 
-] <Plot3_cdfcompr.png, id=254, 950.55125pt x 562.1pt>
+] <Plot3_cdfcompr.png, id=255, 950.55125pt x 562.1pt>
 File: Plot3_cdfcompr.png Graphic file (type png)
 
 <use Plot3_cdfcompr.png>
 Package pdftex.def Info: Plot3_cdfcompr.png used on input line 65.
 (pdftex.def)             Requested size: 380.21376pt x 224.83601pt.
- <BrowserCounter.png, id=262, 602.25pt x 602.25pt>
-File: BrowserCounter.png Graphic file (type png)
 
-<use BrowserCounter.png>
-Package pdftex.def Info: BrowserCounter.png used on input line 73.
-(pdftex.def)             Requested size: 301.12425pt x 301.12425pt.
+<BrowserCounter_2013.png, id=263, 857.2025pt x 501.875pt>
+File: BrowserCounter_2013.png Graphic file (type png)
+
+<use BrowserCounter_2013.png>
+Package pdftex.def Info: BrowserCounter_2013.png used on input line 73.
+(pdftex.def)             Requested size: 428.6002pt x 250.93687pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./Plot3_cdfcompr.png>] [10 <./BrowserCounter.png>]
-Overfull \hbox (12.58307pt too wide) in paragraph at lines 92--93
-\OT1/ptm/m/n/12 codifica[][]ao e decodifica[][]ao do for-mato WebP den-tro do M
-o-zilla Fi-re-fox. Em-bora a implementa[][]ao
- []
-
-[11]
+[9 <./Plot3_cdfcompr.png>] [10 <./BrowserCounter_2013.png>] [11]
 Cap\'{\i }tulo 2.
 [12
 
 ]
-Overfull \hbox (0.79626pt too wide) in paragraph at lines 126--127
+Overfull \hbox (0.79626pt too wide) in paragraph at lines 130--131
 []\OT1/ptm/m/n/12 O na-ve-ga-dor []e, tal-vez, o soft-ware mais am-pla-mente ut
 i-li-zado na hist[]oria e teve uma evolu[][]ao
  []
 
-[13] <web_basic.png, id=316, 462.72874pt x 169.63374pt>
+[13] <web_basic.png, id=319, 1157.32375pt x 366.36874pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
-Package pdftex.def Info: web_basic.png used on input line 173.
-(pdftex.def)             Requested size: 462.72762pt x 169.63332pt.
+Package pdftex.def Info: web_basic.png used on input line 177.
+(pdftex.def)             Requested size: 462.9213pt x 146.54489pt.
 
-Overfull \hbox (7.4835pt too wide) in paragraph at lines 173--174
+Overfull \hbox (7.67719pt too wide) in paragraph at lines 177--178
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 181.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 185.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 181.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 185.
  [14 <./web_basic.png>] [15] [16]
 Cap\'{\i }tulo 3.
 [17
 
-] [18] <LossyLossLessExtended.png, id=357, 598.235pt x 529.98pt>
+] [18] <LossyLossLessExtended.png, id=360, 598.235pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
-Package pdftex.def Info: LossyLossLessExtended.png used on input line 244.
+Package pdftex.def Info: LossyLossLessExtended.png used on input line 248.
 (pdftex.def)             Requested size: 299.11676pt x 264.98933pt.
 
-<AlphaChunk.png, id=358, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=361, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
-Package pdftex.def Info: AlphaChunk.png used on input line 252.
+Package pdftex.def Info: AlphaChunk.png used on input line 256.
 (pdftex.def)             Requested size: 237.28229pt x 53.39854pt.
 
 [19 <./LossyLossLessExtended.png> <./AlphaChunk.png>] [20]
-<Imagem1JPEG.png, id=367, 432.61626pt x 325.215pt>
+<Imagem1JPEG.png, id=370, 432.61626pt x 325.215pt>
 File: Imagem1JPEG.png Graphic file (type png)
  <use Imagem1JPEG.png>
-Package pdftex.def Info: Imagem1JPEG.png used on input line 294.
+Package pdftex.def Info: Imagem1JPEG.png used on input line 298.
 (pdftex.def)             Requested size: 216.3076pt x 162.6071pt.
 
-<Imagem1WEBP.png, id=368, 432.61626pt x 325.215pt>
+<Imagem1WEBP.png, id=371, 432.61626pt x 325.215pt>
 File: Imagem1WEBP.png Graphic file (type png)
  <use Imagem1WEBP.png>
-Package pdftex.def Info: Imagem1WEBP.png used on input line 300.
+Package pdftex.def Info: Imagem1WEBP.png used on input line 304.
 (pdftex.def)             Requested size: 216.3076pt x 162.6071pt.
 
 [21 <./Imagem1JPEG.png> <./Imagem1WEBP.png>]
-<Imagem2JPEG.png, id=373, 514.92375pt x 338.26375pt>
+<Imagem2JPEG.png, id=376, 514.92375pt x 338.26375pt>
 File: Imagem2JPEG.png Graphic file (type png)
  <use Imagem2JPEG.png>
-Package pdftex.def Info: Imagem2JPEG.png used on input line 308.
+Package pdftex.def Info: Imagem2JPEG.png used on input line 312.
 (pdftex.def)             Requested size: 257.46124pt x 169.13145pt.
 
-<Imagem2WEBP.png, id=374, 514.92375pt x 339.2675pt>
+<Imagem2WEBP.png, id=377, 514.92375pt x 339.2675pt>
 File: Imagem2WEBP.png Graphic file (type png)
  <use Imagem2WEBP.png>
-Package pdftex.def Info: Imagem2WEBP.png used on input line 314.
+Package pdftex.def Info: Imagem2WEBP.png used on input line 318.
 (pdftex.def)             Requested size: 257.46124pt x 169.63333pt.
 
-<Imagem3AlphaPNG.png, id=375, 418.56375pt x 320.19624pt>
+<Imagem3AlphaPNG.png, id=378, 418.56375pt x 320.19624pt>
 File: Imagem3AlphaPNG.png Graphic file (type png)
 
 <use Imagem3AlphaPNG.png>
-Package pdftex.def Info: Imagem3AlphaPNG.png used on input line 322.
+Package pdftex.def Info: Imagem3AlphaPNG.png used on input line 326.
 (pdftex.def)             Requested size: 209.28136pt x 160.09772pt.
  [22 <./Imagem2JPEG.png> <./Imagem2WEBP.png>]
-<Imagem3AlphaWEBP.png, id=380, 418.56375pt x 321.2pt>
+<Imagem3AlphaWEBP.png, id=383, 418.56375pt x 321.2pt>
 File: Imagem3AlphaWEBP.png Graphic file (type png)
 
 <use Imagem3AlphaWEBP.png>
-Package pdftex.def Info: Imagem3AlphaWEBP.png used on input line 328.
+Package pdftex.def Info: Imagem3AlphaWEBP.png used on input line 332.
 (pdftex.def)             Requested size: 209.28136pt x 160.59961pt.
  [23 <./Imagem3AlphaPNG.png> <./Imagem3AlphaWEBP.png>]
 Cap\'{\i }tulo 4.
@@ -908,56 +903,56 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 [27
 
-] <parte1.png, id=410, 934.49126pt x 339.2675pt>
+] <parte1.png, id=413, 934.49126pt x 339.2675pt>
 File: parte1.png Graphic file (type png)
  <use parte1.png>
-Package pdftex.def Info: parte1.png used on input line 416.
+Package pdftex.def Info: parte1.png used on input line 420.
 (pdftex.def)             Requested size: 467.24449pt x 169.63333pt.
 
-Overfull \hbox (12.00038pt too wide) in paragraph at lines 416--417
+Overfull \hbox (12.00038pt too wide) in paragraph at lines 420--421
  [][] 
  []
 
-[28 <./parte1.png>] <parte2.png, id=422, 930.47626pt x 343.2825pt>
+[28 <./parte1.png>] <parte2.png, id=425, 930.47626pt x 343.2825pt>
 File: parte2.png Graphic file (type png)
 
 <use parte2.png>
-Package pdftex.def Info: parte2.png used on input line 433.
+Package pdftex.def Info: parte2.png used on input line 437.
 (pdftex.def)             Requested size: 465.23698pt x 171.64082pt.
 
-Overfull \hbox (9.99287pt too wide) in paragraph at lines 433--434
+Overfull \hbox (9.99287pt too wide) in paragraph at lines 437--438
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 []\OT1/ptm/m/n/12 Ferramenta uti-li-zada para ge-ren-ci-a-mento das re-fer[]enc
 ias des-cri-tas na
  []
 
 
-Overfull \hbox (28.102pt too wide) in paragraph at lines 448--474
+Overfull \hbox (28.102pt too wide) in paragraph at lines 452--478
  [][] 
  []
 
-[29 <./parte2.png>] <Arquitetura.png, id=434, 975.645pt x 406.51875pt>
+[29 <./parte2.png>] <Arquitetura.png, id=437, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
 
 <use Arquitetura.png>
-Package pdftex.def Info: Arquitetura.png used on input line 484.
+Package pdftex.def Info: Arquitetura.png used on input line 488.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
  [30 <./Arquitetura.png>]
-<BuildSystem.png, id=440, 387.4475pt x 316.18124pt>
+<BuildSystem.png, id=443, 387.4475pt x 316.18124pt>
 File: BuildSystem.png Graphic file (type png)
  <use BuildSystem.png>
-Package pdftex.def Info: BuildSystem.png used on input line 507.
+Package pdftex.def Info: BuildSystem.png used on input line 511.
 (pdftex.def)             Requested size: 174.34976pt x 142.28024pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31]
-Overfull \hbox (2.37144pt too wide) in paragraph at lines 523--524
+Overfull \hbox (2.37144pt too wide) in paragraph at lines 527--528
 \OT1/ptm/m/n/12 da cha-mada do m[]etodo Web-PI-Dec-Ge-tRGB da classe de-code.h 
 do WEBP, cap-tura as informa[][]oes
  []
@@ -973,25 +968,25 @@ Cap\'{\i }tulo 6.
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 585.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 589.
 [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 585.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 589.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 585.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 585.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 589.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 589.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
 (rerunfilecheck)             Checksum: DAAB3263102054E7F6FD750A72502C27;2491.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 585.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 589.
  ) 
 Here is how much of TeX's memory you used:
- 6962 strings out of 493488
- 105291 string characters out of 3141326
- 199056 words of memory out of 3000000
- 9970 multiletter control sequences out of 15000+200000
+ 6968 strings out of 493488
+ 105460 string characters out of 3141326
+ 199228 words of memory out of 3000000
+ 9975 multiletter control sequences out of 15000+200000
  34154 words of font info for 63 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  30i,13n,41p,1243b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1003,10 +998,10 @@ texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on proposta.pdf (38 pages, 2152988 bytes).
+Output written on proposta.pdf (38 pages, 2304418 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 473 compressed objects within 5 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 117 named destinations out of 1000 (max. 500000)
  332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

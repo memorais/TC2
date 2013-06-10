@@ -63,13 +63,22 @@ Dispon{\'\i}vel em:
 
 \bibitem[Group]{JPEG}
 \abntrefinfo{Group}{GROUP}{}
-{GROUP, J. P.~E. \emph{Joint Photographic Experts Group, JPEG2000}.}
+{GROUP, J. P.~E. \emph{Joint Photographic Experts Group, JPEG2000}.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.jpeg\-.org\-/jpeg2000\-/index\-.html$>$}{http://www.jpeg.org/jpeg2000/index.html}.}
 
 \bibitem[Implement WebP image support 2010]{FirefoxBug}
 \abntrefinfo{Implement\ldots}{IMPLEMENT\ldots}{2010}
 {IMPLEMENT WebP image support. 2010.
 Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
   }bug\-.cgi?id=600919$>$.}
+
+\bibitem[Konig 2013]{ChromiumBlog}
+\abntrefinfo{Konig}{KONIG}{2013}
+{KONIG, S.
+Blog, \emph{Using WebP to Improve Speed}. 2013.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/blog\-.chromium\-.org\-/2013\-/02\-/using-webp-to-improve-speed\-.html$>$}{http://blog.chromium.org/2013/02/using-webp-to-improve-speed.html}.}
 
 \bibitem[Muizelaar 2011]{WebPCritica}
 \abntrefinfo{Muizelaar}{MUIZELAAR}{2011}
@@ -82,9 +91,10 @@ Dispon{\'\i}vel em:
 {SHARP, B. L. .~R. \emph{Introducing HTML 5}. Second edition. [S.l.]: New
   Riders, 2011. 11-15~p.}
 
-\bibitem[StatCounter 2012]{BrowserStats}
-\abntrefinfo{StatCounter}{STATCOUNTER}{2012}
-{STATCOUNTER. \emph{StatCounter Browsers GlobalStat}. 2012.
+\bibitem[StatCounter 2013]{BrowserStats}
+\abntrefinfo{StatCounter}{STATCOUNTER}{2013}
+{STATCOUNTER.
+Website, \emph{StatCounter Browsers Global Stats}. 2013.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/gs\-.statcounter\-.com\-/$>$}{http://gs.statcounter.com/}.}
 
@@ -110,12 +120,12 @@ Editor's Draft 1 September 2012, 2012.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/dev\-.w3\-.org\-/html5\-/spec\-/single-page\-.html$>$}{http://dev.w3.org/html5/spec/single-page.html}.}
 
-\bibitem[W3Schools 2013]{W3schools}
+\bibitem[W3Schools 2013]{W3schoolsHTML5}
 \abntrefinfo{W3Schools}{W3SCHOOLS}{2013}
-{W3SCHOOLS. \emph{Browser Statistics}. 2013.
+{W3SCHOOLS. \emph{HTML5 Introduction}. 2013.
 Acessado em: 2013-06-08.
 Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.w3schools\-.com\-/browsers\-/browsers\underline{\
-  }stats\-.asp$>$}{http://www.w3schools.com/browsers/browsers_stats.asp}.}
+  \htmladdnormallink{$<$http:\-/\-/www\-.w3schools\-.com\-/html\-/html5\underline{\
+  }intro\-.asp$>$}{http://www.w3schools.com/html/html5_intro.asp}.}
 
 \end{thebibliography}
