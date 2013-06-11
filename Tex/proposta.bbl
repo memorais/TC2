@@ -3,7 +3,7 @@
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.52 }
+\abntbstabout{1.53 }
 
 \bibitem[Bloomberg 2012]{BloombergGameChangers}
 \abntrefinfo{Bloomberg}{BLOOMBERG}{2012}
@@ -85,6 +85,13 @@ Dispon{\'\i}vel em:
 {MUIZELAAR, J. \emph{Críticas ao WebP}. 2011.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
+
+\bibitem[Pfeiffer 2010]{pfeiffer2010definitive}
+\abntrefinfo{Pfeiffer}{PFEIFFER}{2010}
+{PFEIFFER, S. \emph{The Definitive Guide to HTML5 Video}. Apress, 2010.
+  (Definitive Guide Series).
+ISBN 9781430230908. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/books\-.google\-.com\-.br\-/books?id=CypiQKqHMesC$>$}{http://books.google.com.br/books?id=CypiQKqHMesC}.}
 
 \bibitem[Sharp 2011]{HTML5Intro}
 \abntrefinfo{Sharp}{SHARP}{2011}

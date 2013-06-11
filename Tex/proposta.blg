@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposta.aux
 The style file: abnt-alf.bst
@@ -20,50 +20,50 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-alf.bst versao 1.52           |
+| Estilo bibliografico abnt-alf.bst versao 1.53           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 20 entries,
-            6523 wiz_defined-function locations,
-            1268 strings with 11579 characters,
-and the built_in function-call counts, 45384 in all, are:
-= -- 7028
-> -- 343
-< -- 1310
-+ -- 1498
-- -- 110
-* -- 2070
-:= -- 4476
-add.period$ -- 72
-call.type$ -- 21
-change.case$ -- 146
-chr.to.int$ -- 20
-cite$ -- 18
-duplicate$ -- 6404
-empty$ -- 1047
-format.name$ -- 510
-if$ -- 8946
+You've used 21 entries,
+            6522 wiz_defined-function locations,
+            1275 strings with 11738 characters,
+and the built_in function-call counts, 48516 in all, are:
+= -- 7475
+> -- 358
+< -- 1408
++ -- 1602
+- -- 115
+* -- 2212
+:= -- 4771
+add.period$ -- 78
+call.type$ -- 22
+change.case$ -- 152
+chr.to.int$ -- 21
+cite$ -- 19
+duplicate$ -- 6860
+empty$ -- 1143
+format.name$ -- 533
+if$ -- 9567
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 312
-newline$ -- 110
-num.names$ -- 85
-pop$ -- 547
+missing$ -- 348
+newline$ -- 115
+num.names$ -- 90
+pop$ -- 592
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 68
 quote$ -- 0
-skip$ -- 6665
+skip$ -- 7098
 stack$ -- 1
-substring$ -- 1692
-swap$ -- 1446
-text.length$ -- 27
+substring$ -- 1807
+swap$ -- 1592
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 133
+while$ -- 141
 width$ -- 0
-write$ -- 268
+write$ -- 285
 (There was 1 warning)
