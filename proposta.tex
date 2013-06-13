@@ -577,7 +577,7 @@ Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem 
 
 \section{Resultados Obtidos}
 
-Graças a implementação realizada, o Firefox conseguiu codificar e decodificar o formato WebP com sucesso. Como pode ser observado na Figura X, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura Y é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. Na figura Z foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. Isto ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
+Através da implementação realizada, o Firefox conseguiu codificar e decodificar o formato WebP com sucesso. Como pode ser observado na Figura X, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura Y é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. Na figura Z foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. Isto ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
 
 \begin{citacao}
 	\ingles {Only support for image/png is required. User agents may support other types. If the user agent does not support the requested type, it must return the image using the PNG format.}
@@ -595,8 +595,28 @@ Graças a implementação realizada, o Firefox conseguiu codificar e decodificar
   \caption{Firefox com a implementação do trabalho}
 \end{figure}
 
+Afim de avaliar o desempenho de forma prática, foi desenvolvido uma página da \ingles{web} composta de imagens no formato PNG e JPEG, e uma segunda página exatamente igual a primeira apenas com as imagens convertidas de PNG e JPEG para WebP. A página em sua formação original possui tamanho de 5953K e após a conversão das imagens para WebP, o tamanho de todo o \ingles{site} passou a ser de 907K. A tabela abaixo faz uma comparação dos tempos para carregamento da página bem como o nível de utilização de \ingles{bytes} trafegados durante o processo de abertura da página. 
 
-Afim de avaliar o desempenho de forma prática, foi desenvolvido uma página \ingles{web} composta de imagens no formato PNG e JPEG, e uma segunda página exatamente igual a primeira apenas com as imagens convertidas de PNG e JPEG para WebP. A página em sua formação original possui tamanho de 5953K e após a conversão das imagens para WebP, o tamanho de todo o \ingles{site} passou a ser de 907K. A tabela abaixo faz uma comparação dos tempos para carregamento da página bem como o nível de utilização de \ingles{bytes} trafegados durante o processo de abertura da página.
+\begin{table}[ht]
+        \centering
+        \caption{Avaliação prática do WebP
+        \label{tbl:padc}}{
+                \vspace{0.3cm}
+                \begin{tabular}{|l|p{10cm}|}
+                \hline
+                        \textbf{Navegador} & \textbf{Tempo Site normal} & \textbf{Tempo Site WebP} & \textbf{Bytes Site normal} & \textbf{Bytes Site WebP} \\
+                        \hline
+                        Chrome			&  5,52 segundos	& 4,30 segundos		& 2,4 Megabytes		& 757 Kbytes \\
+                        \hline
+			Opera			&  6,34 segundos	& 4,57 segundos		& 2,4 Megabytes		& 754 Kbytes \\
+			\hline
+                        Firefox sem WebP	&  5,89 segundos	& N/A			& 2,4 Megabytes		& N/A \\
+                        \hline
+                        Firefox com WebP	&  5,64 bytes		& 4,39 segundos		& 2,4 Megabytes		& 695 Kbytes \\
+                        \hline
+                \end{tabular}
+                }
+\end{table}
 
 \chapter{Conclusões e Trabalhos Futuros}
 
