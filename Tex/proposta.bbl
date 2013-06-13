@@ -1,39 +1,24 @@
 \providecommand{\abntreprintinfo}[1]{%
  \citeonline{#1}}
-\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.53 }
+\abntbstabout{1.50 }
 
-\bibitem[Bloomberg 2012]{BloombergGameChangers}
-\abntrefinfo{Bloomberg}{BLOOMBERG}{2012}
-{BLOOMBERG. Bloomberg game changers: Marc andreesen.
-2012.
-Acessado em: 2012-09-03.
+\bibitem{W3schoolsHTML5}
+\abntrefinfo{W3Schools}{W3SCHOOLS}{2013}
+{W3SCHOOLS. \emph{HTML5 Introduction}. 2013.
+Acessado em: 2013-06-08.
 Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.bloomberg\-.com\-/video\-/67758394$>$}{http://www.bloomberg.com/video/67758394}.}
+  \htmladdnormallink{$<$http:\-/\-/www\-.w3schools\-.com\-/html\-/html5\underline{\
+  }intro\-.asp$>$}{http://www.w3schools.com/html/html5_intro.asp}.}
 
-\bibitem[Communications 2008]{WebStory}
-\abntrefinfo{Communications}{COMMUNICATIONS}{2008}
-{COMMUNICATIONS, C.~W. How the web began.
-2008.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/public\-.web\-.cern\-.ch\-/public\-/en\-/about\-/WebStory-en\-.html$>$}{http://public.web.cern.ch/public/en/about/WebStory-en.html}.}
+\bibitem{WebFaster}
+\abntrefinfo{Google}{GOOGLE}{2012}
+{GOOGLE. \emph{Make the Web Faster}. 2012.
+Dispon{\'\i}vel em: $<$https:\-/\-/developers\-.google\-.com\-/speed\-/$>$.}
 
-\bibitem[Curbera e Weerawarana 2001]{WebServices}
-\abntrefinfo{Curbera e Weerawarana}{CURBERA; WEERAWARANA}{2001}
-{CURBERA, W. A.~N. F.; WEERAWARANA, S. Web services: Why and how.
-IBM T.J. Watson Research Center, 2001.
-Dispon{\'\i}vel em:
-  $<$https:\-/\-/researcher\-.ibm\-.com\-/files\-/us-bth\-/nagy\-.pdf$>$.}
-
-\bibitem[Dufaux, Sullivan e Ebrahimi 2009]{HDPhoto}
-\abntrefinfo{Dufaux, Sullivan e Ebrahimi}{DUFAUX; SULLIVAN; EBRAHIMI}{2009}
-{DUFAUX, F.; SULLIVAN, G.; EBRAHIMI, T. The jpeg xr image coding standard
-  [standards in a nutshell].
-IEEE Computer Society, 2009.}
-
-\bibitem[Google 2010]{WebPStudy}
+\bibitem{WebPStudy}
 \abntrefinfo{Google}{GOOGLE}{2010}
 {GOOGLE. Comparative study of webp, jpeg and jpeg 2000.
 2010.
@@ -41,71 +26,71 @@ Dispon{\'\i}vel em:
   $<$https:\-/\-/developers\-.google\-.com\-/speed\-/webp\-/docs\-/c\underline{\
   }study$>$.}
 
-\bibitem[Google 2012]{WebFaster}
-\abntrefinfo{Google}{GOOGLE}{2012a}
-{GOOGLE. \emph{Make the Web Faster}. 2012.
-Dispon{\'\i}vel em: $<$https:\-/\-/developers\-.google\-.com\-/speed\-/$>$.}
-
-\bibitem[Google 2012]{WebPLossyStudy}
-\abntrefinfo{Google}{GOOGLE}{2012b}
-{GOOGLE. Webp compression study.
-2012.
-Dispon{\'\i}vel em:
-  $<$https:\-/\-/developers\-.google\-.com\-/speed\-/webp\-/docs\-/webp\underline{\
-  }study$>$.}
-
-\bibitem[Grosskurth e Godfrey 2005]{ArchitectureWebBrowsers}
-\abntrefinfo{Grosskurth e Godfrey}{GROSSKURTH; GODFREY}{2005}
-{GROSSKURTH, A.; GODFREY, M.~W. A reference architecture for web browsers.
-IEEE Computer Society, 2005.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/ieeexplore\-.ieee\-.org\-/ielx5\-/10097\-/32336\-/01510168\-.pdf$>$}{http://ieeexplore.ieee.org/ielx5/10097/32336/01510168.pdf}.}
-
-\bibitem[Group]{JPEG}
-\abntrefinfo{Group}{GROUP}{}
-{GROUP, J. P.~E. \emph{Joint Photographic Experts Group, JPEG2000}.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.jpeg\-.org\-/jpeg2000\-/index\-.html$>$}{http://www.jpeg.org/jpeg2000/index.html}.}
-
-\bibitem[Implement WebP image support 2010]{FirefoxBug}
-\abntrefinfo{Implement\ldots}{IMPLEMENT\ldots}{2010}
-{IMPLEMENT WebP image support. 2010.
-Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
-  }bug\-.cgi?id=600919$>$.}
-
-\bibitem[Konig 2013]{ChromiumBlog}
-\abntrefinfo{Konig}{KONIG}{2013}
-{KONIG, S.
-Blog, \emph{Using WebP to Improve Speed}. 2013.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/blog\-.chromium\-.org\-/2013\-/02\-/using-webp-to-improve-speed\-.html$>$}{http://blog.chromium.org/2013/02/using-webp-to-improve-speed.html}.}
-
-\bibitem[Muizelaar 2011]{WebPCritica}
-\abntrefinfo{Muizelaar}{MUIZELAAR}{2011}
-{MUIZELAAR, J. \emph{Críticas ao WebP}. 2011.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
-
-\bibitem[Pfeiffer 2010]{pfeiffer2010definitive}
-\abntrefinfo{Pfeiffer}{PFEIFFER}{2010}
-{PFEIFFER, S. \emph{The Definitive Guide to HTML5 Video}. Apress, 2010.
-  (Definitive Guide Series).
-ISBN 9781430230908. Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/books\-.google\-.com\-.br\-/books?id=CypiQKqHMesC$>$}{http://books.google.com.br/books?id=CypiQKqHMesC}.}
-
-\bibitem[Sharp 2011]{HTML5Intro}
-\abntrefinfo{Sharp}{SHARP}{2011}
-{SHARP, B. L. .~R. \emph{Introducing HTML 5}. Second edition. [S.l.]: New
-  Riders, 2011. 11-15~p.}
-
-\bibitem[StatCounter 2013]{BrowserStats}
+\bibitem{BrowserStats}
 \abntrefinfo{StatCounter}{STATCOUNTER}{2013}
 {STATCOUNTER.
 Website, \emph{StatCounter Browsers Global Stats}. 2013.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/gs\-.statcounter\-.com\-/$>$}{http://gs.statcounter.com/}.}
 
-\bibitem[Taivalsaari e Mikkonen 2011]{WebAppPlataform}
+\bibitem{ChromiumBlog}
+\abntrefinfo{Konig}{KONIG}{2013}
+{KONIG, S.
+Blog, \emph{Using WebP to Improve Speed}. 2013.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/blog\-.chromium\-.org\-/2013\-/02\-/using-webp-to-improve-speed\-.html$>$}{http://blog.chromium.org/2013/02/using-webp-to-improve-speed.html}.}
+
+\bibitem{pfeiffer2010definitive}
+\abntrefinfo{Pfeiffer}{PFEIFFER}{2010}
+{PFEIFFER, S. \emph{The Definitive Guide to HTML5 Video}. Apress, 2010.
+  (Definitive Guide Series).
+ISBN 9781430230908. Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/books\-.google\-.com\-.br\-/books?id=CypiQKqHMesC$>$}{http://books.google.com.br/books?id=CypiQKqHMesC}.}
+
+\bibitem{WebStory}
+\abntrefinfo{Communications}{COMMUNICATIONS}{2008}
+{COMMUNICATIONS, C.~W. How the web began.
+2008.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/public\-.web\-.cern\-.ch\-/public\-/en\-/about\-/WebStory-en\-.html$>$}{http://public.web.cern.ch/public/en/about/WebStory-en.html}.}
+
+\bibitem{W3Cfacts}
+\abntrefinfo{W3C}{W3C}{2012}
+{W3C. Facts about w3c.
+2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.w3\-.org\-/Consortium\-/facts$>$}{http://www.w3.org/Consortium/facts}.}
+
+\bibitem{WebServices}
+\abntrefinfo{Curbera e Weerawarana}{CURBERA; WEERAWARANA}{2001}
+{CURBERA, W. A.~N. F.; WEERAWARANA, S. Web services: Why and how.
+IBM T.J. Watson Research Center, 2001.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/researcher\-.ibm\-.com\-/files\-/us-bth\-/nagy\-.pdf$>$.}
+
+\bibitem{HTML5spec}
+\abntrefinfo{W3C}{W3C}{2012}
+{W3C. Html5: A vocabulary and associated apis for html and xhtml.
+Editor's Draft 1 September 2012, 2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/dev\-.w3\-.org\-/html5\-/spec\-/single-page\-.html$>$}{http://dev.w3.org/html5/spec/single-page.html}.}
+
+\bibitem{BloombergGameChangers}
+\abntrefinfo{Bloomberg}{BLOOMBERG}{2012}
+{BLOOMBERG. Bloomberg game changers: Marc andreesen.
+2012.
+Acessado em: 2012-09-03.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.bloomberg\-.com\-/video\-/67758394$>$}{http://www.bloomberg.com/video/67758394}.}
+
+\bibitem{ArchitectureWebBrowsers}
+\abntrefinfo{Grosskurth e Godfrey}{GROSSKURTH; GODFREY}{2005}
+{GROSSKURTH, A.; GODFREY, M.~W. A reference architecture for web browsers.
+IEEE Computer Society, 2005.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/ieeexplore\-.ieee\-.org\-/ielx5\-/10097\-/32336\-/01510168\-.pdf$>$}{http://ieeexplore.ieee.org/ielx5/10097/32336/01510168.pdf}.}
+
+\bibitem{WebAppPlataform}
 \abntrefinfo{Taivalsaari e Mikkonen}{TAIVALSAARI; MIKKONEN}{2011}
 {TAIVALSAARI, A.; MIKKONEN, T. The web as an application platform: The saga
   continues.
@@ -113,26 +98,48 @@ IEEE Computer Society, 2011.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/ieeexplore\-.ieee\-.org\-/ielx5\-/6068192\-/6068309\-/06068340\-.pdf$>$}{http://ieeexplore.ieee.org/ielx5/6068192/6068309/06068340.pdf}.}
 
-\bibitem[W3C 2012]{W3Cfacts}
-\abntrefinfo{W3C}{W3C}{2012a}
-{W3C. Facts about w3c.
+\bibitem{HTML5Intro}
+\abntrefinfo{Sharp}{SHARP}{2011}
+{SHARP, B. L. .~R. \emph{Introducing HTML 5}. Second edition. [S.l.]: New
+  Riders, 2011. 11-15~p.}
+
+\bibitem{WebPLossyStudy}
+\abntrefinfo{Google}{GOOGLE}{2012}
+{GOOGLE. Webp compression study.
 2012.
 Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.w3\-.org\-/Consortium\-/facts$>$}{http://www.w3.org/Consortium/facts}.}
+  $<$https:\-/\-/developers\-.google\-.com\-/speed\-/webp\-/docs\-/webp\underline{\
+  }study$>$.}
 
-\bibitem[W3C 2012]{HTML5spec}
-\abntrefinfo{W3C}{W3C}{2012b}
-{W3C. Html5: A vocabulary and associated apis for html and xhtml.
-Editor's Draft 1 September 2012, 2012.
-Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/dev\-.w3\-.org\-/html5\-/spec\-/single-page\-.html$>$}{http://dev.w3.org/html5/spec/single-page.html}.}
+\bibitem{FirefoxBug}
+\abntrefinfo{Implement\ldots}{IMPLEMENT\ldots}{2010}
+{IMPLEMENT WebP image support. 2010.
+Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
+  }bug\-.cgi?id=600919$>$.}
 
-\bibitem[W3Schools 2013]{W3schoolsHTML5}
-\abntrefinfo{W3Schools}{W3SCHOOLS}{2013}
-{W3SCHOOLS. \emph{HTML5 Introduction}. 2013.
-Acessado em: 2013-06-08.
+\bibitem{WebPCritica}
+\abntrefinfo{Muizelaar}{MUIZELAAR}{2011}
+{MUIZELAAR, J. \emph{Críticas ao WebP}. 2011.
 Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/www\-.w3schools\-.com\-/html\-/html5\underline{\
-  }intro\-.asp$>$}{http://www.w3schools.com/html/html5_intro.asp}.}
+  \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
+
+\bibitem{JPEG}
+\abntrefinfo{Group}{GROUP}{}
+{GROUP, J. P.~E. \emph{Joint Photographic Experts Group, JPEG2000}.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.jpeg\-.org\-/jpeg2000\-/index\-.html$>$}{http://www.jpeg.org/jpeg2000/index.html}.}
+
+\bibitem{HDPhoto}
+\abntrefinfo{Dufaux, Sullivan e Ebrahimi}{DUFAUX; SULLIVAN; EBRAHIMI}{2009}
+{DUFAUX, F.; SULLIVAN, G.; EBRAHIMI, T. The jpeg xr image coding standard
+  [standards in a nutshell].
+IEEE Computer Society, 2009.}
+
+\bibitem{CanvasElement}
+\abntrefinfo{W3C}{W3C}{2011}
+{W3C. The canvas element.
+2011.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.w3\-.org\-/TR\-/2011\-/WD-html5-20110405\-/the-canvas-element\-.html$>$}{http://www.w3.org/TR/2011/WD-html5-20110405/the-canvas-element.html}.}
 
 \end{thebibliography}

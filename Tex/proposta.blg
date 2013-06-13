@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposta.aux
-The style file: abnt-alf.bst
+The style file: abnt-num.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -12,58 +12,55 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: proposta.bib
-Warning--entry type for "JPEG" isn't style-file defined
---line 131 of file proposta.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-alf.bst versao 1.53           |
+| Estilo bibliografico abnt-num.bst versao 1.50           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 21 entries,
+You've used 22 entries,
             6522 wiz_defined-function locations,
-            1275 strings with 11738 characters,
-and the built_in function-call counts, 48516 in all, are:
-= -- 7475
-> -- 358
-< -- 1408
-+ -- 1602
-- -- 115
-* -- 2212
-:= -- 4771
-add.period$ -- 78
-call.type$ -- 22
-change.case$ -- 152
-chr.to.int$ -- 21
-cite$ -- 19
-duplicate$ -- 6860
-empty$ -- 1143
-format.name$ -- 533
-if$ -- 9567
-int.to.chr$ -- 3
+            1279 strings with 11849 characters,
+and the built_in function-call counts, 51467 in all, are:
+= -- 8033
+> -- 300
+< -- 1544
++ -- 1718
+- -- 96
+* -- 2309
+:= -- 4962
+add.period$ -- 82
+call.type$ -- 23
+change.case$ -- 159
+chr.to.int$ -- 24
+cite$ -- 20
+duplicate$ -- 7428
+empty$ -- 1148
+format.name$ -- 484
+if$ -- 10096
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 348
-newline$ -- 115
-num.names$ -- 90
-pop$ -- 592
+missing$ -- 365
+newline$ -- 121
+num.names$ -- 76
+pop$ -- 646
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 71
 quote$ -- 0
-skip$ -- 7098
+skip$ -- 7635
 stack$ -- 1
-substring$ -- 1807
-swap$ -- 1592
-text.length$ -- 29
+substring$ -- 1960
+swap$ -- 1735
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 141
+while$ -- 130
 width$ -- 0
-write$ -- 285
-(There was 1 warning)
+write$ -- 258

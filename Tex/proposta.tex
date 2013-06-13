@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[brazil]{babel}
 \usepackage{hyperref}
-\usepackage[alf]{abntcite}
+\usepackage[num]{abntcite}
 \usepackage{mdwlist}
 \usepackage{dsfont}
 \usepackage{graphicx}
@@ -14,7 +14,7 @@
 \orientador{Isabel H. Manssour}
 \instituicao{Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)}
 \local{Porto Alegre}
-\data{\Data$Date: 2012/12/03 $}
+\data{\Data$Date: 2013/06/17 $}
 
 
 %\begin{comment}    Comentários no trabalho estão dentro dessas tags    %\end{comment}
@@ -576,13 +576,62 @@ Dos 13 métodos listados a interação com a libwebp foi criada dentro dos méto
 Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem já está devidamente codificada no formato WebP.
 
 \section{Resultados Obtidos}
-Resultados obtidos com a implementação realizada.
+
+Através da implementação realizada, o Firefox conseguiu codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.6, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.6 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. Na figura 5.7 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. Isto ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
+
+\begin{citacao}
+	\ingles {Only support for image/png is required. User agents may support other types. If the user agent does not support the requested type, it must return the image using the PNG format.}
+\end{citacao}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{FirefoxSemWebP.png}
+  \caption{Firefox sem a implementação do trabalho}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{FirefoxComWebP.png}
+  \caption{Firefox com a implementação do trabalho}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{HTML5CanvasFirefoxWebP.png}
+  \caption{Firefox com a implementação do trabalho usando o elemento \ingles{canvas}}
+\end{figure}
+
+Afim de avaliar o desempenho de forma prática, foi desenvolvido uma página da \ingles{web} composta de imagens no formato PNG e JPEG, e uma segunda página exatamente igual a primeira apenas com as imagens convertidas de PNG e JPEG para WebP. A página em sua formação original possui tamanho de 5953K e após a conversão das imagens para WebP, o tamanho de todo o \ingles{site} passou a ser de 907K. A tabela 5.3 mostra uma comparação dos tempos para carregamento da página bem como o nível de utilização de \ingles{bytes} trafegados durante o processo de abertura da página.
+
+\begin{table}[ht]
+        \centering
+        \caption{Avaliação prática do WebP
+        \label{tbl:padc}}{
+                \begin{tabular}{|l|p{3cm}|p{3cm}|l|p{2cm}|}
+                \hline
+                        \textbf{Navegador} & \textbf{Tempo Site normal} & \textbf{Tempo Site WebP} & \textbf{Bytes Site normal} & \textbf{Bytes Site WebP} \\
+                        \hline
+                        Chrome			&  5,52 segundos	& 4,30 segundos		& 2,4 Megabytes		& 757 Kbytes \\
+                        \hline
+			Opera			&  6,34 segundos	& 4,57 segundos		& 2,4 Megabytes		& 754 Kbytes \\
+			\hline
+                        Firefox sem WebP	&  5,89 segundos	& N/A			& 2,4 Megabytes		& N/A \\
+                        \hline
+                        Firefox com WebP	&  5,64 segundos	& 4,39 segundos		& 2,4 Megabytes		& 695 Kbytes \\
+                        \hline
+                \end{tabular}
+                }
+\end{table}
+
+O teste consistiu apenas na entrada da página principal, não houve nenhuma navegação adicional dentro do \ingles{site}. A coluna "Tempo Site normal" indica o tempo de carregamento da página com as imagens no formato PNG/JPEG. A coluna "Tempo Site WebP" indica o tempo de carregamento da página com as imagens no formato WebP. As colunas "Bytes Site normal" e "Bytes Site WebP" indicam a quantidade de bytes trafegados durante a abertura da página com as imagens no formato PNG/JPEG e com imagens no formato WebP respectivamente.
 
 \chapter{Conclusões e Trabalhos Futuros}
 
-A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox se faz possível conforme demonstrado pelo estudo feito na fundamentação teórica, no entendimento do formato propriamente dito e principalmente na descrição do projeto. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010 após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
+A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado pelo estudo feito na fundamentação teórica, na motivação e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010 após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
 
 Apesar da evolução constante realizada pele equipe de desenvolvimento, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
+
+A versão 0.3.0 da libwebp, utilizada no desenvolvimento do trabalho, oferece suporte à animação de imagens quadro a quadro, semelhante ao processo realizado pelo formato GIF. Entretanto este tipo de implementação não foi realizada no desenvolvimento do codificador e do decodificador, ficando como referência para trabalhos futuros que devem ser realizados.
 
 \bibliography{proposta}
 

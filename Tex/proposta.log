@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  11 JUN 2013 12:41
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  13 JUN 2013 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -545,7 +545,7 @@ File: nbr10520-2002.def 2006/04/25 v1.4 Definicoes para abntcite (NBR10520:2002
 )
 \biblabelsep=\skip55
 LaTeX Info: Redefining \newblock on input line 466.
-LaTeX Info: Redefining \cite on input line 493.
+LaTeX Info: Redefining \cite on input line 735.
 \ABCItoken=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mdwtools/mdwlist.sty
@@ -578,6 +578,9 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 ) (./proposta.aux
+
+LaTeX Warning: Label `tbl:padc' multiply defined.
+
 
 LaTeX Warning: Label `tbl:padc' multiply defined.
 
@@ -774,7 +777,7 @@ File: Plot3_cdfcompr.png Graphic file (type png)
 Package pdftex.def Info: Plot3_cdfcompr.png used on input line 65.
 (pdftex.def)             Requested size: 380.21376pt x 224.83601pt.
 
-<BrowserCounter_2013.png, id=263, 857.2025pt x 501.875pt>
+<BrowserCounter_2013.png, id=259, 857.2025pt x 501.875pt>
 File: BrowserCounter_2013.png Graphic file (type png)
 
 <use BrowserCounter_2013.png>
@@ -794,7 +797,7 @@ Overfull \hbox (0.79626pt too wide) in paragraph at lines 130--131
 i-li-zado na hist[]oria e teve uma evolu[][]ao
  []
 
-[13] <web_basic.png, id=322, 1157.32375pt x 366.36874pt>
+[13] <web_basic.png, id=304, 1157.32375pt x 366.36874pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
 Package pdftex.def Info: web_basic.png used on input line 177.
@@ -815,53 +818,53 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Cap\'{\i }tulo 3.
 [17
 
-] [18] <LossyLossLessExtended.png, id=365, 598.235pt x 529.98pt>
+] [18] <LossyLossLessExtended.png, id=340, 598.235pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
 Package pdftex.def Info: LossyLossLessExtended.png used on input line 248.
 (pdftex.def)             Requested size: 299.11676pt x 264.98933pt.
 
-<AlphaChunk.png, id=366, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=341, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
 Package pdftex.def Info: AlphaChunk.png used on input line 256.
 (pdftex.def)             Requested size: 237.28229pt x 53.39854pt.
 
 [19 <./LossyLossLessExtended.png> <./AlphaChunk.png>] [20]
-<Imagem1JPEG.png, id=375, 432.61626pt x 325.215pt>
+<Imagem1JPEG.png, id=350, 432.61626pt x 325.215pt>
 File: Imagem1JPEG.png Graphic file (type png)
  <use Imagem1JPEG.png>
 Package pdftex.def Info: Imagem1JPEG.png used on input line 298.
 (pdftex.def)             Requested size: 216.3076pt x 162.6071pt.
 
-<Imagem1WEBP.png, id=376, 432.61626pt x 325.215pt>
+<Imagem1WEBP.png, id=351, 432.61626pt x 325.215pt>
 File: Imagem1WEBP.png Graphic file (type png)
  <use Imagem1WEBP.png>
 Package pdftex.def Info: Imagem1WEBP.png used on input line 304.
 (pdftex.def)             Requested size: 216.3076pt x 162.6071pt.
 
 [21 <./Imagem1JPEG.png> <./Imagem1WEBP.png>]
-<Imagem2JPEG.png, id=381, 514.92375pt x 338.26375pt>
+<Imagem2JPEG.png, id=356, 514.92375pt x 338.26375pt>
 File: Imagem2JPEG.png Graphic file (type png)
  <use Imagem2JPEG.png>
 Package pdftex.def Info: Imagem2JPEG.png used on input line 312.
 (pdftex.def)             Requested size: 257.46124pt x 169.13145pt.
 
-<Imagem2WEBP.png, id=382, 514.92375pt x 339.2675pt>
+<Imagem2WEBP.png, id=357, 514.92375pt x 339.2675pt>
 File: Imagem2WEBP.png Graphic file (type png)
  <use Imagem2WEBP.png>
 Package pdftex.def Info: Imagem2WEBP.png used on input line 318.
 (pdftex.def)             Requested size: 257.46124pt x 169.63333pt.
 
-<Imagem3AlphaPNG.png, id=383, 418.56375pt x 320.19624pt>
+<Imagem3AlphaPNG.png, id=358, 418.56375pt x 320.19624pt>
 File: Imagem3AlphaPNG.png Graphic file (type png)
 
 <use Imagem3AlphaPNG.png>
 Package pdftex.def Info: Imagem3AlphaPNG.png used on input line 326.
 (pdftex.def)             Requested size: 209.28136pt x 160.09772pt.
  [22 <./Imagem2JPEG.png> <./Imagem2WEBP.png>]
-<Imagem3AlphaWEBP.png, id=388, 418.56375pt x 321.2pt>
+<Imagem3AlphaWEBP.png, id=363, 418.56375pt x 321.2pt>
 File: Imagem3AlphaWEBP.png Graphic file (type png)
 
 <use Imagem3AlphaWEBP.png>
@@ -875,7 +878,7 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 [27
 
-] <parte1.png, id=418, 934.49126pt x 339.2675pt>
+] <parte1.png, id=390, 934.49126pt x 339.2675pt>
 File: parte1.png Graphic file (type png)
  <use parte1.png>
 Package pdftex.def Info: parte1.png used on input line 420.
@@ -885,7 +888,7 @@ Overfull \hbox (12.00038pt too wide) in paragraph at lines 420--421
  [][] 
  []
 
-[28 <./parte1.png>] <parte2.png, id=430, 930.47626pt x 343.2825pt>
+[28 <./parte1.png>] <parte2.png, id=401, 930.47626pt x 343.2825pt>
 File: parte2.png Graphic file (type png)
 
 <use parte2.png>
@@ -907,14 +910,14 @@ Overfull \hbox (28.102pt too wide) in paragraph at lines 452--478
  [][] 
  []
 
-[29 <./parte2.png>] <Arquitetura.png, id=442, 975.645pt x 406.51875pt>
+[29 <./parte2.png>] <Arquitetura.png, id=413, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
 
 <use Arquitetura.png>
 Package pdftex.def Info: Arquitetura.png used on input line 488.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
  [30 <./Arquitetura.png>]
-<BuildSystem.png, id=448, 387.4475pt x 316.18124pt>
+<BuildSystem.png, id=419, 387.4475pt x 316.18124pt>
 File: BuildSystem.png Graphic file (type png)
  <use BuildSystem.png>
 Package pdftex.def Info: BuildSystem.png used on input line 511.
@@ -930,38 +933,80 @@ do WEBP, cap-tura as informa[][]oes
  []
 
 [32 <./BuildSystem.png>] [33] [34]
-Cap\'{\i }tulo 6.
-(./proposta.bbl [35
+<FirefoxSemWebP.png, id=441, 995.72pt x 618.31pt>
+File: FirefoxSemWebP.png Graphic file (type png)
+ <use FirefoxSemWebP.png>
+Package pdftex.def Info: FirefoxSemWebP.png used on input line 588.
+(pdftex.def)             Requested size: 398.28094pt x 247.31961pt.
 
-] [36
+<FirefoxComWebP.png, id=442, 1029.8475pt x 562.1pt>
+File: FirefoxComWebP.png Graphic file (type png)
+ <use FirefoxComWebP.png>
+Package pdftex.def Info: FirefoxComWebP.png used on input line 594.
+(pdftex.def)             Requested size: 411.9317pt x 224.83601pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<HTML5CanvasFirefoxWebP.png, id=443, 1029.8475pt x 562.1pt>
+File: HTML5CanvasFirefoxWebP.png Graphic file (type png)
+
+<use HTML5CanvasFirefoxWebP.png>
+Package pdftex.def Info: HTML5CanvasFirefoxWebP.png used on input line 600.
+(pdftex.def)             Requested size: 411.9317pt x 224.83601pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 612--612
+[]\OT1/ptm/b/n/12 Tempo Site
+ []
+
+
+Underfull \hbox (badness 4872) in paragraph at lines 612--613
+[]\OT1/ptm/b/n/12 Bytes Site
+ []
+
+
+Overfull \hbox (13.39626pt too wide) in paragraph at lines 610--624
+ [][] 
+ []
+
+[35 <./FirefoxSemWebP.png>] [36 <./FirefoxComWebP.png> <./HTML5CanvasFirefoxWeb
+P.png>]
+Cap\'{\i }tulo 6.
+(./proposta.bbl [37
+
+] [38
 
 ])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 589.
-[37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 589.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 638.
+[39]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 638.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 589.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 589.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 638.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 638.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
 (rerunfilecheck)             Checksum: DAAB3263102054E7F6FD750A72502C27;2491.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 589.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 638.
  ) 
 Here is how much of TeX's memory you used:
- 6975 strings out of 495039
- 103372 string characters out of 3181249
- 198132 words of memory out of 3000000
- 9863 multiletter control sequences out of 15000+200000
+ 7017 strings out of 495039
+ 104047 string characters out of 3181249
+ 197930 words of memory out of 3000000
+ 9875 multiletter control sequences out of 15000+200000
  34154 words of font info for 63 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 30i,13n,41p,1243b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,13n,41p,1242b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
@@ -969,10 +1014,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 w/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposta.pdf (38 pages, 2305742 bytes).
+Output written on proposta.pdf (40 pages, 2843748 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
- 332 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 571 PDF objects out of 1000 (max. 8388607)
+ 496 compressed objects within 5 object streams
+ 145 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 
