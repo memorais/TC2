@@ -21,13 +21,11 @@
 \contentsline {section}{\numberline {4.2}JPEG XR}{25}{section.abstract.4.2}
 \contentsline {section}{\numberline {4.3}O Primeiro Patch para o Firefox}{25}{section.abstract.4.3}
 \contentsline {chapter}{\numberline {5}Descri\IeC {\c c}\IeC {\~a}o do Projeto}{27}{chapter.abstract.5}
-\contentsline {section}{\numberline {5.1}Objetivos}{27}{section.abstract.5.1}
-\contentsline {section}{\numberline {5.2}Projeto}{28}{section.abstract.5.2}
-\contentsline {section}{\numberline {5.3}Ambiente de Desenvolvimento}{29}{section.abstract.5.3}
-\contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{29}{section.abstract.5.4}
-\contentsline {section}{\numberline {5.5}Sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}{31}{section.abstract.5.5}
-\contentsline {section}{\numberline {5.6}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{32}{section.abstract.5.6}
-\contentsline {section}{\numberline {5.7}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{33}{section.abstract.5.7}
-\contentsline {section}{\numberline {5.8}Resultados Obtidos}{34}{section.abstract.5.8}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{38}{chapter.abstract.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{40}{chapter.abstract.6}
+\contentsline {section}{\numberline {5.1}Ambiente de Desenvolvimento}{27}{section.abstract.5.1}
+\contentsline {section}{\numberline {5.2}Modelagem e Arquitetura}{28}{section.abstract.5.2}
+\contentsline {section}{\numberline {5.3}Sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}{28}{section.abstract.5.3}
+\contentsline {section}{\numberline {5.4}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{30}{section.abstract.5.4}
+\contentsline {section}{\numberline {5.5}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{30}{section.abstract.5.5}
+\contentsline {section}{\numberline {5.6}Resultados Obtidos}{32}{section.abstract.5.6}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{35}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{37}{chapter.abstract.6}
