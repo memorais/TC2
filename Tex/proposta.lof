@@ -1,17 +1,17 @@
 \select@language {brazil}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o do tamanho das imagens e porcentagem de compress\IeC {\~a}o \cite {WebPStudy}}}{9}{figure.abstract.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Percentual de utiliza\IeC {\c c}\IeC {\~a}o dos Navegadores na Web \cite {BrowserStats}}}{10}{figure.abstract.1.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Fluxo b\IeC {\'a}sico de requisi\IeC {\c c}\IeC {\~a}o de uma p\IeC {\'a}gina da \textsl {Web} para um servidor.}}{14}{figure.abstract.2.1}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Formato simples com compress\IeC {\~a}o \textsl {lossy}, formato simples com a compress\IeC {\~a}o \textsl {lossless} e formato estendido}}{19}{figure.abstract.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Peda\IeC {\c c}o que \IeC {\'e} acrescentado quando o \textsl {bit alpha} \IeC {\'e} definido para 1}}{19}{figure.abstract.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Imagem no formato JPEG com tamanho de 430K}}{21}{figure.abstract.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Imagem no formato WebP com tamanho de 228K}}{21}{figure.abstract.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Imagem no formato JPEG com tamanho de 6996K}}{22}{figure.abstract.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Imagem no formato WebP com tamanho de 1008K}}{22}{figure.abstract.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Imagem com \textsl {alpha} no formato PNG com tamanho de 840K}}{23}{figure.abstract.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Imagem com \textsl {alpha} no formato WebP com tamanho de 56K}}{23}{figure.abstract.3.8}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama dos componentes e suas rela\IeC {\c c}\IeC {\~o}es}}{28}{figure.abstract.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Estrutura do sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}}{29}{figure.abstract.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Firefox sem a implementa\IeC {\c c}\IeC {\~a}o do trabalho}}{33}{figure.abstract.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Firefox com a implementa\IeC {\c c}\IeC {\~a}o do trabalho}}{34}{figure.abstract.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Firefox com a implementa\IeC {\c c}\IeC {\~a}o do trabalho usando o elemento \textsl {canvas}}}{34}{figure.abstract.5.5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Fluxo b\IeC {\'a}sico de requisi\IeC {\c c}\IeC {\~a}o de uma p\IeC {\'a}gina da \textsl {Web} para um servidor.}}{15}{figure.abstract.2.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Formato simples com compress\IeC {\~a}o \textsl {lossy}, formato simples com a compress\IeC {\~a}o \textsl {lossless} e formato estendido}}{20}{figure.abstract.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Peda\IeC {\c c}o que \IeC {\'e} acrescentado quando o \textsl {bit alpha} \IeC {\'e} definido para 1}}{20}{figure.abstract.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Imagem no formato JPEG com tamanho de 430K}}{22}{figure.abstract.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Imagem no formato WebP com tamanho de 228K}}{22}{figure.abstract.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Imagem no formato JPEG com tamanho de 6996K}}{23}{figure.abstract.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Imagem no formato WebP com tamanho de 1008K}}{23}{figure.abstract.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Imagem com \textsl {alpha} no formato PNG com tamanho de 840K}}{24}{figure.abstract.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Imagem com \textsl {alpha} no formato WebP com tamanho de 56K}}{24}{figure.abstract.3.8}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama dos componentes e suas rela\IeC {\c c}\IeC {\~o}es}}{29}{figure.abstract.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Estrutura do sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}}{30}{figure.abstract.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Firefox sem a implementa\IeC {\c c}\IeC {\~a}o do trabalho}}{34}{figure.abstract.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Firefox com a implementa\IeC {\c c}\IeC {\~a}o do trabalho}}{35}{figure.abstract.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Firefox com a implementa\IeC {\c c}\IeC {\~a}o do trabalho usando o elemento \textsl {canvas}}}{35}{figure.abstract.5.5}

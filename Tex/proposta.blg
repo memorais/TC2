@@ -35,45 +35,45 @@ while executing---line 2178 of file abnt-num.bst
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 24 entries,
+You've used 25 entries,
             6523 wiz_defined-function locations,
-            1291 strings with 12271 characters,
-and the built_in function-call counts, 52753 in all, are:
-= -- 8144
-> -- 352
-< -- 1545
-+ -- 1738
-- -- 112
-* -- 2417
-:= -- 5153
-add.period$ -- 88
-call.type$ -- 25
-change.case$ -- 181
-chr.to.int$ -- 26
-cite$ -- 22
-duplicate$ -- 7474
-empty$ -- 1223
-format.name$ -- 566
-if$ -- 10380
+            1296 strings with 12425 characters,
+and the built_in function-call counts, 56917 in all, are:
+= -- 8815
+> -- 364
+< -- 1703
++ -- 1900
+- -- 116
+* -- 2608
+:= -- 5548
+add.period$ -- 92
+call.type$ -- 26
+change.case$ -- 187
+chr.to.int$ -- 27
+cite$ -- 23
+duplicate$ -- 8123
+empty$ -- 1278
+format.name$ -- 586
+if$ -- 11143
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 383
-newline$ -- 131
-num.names$ -- 84
-pop$ -- 681
+missing$ -- 398
+newline$ -- 136
+num.names$ -- 88
+pop$ -- 713
 preamble$ -- 1
-purify$ -- 79
+purify$ -- 82
 quote$ -- 0
-skip$ -- 7704
+skip$ -- 8357
 stack$ -- 1
-substring$ -- 2038
-swap$ -- 1737
-text.length$ -- 32
+substring$ -- 2212
+swap$ -- 1901
+text.length$ -- 34
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 142
+while$ -- 149
 width$ -- 0
-write$ -- 283
+write$ -- 295
 (There were 6 error messages)

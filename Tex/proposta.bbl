@@ -123,6 +123,12 @@ Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
 
+\bibitem{RIFFContainer}
+\abntrefinfo{Microsoft}{MICROSOFT}{2012}
+{MICROSOFT. \emph{Resource Interchange File Format Services}. 2012.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/msdn\-.microsoft\-.com\-/en-us\-/library\-/windows\-/desktop\-/dd798636(v=vs\-.85)\-.aspx$>$}{http://msdn.microsoft.com/en-us/library/windows/desktop/dd798636(v=vs.85).aspx}.}
+
 \bibitem{VP8Performance}
 \abntrefinfo{Simone Lutz~Goldmann e Ebrahimi}{SIMONE LUTZ~GOLDMANN;
   EBRAHIMI}{2011}

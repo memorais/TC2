@@ -6,26 +6,26 @@
 \contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{10}{section.abstract.1.2}
 \contentsline {section}{\numberline {1.3}Objetivo}{11}{section.abstract.1.3}
 \contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Texto}{11}{section.abstract.1.4}
-\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{12}{chapter.abstract.2}
-\contentsline {section}{\numberline {2.1}A World Wide Web}{12}{section.abstract.2.1}
-\contentsline {section}{\numberline {2.2}Navegadores}{13}{section.abstract.2.2}
-\contentsline {section}{\numberline {2.3}HTML5}{15}{section.abstract.2.3}
-\contentsline {chapter}{\numberline {3}WebP}{17}{chapter.abstract.3}
-\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{17}{section.abstract.3.1}
-\contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{18}{section.abstract.3.2}
-\contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{18}{section.abstract.3.3}
-\contentsline {section}{\numberline {3.4}A API libwebp}{19}{section.abstract.3.4}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{13}{chapter.abstract.2}
+\contentsline {section}{\numberline {2.1}A World Wide Web}{13}{section.abstract.2.1}
+\contentsline {section}{\numberline {2.2}Navegadores}{14}{section.abstract.2.2}
+\contentsline {section}{\numberline {2.3}HTML5}{16}{section.abstract.2.3}
+\contentsline {chapter}{\numberline {3}WebP}{18}{chapter.abstract.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{18}{section.abstract.3.1}
+\contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{19}{section.abstract.3.2}
+\contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{19}{section.abstract.3.3}
+\contentsline {section}{\numberline {3.4}A API libwebp}{20}{section.abstract.3.4}
 \contentsline {section}{\numberline {3.5}Estudo de caso do WebP}{21}{section.abstract.3.5}
-\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{24}{chapter.abstract.4}
-\contentsline {section}{\numberline {4.1}JPEG 2000}{24}{section.abstract.4.1}
-\contentsline {section}{\numberline {4.2}JPEG XR}{25}{section.abstract.4.2}
-\contentsline {section}{\numberline {4.3}O Primeiro Patch para o Firefox}{25}{section.abstract.4.3}
-\contentsline {chapter}{\numberline {5}Descri\IeC {\c c}\IeC {\~a}o do Projeto}{27}{chapter.abstract.5}
-\contentsline {section}{\numberline {5.1}Ambiente de Desenvolvimento}{27}{section.abstract.5.1}
-\contentsline {section}{\numberline {5.2}Modelagem e Arquitetura}{28}{section.abstract.5.2}
-\contentsline {section}{\numberline {5.3}Sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}{28}{section.abstract.5.3}
-\contentsline {section}{\numberline {5.4}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{30}{section.abstract.5.4}
-\contentsline {section}{\numberline {5.5}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{30}{section.abstract.5.5}
-\contentsline {section}{\numberline {5.6}Resultados Obtidos}{32}{section.abstract.5.6}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{35}{chapter.abstract.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{37}{chapter.abstract.6}
+\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{25}{chapter.abstract.4}
+\contentsline {section}{\numberline {4.1}JPEG 2000}{25}{section.abstract.4.1}
+\contentsline {section}{\numberline {4.2}JPEG XR}{26}{section.abstract.4.2}
+\contentsline {section}{\numberline {4.3}O Primeiro Patch para o Firefox}{26}{section.abstract.4.3}
+\contentsline {chapter}{\numberline {5}Descri\IeC {\c c}\IeC {\~a}o do Projeto}{28}{chapter.abstract.5}
+\contentsline {section}{\numberline {5.1}Ambiente de Desenvolvimento}{28}{section.abstract.5.1}
+\contentsline {section}{\numberline {5.2}Modelagem e Arquitetura}{29}{section.abstract.5.2}
+\contentsline {section}{\numberline {5.3}Sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}{29}{section.abstract.5.3}
+\contentsline {section}{\numberline {5.4}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{31}{section.abstract.5.4}
+\contentsline {section}{\numberline {5.5}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{31}{section.abstract.5.5}
+\contentsline {section}{\numberline {5.6}Resultados Obtidos}{33}{section.abstract.5.6}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{36}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{38}{chapter.abstract.6}
