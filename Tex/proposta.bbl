@@ -3,7 +3,7 @@
 \begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.50 }
+\abntbstabout{1.49 }
 
 \bibitem{W3schoolsHTML5}
 \abntrefinfo{W3Schools}{W3SCHOOLS}{2013}
@@ -122,6 +122,19 @@ Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
 {MUIZELAAR, J. \emph{Críticas ao WebP}. 2011.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
+
+\bibitem{VP8Performance}
+\abntrefinfo{Simone Lutz~Goldmann e Ebrahimi}{SIMONE LUTZ~GOLDMANN;
+  EBRAHIMI}{2011}
+{SIMONE LUTZ~GOLDMANN, J.-S.~L. F.~D.; EBRAHIMI, T. Performance analysis of vp8
+  image and video compression based on subjective evaluations.
+\emph{Applications of Digital Image Processing XXXIV}, 2011.}
+
+\bibitem{JPEG2000Codestreams}
+\abntrefinfo{Wu e Deng}{WU; DENG}{2004}
+{WU, Y.; DENG, R.~H. Compliant encryption of jpeg2000 codestreams.
+\emph{Image Processing, 2004. ICIP '04. 2004 International Conference}, p. 3439
+  -- 3442, 2004.}
 
 \bibitem{JPEG}
 \abntrefinfo{Group}{GROUP}{}
