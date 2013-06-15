@@ -33,15 +33,15 @@
 \newcommand{\bibTeX}{bib\kern-.13ex\TeX}
 
 \begin{resumo}
-O desempenho de técnicas de codificação multimidia está melhorando constantemente em termos de taxa de compressão, funcionalidades de código, algoritmos, e robustez contra erros mesmo em um ritmo mais lento em relação ao que estávamos acostumados até há uma década atrás. Um dos últimos \ingles{codecs} que é esperado para melhorar este cenário é o algoritmo WebP lançado recentemente pela empresa Google, cujo objetivo principal é fornecer imagens com uma maior taxa de compressão, mas sem perda de qualidade. 
+O desempenho de técnicas de codificação multimidia está melhorando constantemente em termos de taxa de compressão, funcionalidades de código, algoritmos, e robustez contra erros, mesmo que em um ritmo mais lento que há uma década atrás. Um dos últimos \ingles{codecs} que é esperado para melhorar este cenário é o algoritmo WebP, lançado recentemente pela empresa Google, cujo objetivo principal é fornecer imagens com uma maior taxa de compressão, mas sem perda de qualidade. 
 
 Naturalmente, o novo formato se torna pouco utilizado até que todos os navegadores dêem suporte. Dado o cenário atual, este Trabalho de Conclusão propõe disseminar a utilização do \ingles{codec} WebP através da implementação do codificador e decodificador deste formato no navegador Mozilla Firefox.
 \end{resumo}
 
 \begin{abstract}
-Performance of multimedia coding techniques are constantly improving in terms of compression ratio, code features, algorithms, and robustness against errors even at a slower pace compared to what we were used to a decade ago. One of the last codecs that is expected to improve this scenario is the algorithm WebP recently released by Google company, whose main goal is to provide images with higher compression ratio but without loss quality. 
+The performance of multimedia coding techniques are constantly improving in terms of compression ratio, code features, algorithms, and robustness against errors even at a slower pace compared to a decade ago. One of the last codecs that is expected to improve this scenario is the algorithm WebP recently released by Google company, whose main goal is to provide images with higher compression ratio but without loss quality. 
 
-Naturally, the format becomes rarely used until all browsers give support. Given the current scenario, this paper provides to spread the use of codec WebP through the implementation of encoder and decoder of this format in Mozilla Firefox browser.
+Naturally, a new format becomes rarely used until all browsers give support. Given the current scenario, this work aims to spread the use of codec WebP through the implementation of an encoder and decoder of this format in Mozilla Firefox browser.
 \end{abstract}
 
 \onehalfspacing
@@ -95,13 +95,14 @@ A implementação do decodificador irá permitir ao usuário acessar e exibir, a
 
 Embora a implementação do suporte ao \ingles{WebP} esteja disponível somente para dois navegadores (Chrome e Opera), estes constituem um percentual de uso de cerca de 42,38\% de todos os navegadores utilizados dentro da internet nos dias de hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 62,14\%, já que cerca de 19,76\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
 
-O trabalho desenvolvido foi entegue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não está no foco do projeto. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas somente em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
+O trabalho desenvolvido foi entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não está no foco do projeto. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas somente em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
 
 \section{Organização do Texto}
 
-Este trabalho está estruturado em seis capítulos. O primeiro capítulo apresenta uma contextualização sobre o assunto, bem como a motivação e os objetivos. Já no capítulo 2, a fundamentação teórica está exposta apresentando as tecnologias que possuem ligação direta com a implementação desenvolvida. O capítulo 3 apresenta uma descrição mais aprofundada sobre os principais conceitos e tecnologias que fazem parte do escopo do desenvolvimento.
-No capítulo 4, é apresentado os trabalhos relacionados, que possuem objetivos semelhantes ao assunto tratado e que de alguma forma contribuíram para a analise e estudo. 
-No capítulo 5 está a descrição da implementação proposta, cotendo a descrição dos módulos que foram desenvolvidos e os resultados que foram obtidos a partir dos testes executados. No capítulo 7 são feitas as conclusões e considerações finais deste trabalho, bem como planos de desenvolvimento para trabalhos futuros. O documento encerra contendo as referências bibliográficas que foram utilizadas como base para estudo e pesquisa ao longo do desenvolvimento deste trabalho.
+Este trabalho está estruturado em seis capítulos. O primeiro capítulo apresenta uma contextualização sobre o formato WebP, bem como a motivação e os objetivos. Já no capítulo 2, a fundamentação teórica está exposta apresentando as tecnologias que possuem ligação direta com a implementação desenvolvida. Apresenta também a história da \ingles{World Wide Web} e comenta à respeito do seu futuro através da quinta e maior revisão da linguagem que a rege, o HTML. 
+O capítulo 3 apresenta uma descrição mais aprofundada sobre o formarto WebP, detalhahando a API que será utilizada por este trabalho e um estudo de caso fazendo o comparativo com outros formatos mais utilizados atualmente.
+No capítulo 4, é apresentado os trabalhos relacionados, que possuem objetivos semelhantes ao assunto tratado e que de alguma forma contribuíram para a análise e estudo. São apresentadas duas propostas para novos formatos (JPEG XR e JPEG 2000), e a primeira tentativa de realizar a implantação do processo de decodificação do WebP dentro do Mozilla Firefox. 
+No capítulo 5 está a descrição da implementação proposta, contendo a arquitetura e a descrição dos módulos que foram desenvolvidos, e os resultados que foram obtidos a partir dos testes executados. No capítulo 6 são feitas as conclusões e considerações finais deste trabalho, bem como planos de desenvolvimento para trabalhos futuros. O documento encerra contendo as referências bibliográficas que foram utilizadas como base para estudo e pesquisa ao longo do desenvolvimento deste trabalho.
 
 \chapter{Fundamentação Teórica}
 
@@ -220,19 +221,19 @@ Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de 
 
 O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela na qual porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma, a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores, reduz de 25 a 34\% o tamanho da imagem quando comparado com o formato JPEG. Ele também fornece suporte à transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8, que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
 
-A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, a horizontal, a vertical, a DC e a \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding}, que é um método \ingles{lossless} amplamente usado para compressão de dados.
+A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, o horizontal, o vertical, o DC e o \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding}, que é um método \ingles{lossless} amplamente usado para compressão de dados.
 
 O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto VP8 utilizam a mesma técnica para a compressão de imagens pois, no caso de vídeo, o mesmo conceito é utilizado para compressão dos \ingles{frames}.
 
 \section{Mozilla Firefox e o WebP}
 
-O formato WebP foi disponibilizado em 2010 mas nunca conseguiu ser integrado ao Mozilla Firefox. Inclusive na época um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todos os apontamentos dados tenham sido ajustados, ainda não há uma clara razão do por que ele ainda não foi implementado. Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porém estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente.
+O formato WebP foi disponibilizado em 2010 mas ainda não foi integrado ao Mozilla Firefox. Inclusive, na época, um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo, a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todas as considerações dadas tenham sido atendidas, ainda não há uma clara razão do por que ele ainda não foi implementado no Mozilla Firefox. Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porém estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta deste trabalho é que o navegador seja capaz de realizar a renderização nativamente.
 
-Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial.
+Pelo que se pode averiguar, parece que há uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada devido ao grande sucesso do navegador concorrente. Entretanto, pelo que foi pesquisado dentro da comunidade, há alguma chance de que caso uma boa implementação seja feita, ela possa ser aceita dentro do código oficial.
 
 \section{Especificação do Container WebP}
 
-Como um formato de imagem, o WebP utiliza um \ingles{container} RIFF (\ingles{Resource Interchange File Format}) para armazenamento das informações necessárias para utilização do formato dentro de um arquivo. O \ingles{container} do WebP também oferece como característica o suporte para a compressão \ingles{lossless} e o efeito de transparência que pode ser obtido através de um canal \ingles{alpha}. De forma geral o arquivo WebP é composto da imagem representada por uma matriz de \ingles{pixels} no formato VP8 e opcionalmente a informação em relação a transparência.
+Como um formato de imagem, o WebP utiliza um \ingles{container} RIFF (\ingles{Resource Interchange File Format}) para o armazenamento das informações necessárias para utilização do formato dentro de um arquivo \cite{RIFFContainer}. O \ingles{container} do WebP também oferece como característica o suporte para a compressão \ingles{lossless} e o efeito de transparência que pode ser obtido através de um canal \ingles{alpha}. De forma geral o arquivo WebP é composto da imagem representada por uma matriz de \ingles{pixels} no formato VP8 e, opcionalmente, a informação em relação a transparência.
 
 Basicamente, existem três tipos de arquivos: o formato simples com compressão \ingles{lossy}, o formato simples com a compressão \ingles{lossless} e o formato estendido. Em todos os três tipos existe o cabeçalho do arquivo, que é composto inicialmente pelos caracteres 'RIFF' em ASCII, seguido da informação em relação ao tamanho do arquivo em \ingles{bytes} e por último os caracteres 'WEBP' em ASCII.
 
@@ -256,39 +257,27 @@ A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossl
 
 \section{A API libwebp}
 
-A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho, foram utilizadas os cabeçalhos para codificação e decodificação (encode.h e decode.h). Também foi necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
+A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho, foram utilizados os cabeçalhos para codificação e decodificação (encode.h e decode.h). Também foi necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
 
 De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções foram utilizadas para criação do decodificador:
 
 \begin{itemize}
-	\item WebPIDecGetRGB
-	\item WebPGetDecoderVersion
-	\item WebPGetInfo
-	\item WebPDecodeRGB
-	\item WebPDecodeRGBA
-	\item WebPDecodeARGB
-	\item WebPDecodeBGR
-	\item WebPDecodeBGRA
+	\item WebPIDecGetRGB, WebPGetDecoderVersion, WebPGetInfo, WebPIDelete, WebPFreeDecBuffer, WebPIAppend, WebPINewDecoder;
 \end{itemize}
 
 As funções utilizadas para criação do codificador foram as seguintes:
 
 \begin{itemize}
-	\item WebPMemoryWrite
-	\item WebPGetEncoderVersion
-	\item WebPEncodeRGB
-	\item WebPEncodeRGBA
-	\item WebPEncodeBGR
-	\item WebPEncodeBGRA
+	\item WebPMemoryWrite, WebPGetEncoderVersion, WebPMemoryWriterInit, WebPConfigInit, WebPPictureInit, WebPPictureFree;
 \end{itemize}
 
-A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela foi peça fundamental para implementação do projeto. A versão da libwebp utilizada dentro do trabalho foi a 0.3.0.
+A documentação da biblioteca libwebp é bem simples e direta, mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho, não houve dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela foi fundamental para implementação do projeto. A versão da libwebp utilizada dentro do trabalho foi a 0.3.0.
 
 \section{Estudo de caso do WebP}
 
-Com o objetivo de apresentar os ganhos de compressão do formato de imagem WebP em relação aos formatos JPEG e PNG, é mostrado a seguir uma série de 3 pares de imagens diferentes, uma em seu formato original e a outra já convertida para o WebP, os detalhes com relação ao tamanho final do arquivo e os recursos utilizados em cada um dos casos. As imagens foram retiradas aleatoriamente da internet e convertidas utilizando o conversor padrão fornecido juntamente com a libwebp.
+Com o objetivo de apresentar os ganhos de compressão do formato de imagem WebP em relação aos formatos JPEG e PNG, é mostrada a seguir uma série de 3 pares de imagens diferentes, uma em seu formato original e a outra convertida para o WebP, incluindo os detalhes com relação ao tamanho final do arquivo e os recursos utilizados em cada um dos casos. As imagens foram retiradas aleatoriamente da internet e convertidas utilizando o conversor padrão fornecido juntamente com a libwebp.
 
-O primeiro caso é de uma paisagem montanhosa cuja a largura é de 1150 pixels e a altura de 863 pixels. A imagem na figura 3.3 está no formato JPEG e seu tamanho original é de 430K. O processo de conversão desta imagem para WebP levou exatos 0,428 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. Após a conversão para o formato WebP, como pode ser visto na figura 3.4, a imagem resultante foi reduzida para 228K, aproximadamente 46,98\% de ganho na compressão.
+O primeiro caso é de uma paisagem montanhosa cuja a largura da imagem é de 1150 pixels e a altura de 863 pixels. A imagem na figura 3.3 está no formato JPEG e seu tamanho original é de 430K. O processo de conversão desta imagem para WebP levou exatos 0,428 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. Após a conversão para o formato WebP, como pode ser visto na figura 3.4, a imagem resultante foi reduzida para 228K, aproximadamente 46,98\% de ganho na compressão.
 
 \begin{figure}[h]
   \centering
@@ -302,7 +291,7 @@ O primeiro caso é de uma paisagem montanhosa cuja a largura é de 1150 pixels e
   \caption{Imagem no formato WebP com tamanho de 228K}
 \end{figure}
 
-Como o primeiro caso retrata uma imagem com tamanho consideravelmente pequeno, foi feita uma avaliação com uma imagem maior para verificar se o comportamento do formato WebP é alterado. A imagem mostrada na figura 3.5 também está no formato JPEG e possui largura de 4928 pixels e a altura de 3264 pixels. O tamanho original da imagem é de 6996K. O processo de conversão desta imagem para WebP levou 5098 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem no formato WebP, como pode ser visto na figura 3.6, foi reduzida para 1008K. Neste segundo caso o ganho foi maior ainda, uma redução de 85,59\% com relação a imagem original.
+Como o primeiro caso retrata uma imagem com tamanho consideravelmente pequeno, foi feita uma avaliação com uma imagem maior para verificar se o comportamento do formato WebP é alterado. A imagem exibida na figura 3.5 está no formato JPEG e possui largura de 4928 pixels e a altura de 3264 pixels. O tamanho original da imagem é de 6996K. O processo de conversão desta imagem para WebP levou 5098 milissegundos em uma máquina com processador Intel Core I5 de 2.5GHz. A imagem no formato WebP, como pode ser visto na figura 3.6, foi reduzida para 1008K. Neste segundo caso o ganho foi maior ainda, uma redução de 85,59\% com relação a imagem original.
 
 \begin{figure}[h]
   \centering
