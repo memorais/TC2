@@ -54,11 +54,15 @@ Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da 
 
 Com a crescente evolução dos meios de comunicação, a necessidade de total interatividade do usuário com as páginas aumenta cada vez mais. Uma página da \ingles{Web} não é somente texto como era nos primórdios, ela é composta de uma série de diferentes atores, tais como folhas de estilo, imagens e vídeos. Estes atores existem para aumentar a facilidade no uso e proporcionar uma experiência mais agradável para o usuário final.
 
-Apesar da mudança na necessidade dos usuários da \ingles{Web}, poucas alteração foram feitas no protocolo HTTP, cuja última revisão (1.1) ocorreu no ano de 1999, e na linguagem HTML que sofreu seu último ajuste em maio de 2000. Essencialmente a tecnologia implementada atualmente é a mesma criada no início dos anos 90 e apesar de sofrerem pequenas revisões pós criação, continuam não atendendo totalmente as demandas que surgem. Um fator que comprova este fato é a diversidade de tecnologias paralelas (\ingles{plugins}) não oficiais que foram criadas para preencher estas lacunas. O \ingles{Flash}, o \ingles{JavaFX} e o \ingles{Silverlight} são algumas das tecnologias que ilustram este cenário. Outro fator importante é que mesmo com o avanço das tecnologias de comunicação, nem todas as pessoas têm acesso a esta evolução. Seja por uma questão econômica ou mesmo pela carência de infraestrutura. Existe atualmente o desenvolvimento da quinta versão para a linguagem HTML, que apesar de ainda não possuir uma versão final, já tem uma grande popularidade na Internet, e conta com o suporte de todos os principais navegadores \cite{W3schoolsHTML5}.
+Apesar da mudança na necessidade dos usuários da \ingles{Web}, poucas alteração foram feitas no protocolo HTTP, cuja última revisão (1.1) ocorreu no ano de 1999, e na linguagem HTML que sofreu seu último ajuste em maio de 2000. Essencialmente a tecnologia implementada atualmente é a mesma criada no início dos anos 90 e apesar de sofrerem pequenas revisões pós criação, continuam não atendendo totalmente as demandas que surgem. Um fator que comprova este fato é a diversidade de tecnologias paralelas (\ingles{plugins}) não oficiais que foram criadas para preencher estas lacunas. O \ingles{Flash}, o \ingles{JavaFX} e o \ingles{Silverlight} são algumas das tecnologias que ilustram este cenário.
 
-Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}, criado para ser utilizado principalmente na \ingles{Web}. Este formato é capaz de comprimir aproximadamente 39\% mais que a melhor solução utilizada hoje que é o formato JPEG, e apresentar imagens com o mesmo nível de qualidade visual \cite{WebPStudy}. O suporte à renderização de imagens \ingles{WebP} está implementado atualmente apenas nos navegadores Chrome e Opera.
+Outro fator importante é que mesmo com o avanço das tecnologias de comunicação, nem todas as pessoas têm acesso a esta evolução. Seja por uma questão econômica ou mesmo pela carência de infraestrutura. Existe atualmente o desenvolvimento da quinta versão para a linguagem HTML, que apesar de ainda não possuir uma versão final, já tem uma grande popularidade na Internet, e conta com o suporte de todos os principais navegadores \cite{W3schoolsHTML5}.
 
-Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200, como pode-se observar na figura 1.1:
+Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. 
+
+Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}, criado para ser utilizado principalmente na \ingles{Web}. Este formato é capaz de comprimir aproximadamente 39\% mais que a melhor solução utilizada hoje que é o formato JPEG, e apresentar imagens com o mesmo nível de qualidade visual \cite{WebPStudy}. O suporte à renderização de imagens \ingles{WebP} está implementado atualmente apenas nos navegadores Chrome e Opera.
+
+Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG2000, como pode-se observar na figura 1.1:
 
 \begin{figure}[h]
   \centering
@@ -74,14 +78,17 @@ Embora a implementação do suporte ao \ingles{WebP} esteja disponível somente 
   \caption{Percentual de utilização dos Navegadores na Web \cite{BrowserStats}}
 \end{figure}
 
-Apesar de não existir nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão, e não se sabe se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de aproximadamente 63\% de suporte dentro dos navegadores da internet também fará com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o façam em virtude da pressão exercida pela maioria.
+Apesar de não existir nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão, e não se sabe se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de aproximadamente 63\% de suporte dentro dos navegadores da internet também irá contribuir com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o façam em virtude da pressão exercida pela maioria.
 
 \section{Motivação}
 
 A necessidade pela busca da informação cresceu exponencialmente de alguns anos pra cá. O crescente avanço tecnológico, trazendo consigo a popularização dos smartphones e a facilidade no acesso à informação, contribuiu de forma expressiva para que cada vez mais as pessoas estejam conectadas em todos os lugares. Da mesma forma que a disponibilidade dessas informações e o acesso à elas deve ser feito de forma cada vez mais rápida.
 
-O desenvolvimento do codificador e decodificador do formato \ingles{WebP} no \ingles{Mozilla Firefox}, trará de imediato a melhora no tempo de resposta na exibição das imagens dentro do navegador, visto que o tamanho dos arquivos no servidor será reduzido. Se considerar que mais de 60\% do tamanho total de um \ingles{website} são imagens, os benefícios podem ser substanciais. É importante ressaltar que a utilização em massa deste novo formato contribui, consequentemente, na diminuição do trafego de rede na internet de maneira global, isso resulta diretamente em maior vazão para outros recursos que possuem um maior consumo de banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
+O desenvolvimento do codificador e decodificador do formato \ingles{WebP} no \ingles{Mozilla Firefox}, trará de imediato a melhora no tempo de resposta na exibição das imagens dentro do navegador, visto que o tamanho dos arquivos no servidor será reduzido. Se considerar que mais de 60\% do tamanho total de um \ingles{website} são imagens, os benefícios podem ser substanciais. 
 
+É importante ressaltar que a utilização em massa deste novo formato contribui, consequentemente, na diminuição do trafego de rede na internet de maneira global, isso resulta diretamente em maior vazão para outros recursos que possuem um maior consumo de banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
+
+\newpage
 Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com o Gerente de Produto do Google, Stephen Konig \cite{ChromiumBlog}:
 \begin{citacao}
 	\ingles{By converting PNGs and JPEGs to WebP, the Chrome Web Store was able to reduce image sizes by about 30\% on average. Given the number of requests Chrome Web Store serves, this adds up to several terabytes of savings every day.}
@@ -196,13 +203,17 @@ A interface gráfica de um navegador possui diversos elementos que são comuns, 
 	\item Botão de Atualizar e Parar, para atualizar e cancelar, respectivamente, o carregamento de páginas.
 \end{itemize}
 
-A concorrência existente entre as empresas e os produtos oferecidos atualmente, se dá principalmente pela velocidade de navegação e a utilização dos recursos computacionais. A cada dia, surgem novos padrões e estudos de novas tecnologias relacionadas, que possibilitam que os navegadores tenham um melhor desempenho na execução das suas funções. Um exemplo é o HTML5, que tem como objetivo tornar o conteúdo das páginas mais dinâmico, deixando de lado o conceito do navegador que apenas realiza a apresentação do documento, mas que interaja como uma aplicação única através dos recursos e ferramentas disponibilizadas \cite{WebAppPlataform}.
+A concorrência existente entre as empresas e os produtos oferecidos atualmente, se dá principalmente pela velocidade de navegação e a utilização dos recursos computacionais. A cada dia, surgem novos padrões e estudos de novas tecnologias relacionadas, que possibilitam que os navegadores tenham um melhor desempenho na execução das suas funções. 
+
+Um exemplo é o HTML5, que tem como objetivo tornar o conteúdo das páginas mais dinâmico, deixando de lado o conceito do navegador que apenas realiza a apresentação do documento, mas que interaja como uma aplicação única através dos recursos e ferramentas disponibilizadas \cite{WebAppPlataform}.
 
 \section{HTML5}
 
 Em 1998 o W3C decidiu que eles não iriam mais continuar o desenvolvimento da linguagem da \ingles{Web} até então, a HTML \ingles{(HyperText Markup Language)}. Ao invés disto eles iriam trabalhar em um novo formato o qual acreditavam ser o futuro da \ingles{Web}, assim nasceu a linguagem XHTML \ingles{(Extensible HyperText Markup Language)} que se fundamentava nos princípios da XML \ingles{(Extensible Markup Language)}. Desta forma a revisão 4.01 da HTML foi congelada, e os esforços se direcionaram para a evolução da XHTML que em sua versão 2.0 trazia além de muitas mudanças revolucionárias, a quebra de toda compatibilidade das aplicações escritas nas versões anteriores da especificação.
 
-Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores. Este grupo é conhecido como WHATWG (\ingles{Web Hypertext Application Technology Working Group}). A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, adotou a versão do grupo WHATWG como base para a nova versão do HTML e começou a trabalhar na quinta revisão, e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML. Este processo de desenvolvimento da nova versão passou a ser desenvolvida simultaneamente, pelo W3C e pelo grupo WHATWG.
+Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores. Este grupo é conhecido como WHATWG (\ingles{Web Hypertext Application Technology Working Group}). 
+
+A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, adotou a versão do grupo WHATWG como base para a nova versão do HTML e começou a trabalhar na quinta revisão, e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML. Este processo de desenvolvimento da nova versão passou a ser desenvolvida simultaneamente, pelo W3C e pelo grupo WHATWG.
 
 Por trás do HTML5 há uma série de princípios de design definidos. De uma forma resumida, pode-se citar três princípios principais \cite{HTML5Intro}:
 \begin{itemize}
@@ -228,15 +239,19 @@ Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de 
 
 \section{Introdução}
 
-O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela na qual porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma, a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores, reduz de 25 a 34\% o tamanho da imagem quando comparado com o formato JPEG. Ele também fornece suporte à transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8, que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
+O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela na qual porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma, a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. 
+
+Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores, reduz de 25 a 34\% o tamanho da imagem quando comparado com o formato JPEG. Ele também fornece suporte à transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8, que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
 
 A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, o horizontal, o vertical, o DC e o \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding}, que é um método \ingles{lossless} amplamente usado para compressão de dados.
 
-O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto VP8 utilizam a mesma técnica para a compressão de imagens pois, no caso de vídeo, o mesmo conceito é utilizado para compressão dos \ingles{frames}.
+O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto WebM utilizam a mesma técnica para a compressão de imagens pois, no caso de vídeo, o mesmo conceito é utilizado para compressão dos \ingles{frames}.
 
 \section{Mozilla Firefox e o WebP}
 
-O formato WebP foi disponibilizado em 2010 mas ainda não foi integrado ao Mozilla Firefox. Inclusive, na época, um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo, a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todas as considerações dadas tenham sido atendidas, ainda não há uma clara razão do por que ele ainda não foi implementado no Mozilla Firefox. Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porém estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta deste trabalho é que o navegador seja capaz de realizar a renderização nativamente.
+O formato WebP foi disponibilizado em 2010 mas ainda não foi integrado ao Mozilla Firefox. Inclusive, na época, um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo, a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todas as considerações dadas tenham sido atendidas, ainda não há uma clara razão do por que ele ainda não foi implementado no Mozilla Firefox. 
+
+Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porém estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta deste trabalho é que o navegador seja capaz de realizar a renderização nativamente.
 
 Pelo que se pode averiguar, parece que há uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada devido ao grande sucesso do navegador concorrente. Entretanto, pelo que foi pesquisado dentro da comunidade, há alguma chance de que caso uma boa implementação seja feita, ela possa ser aceita dentro do código oficial.
 
@@ -248,7 +263,7 @@ Basicamente, existem três tipos de arquivos: o formato simples com compressão 
 
 \newpage
 
-A figura 3.1 ilustra o formato simples com compressão \ingles{lossy}, o formato simples com a compressão \ingles{lossless} e o formato estendido, respectivamente.
+A figura 3.1 ilustra o formato simples com compressão \ingles{lossy} (a), o formato simples com a compressão \ingles{lossless} (b) e o formato estendido (c).
 
 \begin{figure}[h]
   \centering
@@ -502,19 +517,7 @@ O processo de codificação da libwebp possui vários recursos adicionais que n�
 Assim como no desenvolvimento do decodificador, a criação do codificador passou por uma avaliação dos outros codificadores que já estão implementados no navegador. Como a implementação do nsPNGEncoder estava mais organizada e bem documentada, ela serviu como base para criação do codificador WebP. A classe principal criada para o processo de codificação deveria herdar a classe imgIEncoder do Firefox. Como premissa da classe pai, todos os métodos a seguir precisaram ser implementados para o codificador nsWEBPEncoder:
 
 \begin{itemize}
-	\item InitFromData
-	\item StartImageEncode
-	\item GetImageBufferUsed
-	\item GetImageBuffer
-	\item AddImageFrame
-	\item EndImageEncode
-	\item Close
-	\item Available
-	\item Read
-	\item ReadSegments
-	\item IsNonBlocking
-	\item AsyncWait
-	\item CloseWithStatus
+	\item InitFromData, StartImageEncode, GetImageBufferUsed, GetImageBuffer, AddImageFrame, EndImageEncode, Close, Available, Read, ReadSegments, IsNonBlocking, AsyncWait, CloseWithStatus.
 \end{itemize}
 
 Dos 13 métodos listados a interação com a libwebp foi criada dentro dos métodos StartImageEncode, AddImageFrame e EndImageEncode. Tudo começa no método orquestrador InitFromData, ele é o primeiro método a ser chamado e a sua função é receber o \ingles{buffer} do chamador. A partir dai o método IniFromData executa o método StartImageEncode que é responsável por inicializar as estruturas de dados WebPPicture, WebPConfig e WebPMemoryWriter. O método AddImageFrame possui uma iteração que lê linha a linha do \ingles{buffer} e realiza a construção da codificação através do método WebPMemoryWrite da libwebp. Este método faz a gravação dos dados dentro da estrutura WebPPicture que é efetivamente a imagem no formato WebP. O último método chamado é o EndImageEncode que realiza a liberação da memória utilizada por todo o processo de codificação.
@@ -534,23 +537,23 @@ Esta substituição de formatos na exibição ocorre conforme orientação no ra
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.4]{FirefoxSemWebP.png}
+    \includegraphics[scale=0.3]{FirefoxSemWebP.png}
   \caption{Firefox sem a implementação do trabalho}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.4]{FirefoxComWebP.png}
+    \includegraphics[scale=0.3]{FirefoxComWebP.png}
   \caption{Firefox com a implementação do trabalho}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.4]{HTML5CanvasFirefoxWebP.png}
+    \includegraphics[scale=0.3]{HTML5CanvasFirefoxWebP.png}
   \caption{Firefox com a implementação do trabalho usando o elemento \ingles{canvas}}
 \end{figure}
 
-Como forma de avaliar o desempenho da solução de maneira prática, foi desenvolvido uma página da \ingles{web} composta de imagens no formato PNG e JPEG, e uma segunda página exatamente igual a primeira apenas com as imagens convertidas de PNG e JPEG para WebP. A página em sua formação original possui tamanho total de 5953K e após a conversão das imagens para WebP, o tamanho de todo o \ingles{site} passou a ser de 907K. 
+Como forma de avaliar o desempenho da solução de maneira prática, foi desenvolvido um \ingles{site} composto de imagens no formato PNG e JPEG, e um segundo site exatamente igual ao primeiro, apenas com as imagens convertidas de PNG e JPEG para WebP. O site completo em sua formação original possui tamanho total de 5953K, e após a conversão das imagens para WebP, o tamanho total passou a ser de 907K. 
 
 Após a conversão de todos os arquivos de imagem para o formato WebP, os dois sites foram hospedados em um mesmo servidor \ingles{web}. Com isso, o tráfego de rede para diferentes rotas é evitado, e o tempo de resposta do servidor é basicamente o mesmo, não interferindo nas métricas de carregamento do \ingles{site}. 
 
@@ -558,7 +561,7 @@ A tabela 5.3 mostra uma comparação dos tempos para carregamento da página bem
 
 \begin{table}[ht]
         \centering
-        \caption{Avaliação prática do WebP
+        \caption{Avaliação prática do WebP - Caso 1
         \label{tbl:padc}}{
                 \begin{tabular}{|l|p{3cm}|p{3cm}|l|p{2cm}|}
                 \hline
@@ -578,13 +581,41 @@ A tabela 5.3 mostra uma comparação dos tempos para carregamento da página bem
 
 O teste consistiu apenas na entrada da página principal, não houve nenhuma navegação adicional dentro do \ingles{site}. Na tabela 5.3 a coluna "Tempo Site normal" indica o tempo de carregamento da página com as imagens no formato PNG/JPEG. A coluna "Tempo Site WebP" indica o tempo de carregamento da página com as imagens no formato WebP. As colunas "Bytes Site normal" e "Bytes Site WebP" indicam a quantidade de bytes trafegados durante a abertura da página com as imagens no formato PNG/JPEG e com imagens no formato WebP, respectivamente.
 
+Posteriormente, um segundo caso de teste foi feito, seguindo as mesmas premissas do teste anterior. Foi criado outro \ingles{site} para execução de casos de teste, porém com uma quantidade maior de imagens apresentadas na página inicial. Da mesma forma que o teste anterior, não houve navegação entre as páginas, e as métricas coletadas foram somente no acesso à página inicial, na qual contempla desde a solicitação até o carregamento total da página. O site completo em sua formação original possui tamanho total de 12452K, e após a conversão das imagens para WebP, o tamanho total passou a ser de 2107K. 
+
+A tabela 5.4 mostra uma comparação dos tempos para carregamento da página bem como o nível de utilização de \ingles{bytes} trafegados durante o processo de abertura da página do segundo caso de teste.
+
+\begin{table}[ht]
+        \centering
+        \caption{Avaliação prática do WebP - Caso 2
+        \label{tbl:padc}}{
+                \begin{tabular}{|l|p{3cm}|p{3cm}|l|p{2cm}|}
+                \hline
+                        \textbf{Navegador} & \textbf{Tempo Site normal} & \textbf{Tempo Site WebP} & \textbf{Bytes Site normal} & \textbf{Bytes Site WebP} \\
+                        \hline
+                        Chrome			&  9,34 segundos	& 4,22 segundos		& 8,1 Megabytes		& 1,3 Megabytes \\
+                        \hline
+						Opera			&  11,01 segundos	& 4,79 segundos		& 8,1 Megabytes		& 1,3 Megabytes \\
+						\hline
+                        Firefox sem WebP	&  9,69 segundos	& N/A			& 8,1 Megabytes		& N/A \\
+                        \hline
+                        Firefox com WebP	&  9,51 segundos	& 4,57 segundos		& 8,1 Megabytes		& 1,3 Megabytes \\
+                        \hline
+                \end{tabular}
+                }
+\end{table}
+
 \chapter{Conclusões e Trabalhos Futuros}
 
-A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado pelo estudo feito na fundamentação teórica, na motivação e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010, após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
+A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado nos resultados obtidos e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010, após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
 
-Os resultados obtidos mostraram que páginas da \ingles{web} contendo imagens no formato WebP possuem tempo de carregamento reduzido quando comparado com os outros formatos usados mais comumente. A redução no tamanho das imagens proporcionada pelo WebP também ajuda na queda do consumo de bytes trafegados pela conexão, se tornando especialmente importante para tecnologias de internet que possuem baixa vazão, como aquelas utilizadas em dispositivos móveis (celulares, \ingles{tablets} e outros). Estes resultados levam a constatação de que a economia financeira gerada pela redução no consumo de dados na conexão, pode ser um fator relevante para a popularização do formato, desde que a maior parte dos navegadores seja capaz de renderizá-lo.
+Os resultados obtidos mostraram que páginas da \ingles{web} contendo imagens no formato WebP possuem tempo de carregamento reduzido quando comparado com os outros formatos usados mais comumente. A redução no tamanho das imagens proporcionada pelo WebP também ajuda na diminuição do consumo de bytes trafegados pela conexão, se tornando especialmente importante para tecnologias de internet que possuem baixa vazão, como aquelas utilizadas em dispositivos móveis (celulares, \ingles{tablets} e outros). 
 
-Mesmo com a evolução constante realizada pele equipe de desenvolvimento, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
+Estes resultados levam a constatação de que a economia financeira gerada pela redução no consumo de dados na conexão, pode ser um fator relevante para a popularização do formato, desde que a maior parte dos navegadores seja capaz de renderizá-lo.
+
+Mesmo com a evolução constante realizada pela equipe de desenvolvimento do WebP, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. 
+
+O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
 
 A versão 0.3.0 da libwebp, utilizada no desenvolvimento do trabalho, oferece suporte à animação de imagens quadro a quadro, semelhante ao processo realizado pelo formato GIF. Entretanto este tipo de implementação não foi realizada no desenvolvimento do codificador e do decodificador, ficando como referência para trabalhos futuros que devem ser realizados.
 
