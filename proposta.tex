@@ -373,57 +373,9 @@ Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar supo
 
 \chapter{Descrição do Projeto}
 
-\section{Objetivos}
+Conforme apresentado na seção 1.3, este trabalho desesenvolve uma solução para habilitar o suporte à codificação e decodificação de imagens no formato WebP dentro do navegador Mozilla Firefox. A partir da utilização da biblioteca \ingles{libwebp} criada pela empresa Google Inc, foi elaborada e implementada uma solução que integra esta biblioteca ao código nativo do navegador, possibilitando que o navegador, em tempo de execução, exiba as imagens neste formato sem que seja necessário a uso de \ingles{plug-ins} ou ferramentas adicionais.
 
-Conforme apresentado na seção 1.3, o objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox.
-Pretende-se, realizar em tempo de execução, a renderização de imagens do formato WebP através da utilização do Mozilla Firefox, possibilitando que o navegador realize a leitura e exibição deste formato de imagem para o usuário. 
-
-A motivação do desenvolvimento desta solução, conforme descrito na seção 1.2, se dá pelo fato do formato WebP já se encontrar em um estado avançado de desenvolvimento e maturidade, e já estar recebendo suporte nativo dos browsers Google Chrome e Opera. 
-
-O aumento na capacidade de compressão do formato \ingles{WebP} trará de imediato a melhora no tempo de resposta para o \ingles{download} de imagens no navegador do usuário e também diminuirá o trafego na comunicação entre cliente e servidor. É importante ressaltar também que a popularização e utilização em massa deste novo formato irá beneficiar na diminuição do trafego de rede dentro da internet de uma maneira global, e isso resulta diretamente em uma vazão maior para outros recursos que consomem mais banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
-
-No ano de 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente. Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto será aproveitado dentro deste trabalho, será necessário uma produção a partir do zero.
-
-Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial, embora isto não seja o principal objetivo do trabalho.
-
-Como o tempo para implementação do projeto é reduzido não haverá espaço para a reescrita de uma nova API dentro do Firefox. O que será feito é a incorporação da biblioteca libwebp desenvolvida pelo Google dentro do Firefox e o trabalho efetivamente será a criação do decodificador e codificador integrado com as bibliotecas do próprio Firefox.
-
-\section{Projeto}
-
-Visando atingir os objetivos descritos para este trabalho, foi criado o seguinte cronograma de atividades a ser seguido na disciplina de Trabalho de Conclusão I:
-\begin{enumerate}
-	\item Estudo do formato WebP e da biblioteca libwebp;
-	\item Estudo e análise do código do Mozilla Firefox;
-	\item Estudo dos padrões de codificação do Mozilla Firefox;
-	\item Estudo da viabilidade de implementação;
-	\item Estudo do patch proposto em 2010;
-	\item Desenvolvimento da primeira parte da documentação para o trabalho final.
-\end{enumerate}	
-		
-\begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.5]{parte1.png}
-  \caption{Cronograma de atividades da primeira parte.}
-\end{figure}
-
-Para a segunda parte (Trabalho de Conclusão 2) do desenvolvimento do projeto, foi feito um levantamento das tarefas com base nos estudos realizados e foram identificados as seguintes necessidades:
-\begin{enumerate}
-	\item Criação de um \ingles{fork} da última versão do projeto no repositório oficial.
-	\item \ingles{Merge} da biblioteca libwebp no código do Mozilla Firefox.
-	\item Criação do codificador e decodificador para o formato WebP.
-	\item Ajuste no inicializador e carregador das imagens do Mozilla Firefox.
-	\item Criação dos arquivos para compilação.
-	\item Teste da implementação e avaliação dos resultados
-	\item Desenvolvimento da segunda e última parte da documentação para o trabalho final.
-\end{enumerate}
-
-\begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.5]{parte2.png}
-  \caption{Cronograma de atividades da segunda parte.}
-\end{figure}
-
-O planejamento futuro para implementação vislumbra a criação de um \ingles{fork} a partir do projeto atual disponível na árvore oficial do Firefox. O trabalho então será feito em cima deste projeto separado para evitar que as atualizações constantes dos mantenedores atrapalhe o desenvolvimento que será realizado.
+As seções seguintes descrevem a arquitetura do navegador Mozilla Firefox, bem como seu sistema de compilação e a descrição das implementações desenvolvidas para o codificador e decodificador.
 
 \section{Ambiente de Desenvolvimento}
 
@@ -612,7 +564,7 @@ O teste consistiu apenas na entrada da página principal, não houve nenhuma nav
 
 \chapter{Conclusões e Trabalhos Futuros}
 
-A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado pelo estudo feito na fundamentação teórica, na motivação e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010 após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
+A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado pelo estudo feito na fundamentação teórica, na motivação e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010, após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
 
 Os resultados obtidos mostraram que páginas da \ingles{web} contendo imagens no formato WebP possuem tempo de carregamento reduzido quando comparado com os outros formatos usados mais comumente. A redução no tamanho das imagens proporcionada pelo WebP também ajuda na queda do consumo de bytes trafegados pela conexão, se tornando especialmente importante para tecnologias de internet que possuem baixa vazão, como aquelas utilizadas em dispositivos móveis (celulares, \ingles{tablets} e outros). Estes resultados levam a constatação de que a economia financeira gerada pela redução no consumo de dados na conexão, pode ser um fator relevante para a popularização do formato, desde que a maior parte dos navegadores seja capaz de renderizá-lo.
 

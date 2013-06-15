@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposta.aux
 The style file: abnt-num.bst
@@ -14,53 +14,66 @@ Database file #1: abnt-options.bib
 Database file #2: proposta.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
+while executing---line 2123 of file abnt-num.bst
+Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
+while executing---line 2123 of file abnt-num.bst
+Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
+while executing---line 2123 of file abnt-num.bst
+Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
+while executing---line 2123 of file abnt-num.bst
+Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
+while executing---line 2123 of file abnt-num.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
+while executing---line 2178 of file abnt-num.bst
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-num.bst versao 1.50           |
+| Estilo bibliografico abnt-num.bst versao 1.49           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 22 entries,
-            6522 wiz_defined-function locations,
-            1279 strings with 11849 characters,
-and the built_in function-call counts, 51467 in all, are:
-= -- 8033
-> -- 300
-< -- 1544
-+ -- 1718
-- -- 96
-* -- 2309
-:= -- 4962
-add.period$ -- 82
-call.type$ -- 23
-change.case$ -- 159
-chr.to.int$ -- 24
-cite$ -- 20
-duplicate$ -- 7428
-empty$ -- 1148
-format.name$ -- 484
-if$ -- 10096
+You've used 24 entries,
+            6523 wiz_defined-function locations,
+            1291 strings with 12271 characters,
+and the built_in function-call counts, 52753 in all, are:
+= -- 8144
+> -- 352
+< -- 1545
++ -- 1738
+- -- 112
+* -- 2417
+:= -- 5153
+add.period$ -- 88
+call.type$ -- 25
+change.case$ -- 181
+chr.to.int$ -- 26
+cite$ -- 22
+duplicate$ -- 7474
+empty$ -- 1223
+format.name$ -- 566
+if$ -- 10380
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 365
-newline$ -- 121
-num.names$ -- 76
-pop$ -- 646
+missing$ -- 383
+newline$ -- 131
+num.names$ -- 84
+pop$ -- 681
 preamble$ -- 1
-purify$ -- 71
+purify$ -- 79
 quote$ -- 0
-skip$ -- 7635
+skip$ -- 7704
 stack$ -- 1
-substring$ -- 1960
-swap$ -- 1735
-text.length$ -- 31
+substring$ -- 2038
+swap$ -- 1737
+text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 130
+while$ -- 142
 width$ -- 0
-write$ -- 258
+write$ -- 283
+(There were 6 error messages)

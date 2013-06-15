@@ -333,112 +333,63 @@ O último caso é uma imagem no formato PNG que utiliza o recurso de transparên
   \caption{Imagem com \ingles{alpha} no formato WebP com tamanho de 56K}
 \end{figure}
 
+Existem estudos recentes \cite{VP8Performance} que mostram uma semelhança no desempenho (nível de compressão X qualidade da imagem) do processo de decodificação do formato WebP com relação aos formatos JPEG 2000 e JPEG XR, relatados no capítulo 4 deste trabalho.
 
 \chapter{Trabalhos Relacionados}
 
-Neste capítulo são apresentadas alguns desenvolvimentos e projetos que se assemelham ao assunto deste trabalho, evidenciando soluções distintas e suas características.
+Neste capítulo são apresentadas alguns desenvolvimentos e projetos que se assemelham ao assunto deste trabalho, evidenciando soluções distintas e suas características. Tais trabalhos, apresentados respectivamente nas seções 4.1, 4.2 e 4.3 são:
 
 \begin{itemize}
 %	\item x264 Biblioteca para codificação e decodificação de imagem e áudio.
-	\item JPEG 2000 Atualização do padrão JPEG para compressão de imagens.
-	\item JPEG XR Alternativa mais leve ao JPEG 2000 para compressão de imagens.
-	\item Primeiro patch com suporte a decodificação do WebP no Firefox.
+	\item JPEG 2000 Atualização do padrão JPEG para compressão de imagens;
+	\item JPEG XR Alternativa mais leve ao JPEG 2000 para compressão de imagens;
+	\item Primeiro patch com suporte a decodificação do WebP no Firefox;
 \end{itemize}
 
 %\section{Biblioteca x264}
 
 \section{JPEG 2000}
 
-JPEG 2000 é um padrão de compressão de imagens, criado pela Joint Photographic Experts Group com o objetivo de ser amplamente utilizado em diversas áreas. Suas principais aplicações se deram em câmeras digitais, possibilitando imagens com resoluções maiores, de maior qualidade, utilizando uma compressão dessas informações em um arquivo fisicamente menor; na \ingles{Internet}; em impressões avançadas; em imagens médicas e outros setores chaves. O objetivo do JPEG 2000 não é apenas melhorar o desempenho de compressão em relação ao JPEG, mas adicionar (ou melhorar) características como escalabilidade e capacidade de edição.
+JPEG 2000 é um padrão de compressão de imagens, criado pela Joint Photographic Experts Group com o objetivo de ser amplamente utilizado em diversas áreas. Suas principais aplicações se deram em câmeras digitais, possibilitando imagens com resoluções maiores, de maior qualidade, em um arquivo fisicamente menor devido às técnicas de compressão utilizadas; na \ingles{Internet}; em impressões avançadas; em imagens médicas e outros setores chaves. O objetivo do JPEG 2000 não é apenas melhorar o desempenho da compressão em relação ao JPEG, mas adicionar (ou melhorar) características como escalabilidade e capacidade de edição.
 
-O formato JPEG 2000 trouxe alguns benefícios em relação ao JPEG, sendo eles:
+O formato JPEG 2000 trouxe alguns benefícios em relação ao JPEG, tais como:
 \begin{itemize}
-	\item Compressão da imagem sem perda de qualidade
-	\item Preservação da transparência nas imagens
-	\item Uso de máscaras (canais alpha) para especificar uma área da imagem que necessite ser salva em uma taxa de compressão mais baixa (perda de informação de imagem) do que outras áreas que possui um menor interesse para o usuário
-	\item Preservação das informações EXIF nos arquivos de imagem
-	\item Opções do usuário quanto ao tamanho, qualidade e número de imagem de visualização miniaturas em um site.
+	\item Compressão da imagem sem perda de qualidade;
+	\item Preservação da transparência nas imagens;
+	\item Uso de máscaras (canais alpha) para especificar uma área da imagem que necessite ser salva em uma taxa de compressão mais baixa (perda de informação de imagem) do que outras áreas que possui um menor interesse para o usuário;
+	\item Preservação das informações EXIF nos arquivos de imagem;
+	\item Opções para os desenvolvedores quanto ao tamanho, qualidade e número de imagem de visualização miniaturas em um site;
 \end{itemize}
 
-A principal vantagem oferecida pelo formato JPEG 2000 é a flexibilidade no manuseio do\ingles{codestream} obtido após uma compressão de imagem utilizando este algoritmo. O \ingles{codestream} obtido, pode ser descodificado de diversas maneiras.
+A principal vantagem oferecida pelo formato JPEG 2000 é a flexibilidade no manuseio do \ingles{codestream} obtido após uma compressão de imagem utilizando este algoritmo. O \ingles{codestream} obtido, pode ser descodificado de diversas maneiras. \cite{JPEG2000Codestreams}
 
 O JPEG 2000 foi publicado como um padrão ISO, ISO / IEC 15444. Atualmente o formato não é suportado em navegadores web e, portanto, não é geralmente utilizado na \ingles{Internet}.\cite{JPEG}
 
 \section{JPEG XR}
 
 O formato de imagem JPEG XR (abreviação para \ingles{JPEG extended range}) é um padrão de compressão de imagens desenvolvido e patenteado pela Microsoft sob o nome de HD Photo.
-Com a a popularidade do formato JPEG 2000 em baixa, devido à pouco suporte de aplicativos e falta de melhorias no formato, a Microsoft desenvolveu o JPEG XR, na qual se diz comparável com o JPEG 2000, e mais eficiente que o JPEG. Ao contrário do JPEG 2000, este novo formato proposto pela Microsoft é proprietário, ou seja, necessita de drivers e \ingles{plug-ins} específicos para codificação e decodificação das imagens em plataformas que ainda não possui suporte nativo.
+Com a popularidade do formato JPEG 2000 em baixa, devido ao pouco suporte de aplicativos e falta de melhorias no formato, a Microsoft desenvolveu o JPEG XR, no qual se diz comparável com o JPEG 2000 e mais eficiente que o JPEG. Ao contrário do JPEG 2000, este novo formato proposto pela Microsoft é proprietário, ou seja, necessita de drivers e \ingles{plug-ins} específicos para codificação e decodificação das imagens em plataformas que ainda não possui suporte nativo.
 
-O formato JPEG XR suporta a compressão de imagens com e sem perda de qualidade. Em relação ao JPEG original, oferece várias melhorias chave, como:
+O formato JPEG XR suporta a compressão de imagens com e sem perda de qualidade. Em relação ao JPEG original, oferece várias melhorias, como:
 \begin{itemize}
-\item Melhor compressão dos dados
-\item Compressão sem perda de qualidade
-\item Suporte de cores com maior precisão
-\item Suporte a  mapeamento de transparência
-\item Suporte a metadados
+	\item Melhor compressão dos dados;
+	\item Compressão sem perda de qualidade (\ingles{lossless});
+	\item Suporte de cores com maior precisão;
+	\item Suporte a  mapeamento de transparência;
+	\item Suporte a metadados;
 \end{itemize}
 
-Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 11.0, Adobe AIR 3.0, Sumatra PDF 2.1, Windows Imaging Component, .NET Framework 3.0, Windows Vista, Windows 7, Windows 8, Internet Explorer 9, Internet Explorer 10, porém não é comumente utilizado em sites da \ingles{Internet}.\cite{HDPhoto}
+Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 11.0, Adobe AIR 3.0, Sumatra PDF 2.1, Windows Imaging Component, .NET Framework 3.0, Windows Vista, Windows 7, Windows 8, Internet Explorer 9, Internet Explorer 10. Apesar deste suporte, não é comumente utilizado em sites da \ingles{Internet}. \cite{HDPhoto}
 
-\section{O Primeiro Patch}
+\section{O Primeiro Patch para o Firefox}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e ainda utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
-
-Quando foi falado publicamente do nosso interesse em conduzir uma nova implementação, Vikas Arora, entrou em contato conosco e se colocou a disposição para auxiliar na correção do seu \ingles{patch} anterior ou na elaboração de um novo, também realizando a implementação do processo de codificação do formato WebP.
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
 
 \chapter{Descrição do Projeto}
 
-\section{Objetivos}
+Conforme apresentado na seção 1.3, este trabalho desesenvolve uma solução para habilitar o suporte à codificação e decodificação de imagens no formato WebP dentro do navegador Mozilla Firefox. A partir da utilização da biblioteca \ingles{libwebp} criada pela empresa Google Inc, foi elaborada e implementada uma solução que integra esta biblioteca ao código nativo do navegador, possibilitando que o navegador, em tempo de execução, exiba as imagens neste formato sem que seja necessário a uso de \ingles{plug-ins} ou ferramentas adicionais.
 
-Conforme apresentado na seção 1.3, o objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox.
-Pretende-se, realizar em tempo de execução, a renderização de imagens do formato WebP através da utilização do Mozilla Firefox, possibilitando que o navegador realize a leitura e exibição deste formato de imagem para o usuário. 
-
-A motivação do desenvolvimento desta solução, conforme descrito na seção 1.2, se dá pelo fato do formato WebP já se encontrar em um estado avançado de desenvolvimento e maturidade, e já estar recebendo suporte nativo dos browsers Google Chrome e Opera. 
-
-O aumento na capacidade de compressão do formato \ingles{WebP} trará de imediato a melhora no tempo de resposta para o \ingles{download} de imagens no navegador do usuário e também diminuirá o trafego na comunicação entre cliente e servidor. É importante ressaltar também que a popularização e utilização em massa deste novo formato irá beneficiar na diminuição do trafego de rede dentro da internet de uma maneira global, e isso resulta diretamente em uma vazão maior para outros recursos que consomem mais banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
-
-No ano de 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente. Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto será aproveitado dentro deste trabalho, será necessário uma produção a partir do zero.
-
-Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial, embora isto não seja o principal objetivo do trabalho.
-
-Como o tempo para implementação do projeto é reduzido não haverá espaço para a reescrita de uma nova API dentro do Firefox. O que será feito é a incorporação da biblioteca libwebp desenvolvida pelo Google dentro do Firefox e o trabalho efetivamente será a criação do decodificador e codificador integrado com as bibliotecas do próprio Firefox.
-
-\section{Projeto}
-
-Visando atingir os objetivos descritos para este trabalho, foi criado o seguinte cronograma de atividades a ser seguido na disciplina de Trabalho de Conclusão I:
-\begin{enumerate}
-	\item Estudo do formato WebP e da biblioteca libwebp;
-	\item Estudo e análise do código do Mozilla Firefox;
-	\item Estudo dos padrões de codificação do Mozilla Firefox;
-	\item Estudo da viabilidade de implementação;
-	\item Estudo do patch proposto em 2010;
-	\item Desenvolvimento da primeira parte da documentação para o trabalho final.
-\end{enumerate}	
-		
-\begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.5]{parte1.png}
-  \caption{Cronograma de atividades da primeira parte.}
-\end{figure}
-
-Para a segunda parte (Trabalho de Conclusão 2) do desenvolvimento do projeto, foi feito um levantamento das tarefas com base nos estudos realizados e foram identificados as seguintes necessidades:
-\begin{enumerate}
-	\item Criação de um \ingles{fork} da última versão do projeto no repositório oficial.
-	\item \ingles{Merge} da biblioteca libwebp no código do Mozilla Firefox.
-	\item Criação do codificador e decodificador para o formato WebP.
-	\item Ajuste no inicializador e carregador das imagens do Mozilla Firefox.
-	\item Criação dos arquivos para compilação.
-	\item Teste da implementação e avaliação dos resultados
-	\item Desenvolvimento da segunda e última parte da documentação para o trabalho final.
-\end{enumerate}
-
-\begin{figure}[h]
-  \centering
-    \includegraphics[scale=0.5]{parte2.png}
-  \caption{Cronograma de atividades da segunda parte.}
-\end{figure}
-
-O planejamento futuro para implementação vislumbra a criação de um \ingles{fork} a partir do projeto atual disponível na árvore oficial do Firefox. O trabalho então será feito em cima deste projeto separado para evitar que as atualizações constantes dos mantenedores atrapalhe o desenvolvimento que será realizado.
+As seções seguintes descrevem a arquitetura do navegador Mozilla Firefox, bem como seu sistema de compilação e a descrição das implementações desenvolvidas para o codificador e decodificador.
 
 \section{Ambiente de Desenvolvimento}
 
@@ -577,7 +528,7 @@ Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem 
 
 \section{Resultados Obtidos}
 
-Através da implementação realizada, o Firefox conseguiu codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.6, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.6 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. Na figura 5.7 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. Isto ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
+Através da implementação realizada, o Firefox conseguiu codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.5, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.6 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. Na figura 5.7 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. Isto ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
 
 \begin{citacao}
 	\ingles {Only support for image/png is required. User agents may support other types. If the user agent does not support the requested type, it must return the image using the PNG format.}
@@ -601,7 +552,7 @@ Através da implementação realizada, o Firefox conseguiu codificar e decodific
   \caption{Firefox com a implementação do trabalho usando o elemento \ingles{canvas}}
 \end{figure}
 
-Afim de avaliar o desempenho de forma prática, foi desenvolvido uma página da \ingles{web} composta de imagens no formato PNG e JPEG, e uma segunda página exatamente igual a primeira apenas com as imagens convertidas de PNG e JPEG para WebP. A página em sua formação original possui tamanho de 5953K e após a conversão das imagens para WebP, o tamanho de todo o \ingles{site} passou a ser de 907K. A tabela 5.3 mostra uma comparação dos tempos para carregamento da página bem como o nível de utilização de \ingles{bytes} trafegados durante o processo de abertura da página.
+Afim de avaliar o desempenho de forma prática, foi desenvolvido uma página da \ingles{web} composta de imagens no formato PNG e JPEG, e uma segunda página exatamente igual a primeira apenas com as imagens convertidas de PNG e JPEG para WebP. A página em sua formação original possui tamanho total de 5953K e após a conversão das imagens para WebP, o tamanho de todo o \ingles{site} passou a ser de 907K. A tabela 5.3 mostra uma comparação dos tempos para carregamento da página bem como o nível de utilização de \ingles{bytes} trafegados durante o processo de abertura da página.
 
 \begin{table}[ht]
         \centering
@@ -623,13 +574,15 @@ Afim de avaliar o desempenho de forma prática, foi desenvolvido uma página da 
                 }
 \end{table}
 
-O teste consistiu apenas na entrada da página principal, não houve nenhuma navegação adicional dentro do \ingles{site}. A coluna "Tempo Site normal" indica o tempo de carregamento da página com as imagens no formato PNG/JPEG. A coluna "Tempo Site WebP" indica o tempo de carregamento da página com as imagens no formato WebP. As colunas "Bytes Site normal" e "Bytes Site WebP" indicam a quantidade de bytes trafegados durante a abertura da página com as imagens no formato PNG/JPEG e com imagens no formato WebP respectivamente.
+O teste consistiu apenas na entrada da página principal, não houve nenhuma navegação adicional dentro do \ingles{site}. Na tabela 5.3 a coluna "Tempo Site normal" indica o tempo de carregamento da página com as imagens no formato PNG/JPEG. A coluna "Tempo Site WebP" indica o tempo de carregamento da página com as imagens no formato WebP. As colunas "Bytes Site normal" e "Bytes Site WebP" indicam a quantidade de bytes trafegados durante a abertura da página com as imagens no formato PNG/JPEG e com imagens no formato WebP, respectivamente.
 
 \chapter{Conclusões e Trabalhos Futuros}
 
-A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado pelo estudo feito na fundamentação teórica, na motivação e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010 após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
+A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado pelo estudo feito na fundamentação teórica, na motivação e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010, após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
 
-Apesar da evolução constante realizada pele equipe de desenvolvimento, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
+Os resultados obtidos mostraram que páginas da \ingles{web} contendo imagens no formato WebP possuem tempo de carregamento reduzido quando comparado com os outros formatos usados mais comumente. A redução no tamanho das imagens proporcionada pelo WebP também ajuda na queda do consumo de bytes trafegados pela conexão, se tornando especialmente importante para tecnologias de internet que possuem baixa vazão, como aquelas utilizadas em dispositivos móveis (celulares, \ingles{tablets} e outros). Estes resultados levam a constatação de que a economia financeira gerada pela redução no consumo de dados na conexão, pode ser um fator relevante para a popularização do formato, desde que a maior parte dos navegadores seja capaz de renderizá-lo.
+
+Mesmo com a evolução constante realizada pele equipe de desenvolvimento, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
 
 A versão 0.3.0 da libwebp, utilizada no desenvolvimento do trabalho, oferece suporte à animação de imagens quadro a quadro, semelhante ao processo realizado pelo formato GIF. Entretanto este tipo de implementação não foi realizada no desenvolvimento do codificador e do decodificador, ficando como referência para trabalhos futuros que devem ser realizados.
 
