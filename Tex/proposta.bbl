@@ -3,7 +3,7 @@
 \begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.50 }
+\abntbstabout{1.49 }
 
 \bibitem{W3schoolsHTML5}
 \abntrefinfo{W3Schools}{W3SCHOOLS}{2013}
@@ -160,5 +160,11 @@ IEEE Computer Society, 2009.}
 2011.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/www\-.w3\-.org\-/TR\-/2011\-/WD-html5-20110405\-/the-canvas-element\-.html$>$}{http://www.w3.org/TR/2011/WD-html5-20110405/the-canvas-element.html}.}
+
+\bibitem{IANA}
+\abntrefinfo{IANA}{IANA}{}
+{IANA. \emph{Image Media Types}.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.iana\-.org\-/assignments\-/media-types\-/image$>$}{http://www.iana.org/assignments/media-types/image}.}
 
 \end{thebibliography}
