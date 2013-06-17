@@ -7,6 +7,8 @@
 \usepackage{dsfont}
 \usepackage{graphicx}
 \usepackage{placeins}
+\usepackage[chapter]{algorithm}
+\usepackage{algorithmic}
 \def\Data$#1 #2 #3${#2}
 
 \autor{Matheus Eduardo B. Morais e Bruno Rubin}
@@ -397,7 +399,7 @@ Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar supo
 
 \chapter{Descrição do Projeto}
 
-Conforme apresentado na seção 1.3, este trabalho desesenvolve uma solução para habilitar o suporte à codificação e decodificação de imagens no formato WebP dentro do navegador Mozilla Firefox. A partir da utilização da biblioteca \ingles{libwebp} criada pela empresa Google Inc, foi elaborada e implementada uma solução que integra esta biblioteca ao código nativo do navegador, possibilitando que o navegador, em tempo de execução, exiba as imagens neste formato sem que seja necessário a uso de \ingles{plug-ins} ou ferramentas adicionais.
+Conforme apresentado na seção 1.3, o objetivo deste trabalho é apresentar o projeto e implementação de uma solução para habilitar o suporte à codificação e decodificação de imagens no formato WebP dentro do navegador Mozilla Firefox. A partir da utilização da biblioteca libwebp criada pela empresa Google Inc, foi elaborada e implementada uma solução que integra esta biblioteca ao código nativo do navegador, possibilitando que o navegador, em tempo de execução, exiba as imagens neste formato sem que seja necessário o uso de \ingles{plug-ins} ou ferramentas adicionais.
 
 As seções seguintes descrevem a arquitetura do navegador Mozilla Firefox, bem como seu sistema de compilação e a descrição das implementações desenvolvidas para o codificador e decodificador.
 
@@ -442,7 +444,7 @@ As principais ferramentas utilizadas para o desenvolvimento deste trabalho estã
 
 A arquitetura de desenvolvimento do Mozilla Firefox permite a extensão de funcionalidades na renderização de imagens sem a necessidade de alteração de grandes porções de código já existente. É uma arquitetura bem modular e com baixo acoplamento, o que permite a fácil integração de novos componentes quando necessário. 
 
-De uma maneira geral, o núcleo alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Com o codificador e o decodificador implementados, foi necessário fazer alterações neste módulos para que o navegador possa nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
+De uma maneira geral, o núcleo alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Com o codificador e o decodificador implementados, foi necessário fazer alterações nestes módulos para que o navegador pudesse nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
 
 \begin{figure}[h]
   \centering
@@ -450,22 +452,22 @@ De uma maneira geral, o núcleo alterado para implementar a codificação e deco
   \caption{Diagrama dos componentes e suas relações}
 \end{figure}
 
-Também foram necessárias pequenas alterações em outros pontos como por exemplo a definição do \ingles{mime-type} para o formato WebP que foi acrescentado dentro do Firefox, mas estas não caracterizaram mudanças significativas de forma que a maior parte do trabalho foi realizada em cima do núcleo de manipulação de imagens do navegador, conforme mostrado no diagrama dos componentes.
+Também foram necessárias pequenas alterações em outros pontos, como por exemplo, a definição do \ingles{mime-type} para o formato WebP que foi acrescentada dentro do Firefox, mas estas não caracterizaram mudanças significativas, de forma que a maior parte do trabalho foi realizada em cima do núcleo de manipulação de imagens do navegador, conforme mostrado no diagrama dos componentes.
 
 \section{Sistema de compilação do Firefox}
 
 Para realizar o desenvolvimento do codificador e decodificador, foi necessário entender como o sistema de compilação do Firefox funcionava. A fusão da libwebp com o Firefox só poderia ser feita caso este sistema fosse detalhadamente entendido, uma vez que o processo de compilação do mesmo serviria também para compilar o código da libwebp.
 
-O sistema de compilação ou o \ingles{build system} do Firefox é o mesmo utilizado por todos os outros softwares mantidos pela fundação Mozilla (Thunderbird, Sunbird e etc). Ele utiliza o tradicional software \ingles{autoconf} para montar os arquivos de configuração e checar dependências antes do processo de compilação, e o \ingles{make} para efetivamente realizar a compilação dos arquivos fonte. O processo é basicamente composto de 3 fases:
+O sistema de compilação ou o \ingles{build system} do Firefox, é o mesmo utilizado por todos os outros softwares mantidos pela fundação Mozilla (Thunderbird, Sunbird e etc). Ele utiliza o tradicional software \ingles{autoconf} para montar os arquivos de configuração e checar dependências antes do processo de compilação, e o \ingles{make} para efetivamente realizar a compilação dos arquivos fonte. O processo é basicamente composto de 3 fases:
 \begin{enumerate}
-        \item Configuração 
-        \item Preparação do \ingles{backend} e definição do \ingles{build} 
-        \item Invocação do \ingles{build backend}
+        \item Configuração;
+        \item Preparação do \ingles{backend} e definição do \ingles{build};
+        \item Invocação do \ingles{build backend}.
 \end{enumerate}
 
-Na primeira fase o \ingles{autoconf} é invocado para que as características do sistema e do compilador utilizados possam ser determinadas. Aqui também é realizada toda verificação por dependências necessárias para realização do \ingles{build}. A segunda fase na verdade é a aplicação da configuração encontrada na primeira fase para todo o código fonte existente que será compilado. A terceira e última fase é onde ocorre efetivamente a compilação do código, baseando-se nas configurações definidas nas fases anteriores. Desta forma o processo pode ser definido como uma árvore, caso qualquer uma das fases falhe, a próxima etapa não será iniciada.
+Na primeira fase o \ingles{autoconf} é invocado para que as características do sistema e do compilador utilizados possam ser determinadas. Aqui também é realizada toda verificação por dependências necessárias para realização do \ingles{build}. A segunda fase na verdade consiste na aplicação da configuração encontrada na primeira fase para todo o código fonte existente que será compilado. A terceira e última fase é quando ocorre efetivamente a compilação do código e a criação dos \ingles{links} entre os binários gerados, baseando-se nas configurações definidas nas fases anteriores. Ao final da terceira fase são executados os testes automatizados para validar a funcionalidade de cada item compilado. Desta forma o processo pode ser definido como uma árvore, caso qualquer uma das fases falhe, a próxima etapa não será iniciada.
 
-Toda orquestração do processo de compilação é baseada no arquivo moz.build existente dentro de cada diretório que contém um fonte a ser compilado ou a ser exportado como referência (arquivos de cabeçalho por exemplo). A sintaxe de definição do arquivo moz.build obedece as regras regidas pela linguagem Python. Na figura 5.4 é possível observar como a hierarquia está montada e como cada software está envolvido dentro do processo. Como existem várias linguagens de programação existentes dentro do Firefox, a fase de preparação fica responsável por acionar o compilador correto para cada fonte.
+Toda orquestração do processo de compilação é baseada no arquivo moz.build existente dentro de cada diretório que contém um código-fonte a ser compilado ou a ser exportado como referência (arquivos de cabeçalho por exemplo). A sintaxe de definição do arquivo moz.build obedece as regras regidas pela linguagem Python. Na figura 5.2 é possível observar como a hierarquia está montada e como cada software está envolvido dentro do processo. Como existem várias linguagens de programação existentes dentro do Firefox, a fase de preparação fica responsável por acionar o compilador correto para cada fonte.
 
 \begin{figure}[h]
   \centering
@@ -478,20 +480,35 @@ Toda orquestração do processo de compilação é baseada no arquivo moz.build 
 O Firefox é desenvolvido na linguagem de programação C++ e utiliza os conceitos de orientação à objetos de forma massiva. A criação do decodificador passou primeiramente por uma avaliação dos outros decodificadores de imagem já existentes dentro do Firefox, mais especificamente o nsJPEGDecoder para decodificação de imagens JPEG e o nsPNGDecoder para decodificação de imagens PNG. Para a implementação foi necessário criar uma nova classe para a decodificação do formato WEBP que herdasse a classe Decoder original do Firefox. A classe Decoder por sua vez parte da premissa que os seguintes métodos precisam ser implementados:
 
 \begin{itemize}
-        \item void InitInternal
-        \item void WriteInternal
-        \item void FinishInternal
+        \item void InitInternal;
+        \item void WriteInternal;
+        \item void FinishInternal.
 \end{itemize}
 
-De uma forma bastante simples, estes métodos são uma espécie de gancho que servem para inicializar o processo de decodificação, realizar efetivamente a decodificação e finalizar o processo para a classe Decoder. O processo de inicialização é utilizado para repassar o \ingles{buffer} da imagem para o decodificador responsável através do método InitInternal. De posse da imagem a decodificação é efetivamente realizada pelo método WriteInternal. O acionamento do método FinishInternal siginifica para o Firefox que a imagem já foi devidamente decodificada e não há mais nada a ser realizado.
+De uma forma bastante simples, estes métodos são uma espécie de conexão que servem para inicializar o processo de decodificação, realizar efetivamente a decodificação e finalizar o processo para a classe Decoder. O processo de inicialização é utilizado para repassar o \ingles{buffer} da imagem para o decodificador responsável através do método InitInternal. De posse da imagem a decodificação é efetivamente realizada pelo método WriteInternal. O acionamento do método FinishInternal siginifica para o Firefox que a imagem já foi devidamente decodificada e não há mais nada a ser realizado.
 
-Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O buffer resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Black}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox após a execução do método FinishInternal.
+Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O \ingles{buffer} resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Blue}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox após a execução do método FinishInternal. O resumo desta rotina está descrita no algoritmo 5.1.
 
-Como se pode observar em nenhum momento é necessário saber quais são os algoritmos utilizados para realizar a decodificação. Toda esta complexidade fica encapsulada dentro da libwebp que é instrumentada pelas classes criadas para realizar o processo.
+\floatname{algorithm}{Algoritmo}
+\begin{algorithm}[H]
+\caption{Processo de decodificação}
+\label{Decodificacao}
+\begin{algorithmic}
+	\STATE Execução do método InitInternal(\ingles{buffer})
+	\STATE Execução do método WriteInternal
+	\FOR{Ler linha a linha do \ingles{buffer} até a última}
+	\STATE Decodificar a linha do \ingles{buffer} WebP
+	\STATE Executar o método gfxPackedPixel para preencher cada pixel da imagem
+	\ENDFOR
+	\STATE Execução do método FinishInternal para liberação de memória.
+\end{algorithmic}
+\end{algorithm}
+
+Como se pode observar, em nenhum momento é necessário saber quais são os algoritmos utilizados para realizar a decodificação. Toda esta complexidade fica encapsulada dentro da libwebp que é instrumentada pelas classes criadas para realizar o processo.
 
 \section{Implementação do codificador}
 
-Antes de realizar a implementação do codificador dentro do Firefox, foi preciso entender a biblioteca de codificação da libwebp. O próprio cabeçalho principal da biblioteca (encode.h) é a documentação para o processo de codificação. Existem 3 tipos de estruturas fundamentais para o codificador. Abaixo o detalhamento destas estruturas e a sua respectiva função.
+Antes de realizar a implementação do codificador dentro do Firefox, foi preciso entender a biblioteca de codificação da libwebp. O próprio cabeçalho principal da biblioteca (encode.h) é a documentação para o processo de codificação. Existem 3 tipos de estruturas fundamentais para o codificador. A tabela 5.2 apresenta o detalhamento destas estruturas e a sua respectiva função.
 
 \begin{table}[ht]
         \centering
@@ -520,15 +537,28 @@ Assim como no desenvolvimento do decodificador, a criação do codificador passo
 	\item InitFromData, StartImageEncode, GetImageBufferUsed, GetImageBuffer, AddImageFrame, EndImageEncode, Close, Available, Read, ReadSegments, IsNonBlocking, AsyncWait, CloseWithStatus.
 \end{itemize}
 
-Dos 13 métodos listados a interação com a libwebp foi criada dentro dos métodos StartImageEncode, AddImageFrame e EndImageEncode. Tudo começa no método orquestrador InitFromData, ele é o primeiro método a ser chamado e a sua função é receber o \ingles{buffer} do chamador. A partir dai o método IniFromData executa o método StartImageEncode que é responsável por inicializar as estruturas de dados WebPPicture, WebPConfig e WebPMemoryWriter. O método AddImageFrame possui uma iteração que lê linha a linha do \ingles{buffer} e realiza a construção da codificação através do método WebPMemoryWrite da libwebp. Este método faz a gravação dos dados dentro da estrutura WebPPicture que é efetivamente a imagem no formato WebP. O último método chamado é o EndImageEncode que realiza a liberação da memória utilizada por todo o processo de codificação.
+Dos 13 métodos listados a interação com a libwebp foi criada dentro dos métodos StartImageEncode, AddImageFrame e EndImageEncode. Tudo começa no método InitFromData, ele é o primeiro método a ser chamado e tem como função receber o \ingles{buffer} do chamador. A partir daí, o método IniFromData executa o método StartImageEncode que é responsável por inicializar as estruturas de dados WebPPicture, WebPConfig e WebPMemoryWriter. O método AddImageFrame possui uma iteração que lê linha a linha do \ingles{buffer} e realiza a construção da codificação através do método WebPMemoryWrite da libwebp. Este método faz a gravação dos dados dentro da estrutura WebPPicture que é efetivamente a imagem no formato WebP. O último método chamado é o EndImageEncode que realiza a liberação da memória utilizada por todo o processo de codificação. O resumo desta rotina está descrita no algoritmo 5.2.
+
+\begin{algorithm}
+\caption{Processo de codificação}
+\label{Codificacao}
+\begin{algorithmic}
+        \STATE Execução do método InitFromData(\ingles{buffer})
+        \STATE Execução do método AddImageFrame
+        \FOR{Ler linha a linha do \ingles{buffer} até a última}
+        \STATE Codifica a linha no formato WebP através do método WebPMemoryWrite no tipo WebPPicture
+        \ENDFOR
+        \STATE Execução do método EndImageEncode para liberação de memória.
+\end{algorithmic}
+\end{algorithm}
 
 Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem já está devidamente codificada no formato WebP.
 
 \section{Resultados Obtidos}
 
-Através da implementação realizada, o Firefox conseguiu codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.5, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.6 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. 
+A implementação realizada e descrita neste trabalho permitiu ao Firefox codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.3, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.4 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. 
 
-Na figura 5.7 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens, pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. 
+Na figura 5.5 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens, pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. 
 
 Esta substituição de formatos na exibição ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
 \begin{citacao}
@@ -609,15 +639,15 @@ A tabela 5.4 mostra uma comparação dos tempos para carregamento da página bem
 
 A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox foi possível conforme demonstrado nos resultados obtidos e no detalhamento das informações de implementação. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010, após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
 
-Os resultados obtidos mostraram que páginas da \ingles{web} contendo imagens no formato WebP possuem tempo de carregamento reduzido quando comparado com os outros formatos usados mais comumente. A redução no tamanho das imagens proporcionada pelo WebP também ajuda na diminuição do consumo de bytes trafegados pela conexão, se tornando especialmente importante para tecnologias de internet que possuem baixa vazão, como aquelas utilizadas em dispositivos móveis (celulares, \ingles{tablets} e outros). 
+Os resultados obtidos mostraram que páginas da \ingles{web} contendo imagens no formato WebP possuem tempo de carregamento reduzido quando comparado com os outros formatos usados mais comumente. A redução no tamanho das imagens proporcionada pelo WebP também ajuda na diminuição do consumo de bytes trafegados pela conexão, se tornando especialmente importante para tecnologias de internet que possuem performance limitada, como aquelas utilizadas em dispositivos móveis (celulares, \ingles{tablets} e outros). 
 
-Estes resultados levam a constatação de que a economia financeira gerada pela redução no consumo de dados na conexão, pode ser um fator relevante para a popularização do formato, desde que a maior parte dos navegadores seja capaz de renderizá-lo.
+Estes resultados levam a constatação de que a economia gerada pela redução no consumo de dados na conexão, pode ser um fator relevante para a popularização do formato, desde que a maior parte dos navegadores seja capaz de renderizá-lo.
 
 Mesmo com a evolução constante realizada pela equipe de desenvolvimento do WebP, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. 
 
 O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
 
-A versão 0.3.0 da libwebp, utilizada no desenvolvimento do trabalho, oferece suporte à animação de imagens quadro a quadro, semelhante ao processo realizado pelo formato GIF. Entretanto este tipo de implementação não foi realizada no desenvolvimento do codificador e do decodificador, ficando como referência para trabalhos futuros que devem ser realizados.
+A versão 0.3.0 da libwebp, utilizada no desenvolvimento do trabalho, oferece suporte à animação de imagens quadro a quadro, semelhante ao processo realizado pelo formato GIF. Entretanto este tipo de implementação não foi realizada no desenvolvimento do codificador e do decodificador, ficando como referência para trabalhos futuros que devem ser realizados. A criação de um \ingles{script} para realizar testes automatizados de funcionalidade para codificação e decodificação ao final do processo de compilação, também é uma necessidade para trabalhos futuros.
 
 \bibliography{proposta}
 

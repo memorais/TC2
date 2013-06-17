@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposta.aux
 The style file: abnt-num.bst
@@ -15,30 +15,30 @@ Database file #2: proposta.bib
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
-while executing---line 2123 of file abnt-num.bst
+while executing---line 2129 of file abnt-num.bst
 Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
-while executing---line 2123 of file abnt-num.bst
+while executing---line 2129 of file abnt-num.bst
 Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
-while executing---line 2123 of file abnt-num.bst
+while executing---line 2129 of file abnt-num.bst
 Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
-while executing---line 2123 of file abnt-num.bst
+while executing---line 2129 of file abnt-num.bst
 Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
-while executing---line 2123 of file abnt-num.bst
+while executing---line 2129 of file abnt-num.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Name 1 in "Francesca De Simone, Lutz Goldmann, Jong-Seok Lee, and Touradj Ebrahimi" has a comma at the end for entry VP8Performance
-while executing---line 2178 of file abnt-num.bst
+while executing---line 2184 of file abnt-num.bst
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-num.bst versao 1.49           |
+| Estilo bibliografico abnt-num.bst versao 1.50           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
 You've used 25 entries,
-            6523 wiz_defined-function locations,
+            6522 wiz_defined-function locations,
             1296 strings with 12425 characters,
-and the built_in function-call counts, 56917 in all, are:
+and the built_in function-call counts, 57177 in all, are:
 = -- 8815
 > -- 364
 < -- 1703
@@ -51,23 +51,23 @@ call.type$ -- 26
 change.case$ -- 187
 chr.to.int$ -- 27
 cite$ -- 23
-duplicate$ -- 8123
-empty$ -- 1278
+duplicate$ -- 8163
+empty$ -- 1318
 format.name$ -- 586
-if$ -- 11143
+if$ -- 11223
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 398
+missing$ -- 418
 newline$ -- 136
 num.names$ -- 88
-pop$ -- 713
+pop$ -- 733
 preamble$ -- 1
 purify$ -- 82
 quote$ -- 0
-skip$ -- 8357
+skip$ -- 8377
 stack$ -- 1
 substring$ -- 2212
-swap$ -- 1901
+swap$ -- 1941
 text.length$ -- 34
 text.prefix$ -- 0
 top$ -- 0

@@ -7,6 +7,8 @@
 \usepackage{dsfont}
 \usepackage{graphicx}
 \usepackage{placeins}
+\usepackage[chapter]{algorithm}
+\usepackage{algorithmic}
 \def\Data$#1 #2 #3${#2}
 
 \autor{Matheus Eduardo B. Morais e Bruno Rubin}
@@ -485,7 +487,22 @@ O Firefox é desenvolvido na linguagem de programação C++ e utiliza os conceit
 
 De uma forma bastante simples, estes métodos são uma espécie de conexão que servem para inicializar o processo de decodificação, realizar efetivamente a decodificação e finalizar o processo para a classe Decoder. O processo de inicialização é utilizado para repassar o \ingles{buffer} da imagem para o decodificador responsável através do método InitInternal. De posse da imagem a decodificação é efetivamente realizada pelo método WriteInternal. O acionamento do método FinishInternal siginifica para o Firefox que a imagem já foi devidamente decodificada e não há mais nada a ser realizado.
 
-Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O \ingles{buffer} resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Blue}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox após a execução do método FinishInternal.
+Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDecBuffer que através da chamada do método WebPIDecGetRGB da classe decode.h do WEBP, captura as informações de altura e largura da imagem baseadas no \ingles{buffer} e realiza a decodificação. O \ingles{buffer} resultante é uma \ingles{array} no formato RGB (\ingles{Red, Green and Blue}), adicionalmente com o canal alfa para transparência caso necessário. O método gfxPackedPixel é chamado por sua vez para realizar o preenchimento de cada pixel da imagem com o valor correspondente. O resultado é a renderização da imagem utilizando os mecanismos já implementados do Firefox após a execução do método FinishInternal. O resumo desta rotina está descrita no algoritmo 5.1.
+
+\floatname{algorithm}{Algoritmo}
+\begin{algorithm}[H]
+\caption{Processo de decodificação}
+\label{Decodificacao}
+\begin{algorithmic}
+	\STATE Execução do método InitInternal(\ingles{buffer})
+	\STATE Execução do método WriteInternal
+	\FOR{Ler linha a linha do \ingles{buffer} até a última}
+	\STATE Decodificar a linha do \ingles{buffer} WebP
+	\STATE Executar o método gfxPackedPixel para preencher cada pixel da imagem
+	\ENDFOR
+	\STATE Execução do método FinishInternal para liberação de memória.
+\end{algorithmic}
+\end{algorithm}
 
 Como se pode observar, em nenhum momento é necessário saber quais são os algoritmos utilizados para realizar a decodificação. Toda esta complexidade fica encapsulada dentro da libwebp que é instrumentada pelas classes criadas para realizar o processo.
 
@@ -520,7 +537,20 @@ Assim como no desenvolvimento do decodificador, a criação do codificador passo
 	\item InitFromData, StartImageEncode, GetImageBufferUsed, GetImageBuffer, AddImageFrame, EndImageEncode, Close, Available, Read, ReadSegments, IsNonBlocking, AsyncWait, CloseWithStatus.
 \end{itemize}
 
-Dos 13 métodos listados a interação com a libwebp foi criada dentro dos métodos StartImageEncode, AddImageFrame e EndImageEncode. Tudo começa no método InitFromData, ele é o primeiro método a ser chamado e tem como função receber o \ingles{buffer} do chamador. A partir daí, o método IniFromData executa o método StartImageEncode que é responsável por inicializar as estruturas de dados WebPPicture, WebPConfig e WebPMemoryWriter. O método AddImageFrame possui uma iteração que lê linha a linha do \ingles{buffer} e realiza a construção da codificação através do método WebPMemoryWrite da libwebp. Este método faz a gravação dos dados dentro da estrutura WebPPicture que é efetivamente a imagem no formato WebP. O último método chamado é o EndImageEncode que realiza a liberação da memória utilizada por todo o processo de codificação.
+Dos 13 métodos listados a interação com a libwebp foi criada dentro dos métodos StartImageEncode, AddImageFrame e EndImageEncode. Tudo começa no método InitFromData, ele é o primeiro método a ser chamado e tem como função receber o \ingles{buffer} do chamador. A partir daí, o método IniFromData executa o método StartImageEncode que é responsável por inicializar as estruturas de dados WebPPicture, WebPConfig e WebPMemoryWriter. O método AddImageFrame possui uma iteração que lê linha a linha do \ingles{buffer} e realiza a construção da codificação através do método WebPMemoryWrite da libwebp. Este método faz a gravação dos dados dentro da estrutura WebPPicture que é efetivamente a imagem no formato WebP. O último método chamado é o EndImageEncode que realiza a liberação da memória utilizada por todo o processo de codificação. O resumo desta rotina está descrita no algoritmo 5.2.
+
+\begin{algorithm}
+\caption{Processo de codificação}
+\label{Codificacao}
+\begin{algorithmic}
+        \STATE Execução do método InitFromData(\ingles{buffer})
+        \STATE Execução do método AddImageFrame
+        \FOR{Ler linha a linha do \ingles{buffer} até a última}
+        \STATE Codifica a linha no formato WebP através do método WebPMemoryWrite no tipo WebPPicture
+        \ENDFOR
+        \STATE Execução do método EndImageEncode para liberação de memória.
+\end{algorithmic}
+\end{algorithm}
 
 Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem já está devidamente codificada no formato WebP.
 
