@@ -395,7 +395,9 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \section{O Primeiro Patch para o Firefox}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. 
+
+Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
 
 \chapter{Descrição do Projeto}
 
@@ -444,7 +446,9 @@ As principais ferramentas utilizadas para o desenvolvimento deste trabalho estã
 
 A arquitetura de desenvolvimento do Mozilla Firefox permite a extensão de funcionalidades na renderização de imagens sem a necessidade de alteração de grandes porções de código já existente. É uma arquitetura bem modular e com baixo acoplamento, o que permite a fácil integração de novos componentes quando necessário. 
 
-De uma maneira geral, o núcleo alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Com o codificador e o decodificador implementados, foi necessário fazer alterações nestes módulos para que o navegador pudesse nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
+De uma maneira geral, o núcleo alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Com o codificador e o decodificador implementados, foi necessário fazer alterações nestes módulos para que o navegador pudesse nativamente manipular as imagens no formato WebP. 
+
+Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
 
 \begin{figure}[h]
   \centering
