@@ -26,6 +26,6 @@
 \contentsline {section}{\numberline {5.3}Sistema de compila\IeC {\c c}\IeC {\~a}o do Firefox}{30}{section.abstract.5.3}
 \contentsline {section}{\numberline {5.4}Implementa\IeC {\c c}\IeC {\~a}o do decodificador}{30}{section.abstract.5.4}
 \contentsline {section}{\numberline {5.5}Implementa\IeC {\c c}\IeC {\~a}o do codificador}{32}{section.abstract.5.5}
-\contentsline {section}{\numberline {5.6}Resultados Obtidos}{33}{section.abstract.5.6}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{37}{chapter.abstract.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{39}{chapter.abstract.6}
+\contentsline {section}{\numberline {5.6}Resultados Obtidos}{34}{section.abstract.5.6}
+\contentsline {chapter}{\numberline {6}Conclus\IeC {\~o}es e Trabalhos Futuros}{38}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{40}{chapter.abstract.6}
