@@ -98,13 +98,11 @@ Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Googl
 
 \section{Objetivo}
 
-O objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. 
+O objetivo principal deste trabalho é integrar ao código nativo do Mozilla Firefox, o uso da biblioteca \ingles{libwebp} para que o navegador possa realizar a decodificação e codificação de imagens no formato WebP em tempo de execução, sem que seja necessário a utilização de plug-ins ou ferramentas adicionais.
 
-A implementação do decodificador irá permitir ao usuário acessar e exibir, através do navegador, qualquer imagem que estiver no formato WebP. Já o codificador irá possibilitar que \ingles{sites} desenvolvidos utilizando tecnologia HTML5, e que possuam a funcionalidade \ingles{canvas}, possam gerar gráficos no formato WebP através do próprio navegador, sem que seja necessário a utilização de qualquer software adicional \cite{pfeiffer2010definitive}.
+A implementação do decodificador é fundamental para que o navegador consiga realizar a exibição de imagens que estiverem no formato WebP. Já a implementação do codificador, possibilita que \ingles{sites} escritos na linguagem HTML5 e que possuem a funcionalidade \ingles{canvas}, possam gerar gráficos no formato WebP.
 
-Embora a implementação do suporte ao \ingles{WebP} esteja disponível somente para dois navegadores (Chrome e Opera), estes constituem um percentual de uso de cerca de 42,38\% de todos os navegadores utilizados dentro da internet nos dias de hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 62,14\%, já que cerca de 19,76\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
-
-O trabalho desenvolvido foi entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não está no foco do projeto. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas somente em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
+O código implementado foi submetido à comunidade do Firefox para contribuir com o desenvolvimento da ferramenta e os \ingles{feedbacks} recebidos entrarão como proposta para trabalhos e implementações futuras.
 
 \section{Organização do Texto}
 
