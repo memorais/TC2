@@ -400,16 +400,16 @@ Esta primeira tentativa também utilizava diversas estruturas e padrões obsolet
 
 \section{Libwebpjs}
 
-O projeto libwebpjs \cite{libwebpjs} se propõem a implementar um codificador e um decodificador de imagens no formato WebP utilizando somente a linguagem de programação JavaScript. A última versão da implementação disponível é a 0.1.3 de agosto de 2011. Foi observado que a implementação se baseia em premissas inicialmente propostas na primeira versão da especificação do formato WebP e que já não existem mais nas últimas versões. Os testes mostraram que nem todas as figuras conseguem ser renderizadas corretamente e em alguns navegadores, como o Opera por exemplo, as imagens são repetidamente distorcidas durante a navegação no site, conforme mostra a figura X.X.
-
-A implementação da renderização de imagens usando JavaScript tem a praticidade de não envolver todos os detalhes existentes no caso de uma abordagem para codificação e decodificação nativa dentro do \ingles{browser}. Não é preciso conhecer os subsistemas para manipulação de imagem que um navegador possui. A praticidade no desenvolvimento possui uma contrapartida que é a realização do
- processo por uma linguagem interpretada, resultando em uma queda de performance na codificação e decodificação, quando comparado ao mesmo processo sendo executado por uma linguagem compilada. Outro fator relevante é que via de regra, as implementações nos processos de renderização de imagens são realizadas internamente dentro dos navegadores, nunca por \ingles{plugins} adicionais ou por meios externos, justamente pelas questões de performance e segurança.
+O projeto libwebpjs \cite{libwebpjs} se propõem a implementar um codificador e um decodificador de imagens no formato WebP utilizando somente a linguagem de programação JavaScript. A última versão da implementação disponível é a 0.1.3 de agosto de 2011. Foi observado que a implementação se baseia em premissas inicialmente propostas na primeira versão da especificação do formato WebP e que já não existem mais nas últimas versões. Os testes mostraram que nem todas as figuras conseguem ser renderizadas corretamente e em alguns navegadores, como o Opera por exemplo, as imagens são repetidamente distorcidas durante a navegação no site, conforme mostra a figura 4.1.
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.4]{Erro_webpjs.png}
+    \includegraphics[scale=0.3]{Erro_webpjs.png}
   \caption{Distorções na exibição das imagens no formato WebP}
 \end{figure}
+
+A implementação da renderização de imagens usando JavaScript tem a praticidade de não envolver todos os detalhes existentes no caso de uma abordagem para codificação e decodificação nativa dentro do \ingles{browser}. Não é preciso conhecer os subsistemas para manipulação de imagem que um navegador possui. A praticidade no desenvolvimento possui uma contrapartida que é a realização do
+ processo por uma linguagem interpretada, resultando em uma queda de performance na codificação e decodificação, quando comparado ao mesmo processo sendo executado por uma linguagem compilada. Outro fator relevante é que via de regra, as implementações nos processos de renderização de imagens são realizadas internamente dentro dos navegadores, nunca por \ingles{plugins} adicionais ou por meios externos, justamente pelas questões de performance e segurança.
 
 \chapter{Descrição do Projeto}
 
