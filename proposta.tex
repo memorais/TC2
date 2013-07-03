@@ -550,7 +550,7 @@ Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDec
 \begin{algorithmic}
 	\STATE Execução do método InitInternal(\ingles{buffer})
 	\STATE Execução do método WriteInternal
-	\FOR{Para cada linha a linha do \ingles{buffer}}
+	\FOR{Para cada linha do \ingles{buffer}}
 	\STATE Decodificar a linha do \ingles{buffer} WebP
 	\STATE Executar o método gfxPackedPixel para preencher cada pixel da imagem
 	\ENDFOR
@@ -608,7 +608,7 @@ Dos 13 métodos listados a interação com a libwebp foi criada dentro dos méto
 \begin{algorithmic}
         \STATE Execução do método InitFromData(\ingles{buffer})
         \STATE Execução do método AddImageFrame
-        \FOR{Para cada linha a linha do \ingles{buffer}}
+        \FOR{Para cada linha do \ingles{buffer}}
         \STATE Codifica a linha no formato WebP através do método WebPMemoryWrite no tipo WebPPicture
         \ENDFOR
         \STATE Execução do método EndImageEncode para liberação de memória.
