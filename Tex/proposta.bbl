@@ -40,13 +40,6 @@ Blog, \emph{Using WebP to Improve Speed}. 2013.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/blog\-.chromium\-.org\-/2013\-/02\-/using-webp-to-improve-speed\-.html$>$}{http://blog.chromium.org/2013/02/using-webp-to-improve-speed.html}.}
 
-\bibitem{pfeiffer2010definitive}
-\abntrefinfo{Pfeiffer}{PFEIFFER}{2010}
-{PFEIFFER, S. \emph{The Definitive Guide to HTML5 Video}. Apress, 2010.
-  (Definitive Guide Series).
-ISBN 9781430230908. Dispon{\'\i}vel em:
-  \htmladdnormallink{$<$http:\-/\-/books\-.google\-.com\-.br\-/books?id=CypiQKqHMesC$>$}{http://books.google.com.br/books?id=CypiQKqHMesC}.}
-
 \bibitem{WebStory}
 \abntrefinfo{Communications}{COMMUNICATIONS}{2008}
 {COMMUNICATIONS, C.~W. How the web began.
@@ -123,11 +116,24 @@ Dispon{\'\i}vel em: $<$https:\-/\-/bugzilla\-.mozilla\-.org\-/show\underline{\
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/muizelaar\-.blogspot\-.com\-.br\-/2011\-/04\-/webp\-.html$>$}{http://muizelaar.blogspot.com.br/2011/04/webp.html}.}
 
+\bibitem{webp-npapi-linux}
+\abntrefinfo{Projeto\ldots}{PROJETO\ldots}{2011}
+{PROJETO webp-npapi-linux. 2011.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/code\-.google\-.com\-/p\-/webp-npapi-linux\-/$>$}{http://code.google.com/p/webp-npapi-linux/}.}
+
 \bibitem{RIFFContainer}
 \abntrefinfo{Microsoft}{MICROSOFT}{2012}
 {MICROSOFT. \emph{Resource Interchange File Format Services}. 2012.
 Dispon{\'\i}vel em:
   \htmladdnormallink{$<$http:\-/\-/msdn\-.microsoft\-.com\-/en-us\-/library\-/windows\-/desktop\-/dd798636(v=vs\-.85)\-.aspx$>$}{http://msdn.microsoft.com/en-us/library/windows/desktop/dd798636(v=vs.85).aspx}.}
+
+\bibitem{WebPContainer}
+\abntrefinfo{Google}{GOOGLE}{2013}
+{GOOGLE. \emph{WebP Container Specification}. 2013.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/developers\-.google\-.com\-/speed\-/webp\-/docs\-/riff\underline{\
+  }container$>$.}
 
 \bibitem{VP8Performance}
 \abntrefinfo{Simone Lutz~Goldmann e Ebrahimi}{SIMONE LUTZ~GOLDMANN;
@@ -153,6 +159,12 @@ Dispon{\'\i}vel em:
 {DUFAUX, F.; SULLIVAN, G.; EBRAHIMI, T. The jpeg xr image coding standard
   [standards in a nutshell].
 IEEE Computer Society, 2009.}
+
+\bibitem{libwebpjs}
+\abntrefinfo{Homberger}{HOMBERGER}{2011}
+{HOMBERGER, D. \emph{Projeto Libwebpjs}. 2011.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/libwebpjs\-.appspot\-.com\-/v0\-.1\-.3$>$}{http://libwebpjs.appspot.com/v0.1.3}.}
 
 \bibitem{CanvasElement}
 \abntrefinfo{W3C}{W3C}{2011}

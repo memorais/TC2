@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 JUN 2013 20:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 JUL 2013 01:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,7 +790,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...o decodificador}{30}{section.abstract.5.4}
+l.27 ...~a}o do Firefox}{32}{section.abstract.5.3}
                                                    [4
 
 ])
@@ -825,14 +825,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 [8
 
-] <Plot3_cdfcompr.png, id=247, 950.55125pt x 562.1pt>
+] <Plot3_cdfcompr.png, id=264, 950.55125pt x 562.1pt>
 File: Plot3_cdfcompr.png Graphic file (type png)
 
 <use Plot3_cdfcompr.png>
 Package pdftex.def Info: Plot3_cdfcompr.png used on input line 71.
 (pdftex.def)             Requested size: 380.21376pt x 224.83601pt.
 
-<BrowserCounter_2013.png, id=251, 857.2025pt x 501.875pt>
+<BrowserCounter_2013.png, id=268, 857.2025pt x 501.875pt>
 File: BrowserCounter_2013.png Graphic file (type png)
 
 <use BrowserCounter_2013.png>
@@ -854,61 +854,61 @@ red
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.93 \newpage
-              <./BrowserCounter_2013.png>] [11] [12]
+l.96 \end{citacao}
+                   <./BrowserCounter_2013.png>] [11] [12]
 Cap\'{\i }tulo 2.
 [13
 
 ]
-Overfull \hbox (0.79626pt too wide) in paragraph at lines 146--147
+Overfull \hbox (0.79626pt too wide) in paragraph at lines 145--146
 []\OT1/ptm/m/n/12 O na-ve-ga-dor []e, tal-vez, o soft-ware mais am-pla-mente ut
 i-li-zado na hist[]oria e teve uma evolu[][]ao
  []
 
-[14] <web_basic.png, id=300, 1157.32375pt x 366.36874pt>
+[14] <web_basic.png, id=315, 1157.32375pt x 366.36874pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
-Package pdftex.def Info: web_basic.png used on input line 193.
+Package pdftex.def Info: web_basic.png used on input line 192.
 (pdftex.def)             Requested size: 462.9213pt x 146.54489pt.
 
-Overfull \hbox (7.67719pt too wide) in paragraph at lines 193--194
+Overfull \hbox (7.67719pt too wide) in paragraph at lines 192--193
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 201.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 200.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 201.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
  [15pdfTeX warning (ext4): destination with the same identifier (name{table.abs
 tract.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.206 \end{itemize}
+l.205 \end{itemize}
                    pdfTeX warning (ext4): destination with the same identifier 
 (name{figure.abstract.2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.206 \end{itemize}
+l.205 \end{itemize}
                     <./web_basic.png>] [16] [17]
 Cap\'{\i }tulo 3.
 [18
 
-] [19] <LossyLossLessExtended.png, id=338, 632.3625pt x 529.98pt>
+] [19] <LossyLossLessExtended.png, id=355, 632.3625pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
-Package pdftex.def Info: LossyLossLessExtended.png used on input line 272.
+Package pdftex.def Info: LossyLossLessExtended.png used on input line 271.
 (pdftex.def)             Requested size: 316.18048pt x 264.98933pt.
 
-<AlphaChunk.png, id=339, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=358, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
-Package pdftex.def Info: AlphaChunk.png used on input line 280.
+Package pdftex.def Info: AlphaChunk.png used on input line 279.
 (pdftex.def)             Requested size: 237.28229pt x 53.39854pt.
 
 [20pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
@@ -916,48 +916,48 @@ tract.3.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.288 D
+l.287 D
        e acordo com a avaliação feita no código fonte e nas definições ...
 pdfTeX warning (ext4): destination with the same identifier (name{figure.abstra
 ct.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.288 D
+l.287 D
        e acordo com a avaliação feita no código fonte e nas definições ...
  <./LossyLossLessExtended.png> <./AlphaChunk.png>]
-<Imagem1JPEG.png, id=345, 432.61626pt x 325.215pt>
+<Imagem1JPEG.png, id=364, 432.61626pt x 325.215pt>
 File: Imagem1JPEG.png Graphic file (type png)
  <use Imagem1JPEG.png>
-Package pdftex.def Info: Imagem1JPEG.png used on input line 310.
+Package pdftex.def Info: Imagem1JPEG.png used on input line 309.
 (pdftex.def)             Requested size: 216.3076pt x 162.6071pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagem1WEBP.png, id=346, 432.61626pt x 325.215pt>
+<Imagem1WEBP.png, id=365, 432.61626pt x 325.215pt>
 File: Imagem1WEBP.png Graphic file (type png)
  <use Imagem1WEBP.png>
-Package pdftex.def Info: Imagem1WEBP.png used on input line 316.
+Package pdftex.def Info: Imagem1WEBP.png used on input line 315.
 (pdftex.def)             Requested size: 216.3076pt x 162.6071pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] <Imagem2JPEG.png, id=351, 514.92375pt x 338.26375pt>
+[21] <Imagem2JPEG.png, id=370, 514.92375pt x 338.26375pt>
 File: Imagem2JPEG.png Graphic file (type png)
 
 <use Imagem2JPEG.png>
-Package pdftex.def Info: Imagem2JPEG.png used on input line 324.
+Package pdftex.def Info: Imagem2JPEG.png used on input line 323.
 (pdftex.def)             Requested size: 257.46124pt x 169.13145pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagem2WEBP.png, id=352, 514.92375pt x 339.2675pt>
+<Imagem2WEBP.png, id=371, 514.92375pt x 339.2675pt>
 File: Imagem2WEBP.png Graphic file (type png)
  <use Imagem2WEBP.png>
-Package pdftex.def Info: Imagem2WEBP.png used on input line 330.
+Package pdftex.def Info: Imagem2WEBP.png used on input line 329.
 (pdftex.def)             Requested size: 257.46124pt x 169.63333pt.
 
 
@@ -968,29 +968,29 @@ tract.3.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.335 
+l.334 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 abstract.3.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.335 
+l.334 
        <./Imagem1JPEG.png> <./Imagem1WEBP.png>]
-<Imagem3AlphaPNG.png, id=357, 418.56375pt x 320.19624pt>
+<Imagem3AlphaPNG.png, id=376, 418.56375pt x 320.19624pt>
 File: Imagem3AlphaPNG.png Graphic file (type png)
 
 <use Imagem3AlphaPNG.png>
-Package pdftex.def Info: Imagem3AlphaPNG.png used on input line 338.
+Package pdftex.def Info: Imagem3AlphaPNG.png used on input line 337.
 (pdftex.def)             Requested size: 209.28136pt x 160.09772pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagem3AlphaWEBP.png, id=358, 418.56375pt x 321.2pt>
+<Imagem3AlphaWEBP.png, id=377, 418.56375pt x 321.2pt>
 File: Imagem3AlphaWEBP.png Graphic file (type png)
 
 <use Imagem3AlphaWEBP.png>
-Package pdftex.def Info: Imagem3AlphaWEBP.png used on input line 344.
+Package pdftex.def Info: Imagem3AlphaWEBP.png used on input line 343.
 (pdftex.def)             Requested size: 209.28136pt x 160.59961pt.
 
 
@@ -1001,260 +1001,341 @@ tract.3.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 \chapter
+l.349 \chapter
               {Trabalhos Relacionados}pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.abstract.3.6}) has been already used, duplicate
  ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 \chapter
+l.349 \chapter
               {Trabalhos Relacionados} <./Imagem2JPEG.png> <./Imagem2WEBP.png>]
 [24pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
 tract.3.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 \chapter
+l.349 \chapter
               {Trabalhos Relacionados}pdfTeX warning (ext4): destination with t
 he same identifier (name{figure.abstract.3.8}) has been already used, duplicate
  ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.350 \chapter
+l.349 \chapter
               {Trabalhos Relacionados} <./Imagem3AlphaPNG.png> <./Imagem3AlphaW
 EBP.png>]
 Cap\'{\i }tulo 4.
 [25
 
-] [26] [27]
-Cap\'{\i }tulo 5.
+] [26]
+Overfull \hbox (3.86015pt too wide) in paragraph at lines 405--407
+\OT1/ptm/m/n/12 en-vol-ver to-dos os de-ta-lhes exis-ten-tes no caso de uma abo
+r-da-gem para codifica[][]ao e decodifica[][]ao
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+<Erro_webpjs.png, id=405, 673.51625pt x 366.36874pt>
+File: Erro_webpjs.png Graphic file (type png)
+ <use Erro_webpjs.png>
+Package pdftex.def Info: Erro_webpjs.png used on input line 410.
+(pdftex.def)             Requested size: 269.40172pt x 146.54489pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27] [28pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.abstract.4.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.414 \chapter
+              {Descrição do Projeto} <./Erro_webpjs.png>]
+Cap\'{\i }tulo 5.
+<fase1.png, id=415, 855.195pt x 284.06125pt>
+File: fase1.png Graphic file (type png)
+ <use fase1.png>
+Package pdftex.def Info: fase1.png used on input line 430.
+(pdftex.def)             Requested size: 342.07195pt x 113.62247pt.
+ [29
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.abstra
+ct.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.435 
+       <./fase1.png>] <fase2.png, id=420, 731.73375pt x 211.79124pt>
+File: fase2.png Graphic file (type png)
+
+<use fase2.png>
+Package pdftex.def Info: fase2.png used on input line 450.
+(pdftex.def)             Requested size: 292.68831pt x 84.715pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 475--476
 []\OT1/ptm/m/n/12 Ferramenta uti-li-zada para ge-ren-ci-a-mento das re-fer[]enc
 ias des-cri-tas na
  []
 
 
-Overfull \hbox (28.102pt too wide) in paragraph at lines 417--443
+Overfull \hbox (28.102pt too wide) in paragraph at lines 465--491
  [][] 
  []
 
-[28
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.2}) has been already used, duplicate ignored
 
-] <Arquitetura.png, id=393, 975.645pt x 406.51875pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.496 
+       <./fase2.png>] <Arquitetura.png, id=426, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
- <use Arquitetura.png>
-Package pdftex.def Info: Arquitetura.png used on input line 455.
+
+<use Arquitetura.png>
+Package pdftex.def Info: Arquitetura.png used on input line 503.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
-
-[29pdfTeX warning (ext4): destination with the same identifier (name{table.abst
-ract.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.464 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-abstract.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.464 
-       <./Arquitetura.png>]
-<BuildSystem.png, id=398, 387.4475pt x 316.18124pt>
-File: BuildSystem.png Graphic file (type png)
- <use BuildSystem.png>
-Package pdftex.def Info: BuildSystem.png used on input line 478.
-(pdftex.def)             Requested size: 174.34976pt x 142.28024pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30]
-Overfull \hbox (2.37144pt too wide) in paragraph at lines 494--495
+[31pdfTeX warning (ext4): destination with the same identifier (name{table.abst
+ract.5.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.512 
+      ] [32pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.abstract.5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.523 
+       <./Arquitetura.png>]
+<BuildSystem.png, id=439, 387.4475pt x 316.18124pt>
+File: BuildSystem.png Graphic file (type png)
+ <use BuildSystem.png>
+Package pdftex.def Info: BuildSystem.png used on input line 526.
+(pdftex.def)             Requested size: 174.34976pt x 142.28024pt.
+
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.542 D
+       entro do método WriteInternal o \ingles{buffer} é passado para o ti...
+ <./BuildSystem.png>]
+Overfull \hbox (2.37144pt too wide) in paragraph at lines 542--543
 \OT1/ptm/m/n/12 da cha-mada do m[]etodo Web-PI-Dec-Ge-tRGB da classe de-code.h 
 do WEBP, cap-tura as informa[][]oes
  []
 
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 498.
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
-tract.5.2}) has been already used, duplicate ignored
+put line 546.
+<nsWEBPDecoder_UML.png, id=444, 1010.27437pt x 723.45282pt>
+File: nsWEBPDecoder_UML.png Graphic file (type png)
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.510 
-       <./BuildSystem.png>] [32pdfTeX warning (ext4): destination with the same
- identifier (name{table.abstract.5.2}) has been already used, duplicate ignored
+<use nsWEBPDecoder_UML.png>
+Package pdftex.def Info: nsWEBPDecoder_UML.png used on input line 563.
+(pdftex.def)             Requested size: 404.10258pt x 289.376pt.
 
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.539 
-      ]
-Overfull \hbox (14.9583pt too wide) in paragraph at lines 541--542
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34]
+Overfull \hbox (14.9583pt too wide) in paragraph at lines 598--599
 []\OT1/ptm/m/n/12 InitFromData, Star-tI-ma-ge-En-code, Ge-tI-ma-ge-Buf-fe-rU-se
 d, Ge-tI-ma-ge-Buf-fer, Ad-dI-ma-ge-Frame,
  []
 
-[33] <FirefoxSemWebP.png, id=435, 995.72pt x 618.31pt>
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.602 
+       <./nsWEBPDecoder_UML.png>]
+<nsWEBPEncoder_UML.png, id=462, 928.97063pt x 555.57562pt>
+File: nsWEBPEncoder_UML.png Graphic file (type png)
+
+<use nsWEBPEncoder_UML.png>
+Package pdftex.def Info: nsWEBPEncoder_UML.png used on input line 620.
+(pdftex.def)             Requested size: 371.58167pt x 222.2263pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36pdfTeX warning (ext4): destination with the same identifier (name{table.abst
+ract.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.625 \newpage
+              ] <FirefoxSemWebP.png, id=475, 995.72pt x 618.31pt>
 File: FirefoxSemWebP.png Graphic file (type png)
 
 <use FirefoxSemWebP.png>
-Package pdftex.def Info: FirefoxSemWebP.png used on input line 567.
+Package pdftex.def Info: FirefoxSemWebP.png used on input line 632.
 (pdftex.def)             Requested size: 298.7183pt x 185.49443pt.
- <FirefoxComWebP.png, id=436, 1029.8475pt x 562.1pt>
+ <FirefoxComWebP.png, id=476, 1029.8475pt x 562.1pt>
 File: FirefoxComWebP.png Graphic file (type png)
 
 <use FirefoxComWebP.png>
-Package pdftex.def Info: FirefoxComWebP.png used on input line 573.
+Package pdftex.def Info: FirefoxComWebP.png used on input line 638.
 (pdftex.def)             Requested size: 308.95663pt x 168.6313pt.
 
-Overfull \hbox (33.05243pt too wide) in paragraph at lines 579--580
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.643 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+abstract.5.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.643 
+       <./nsWEBPEncoder_UML.png> <./FirefoxSemWebP.png>]
+Overfull \hbox (33.05243pt too wide) in paragraph at lines 644--645
 []\OT1/ptm/m/n/12 Esta substitui[][]ao de for-ma-tos na exibi[][]ao ocorre con-
 forme orienta[][]ao no ras-cu-nho da especifica[][]ao
  []
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
-tract.5.3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.580 \begin{citacao}
-                     pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.abstract.5.4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.580 \begin{citacao}
-                      <./FirefoxSemWebP.png> <./FirefoxComWebP.png>]
-<HTML5CanvasFirefoxWebP.png, id=443, 1029.8475pt x 562.1pt>
+<HTML5CanvasFirefoxWebP.png, id=483, 1029.8475pt x 562.1pt>
 File: HTML5CanvasFirefoxWebP.png Graphic file (type png)
 
 <use HTML5CanvasFirefoxWebP.png>
-Package pdftex.def Info: HTML5CanvasFirefoxWebP.png used on input line 586.
+Package pdftex.def Info: HTML5CanvasFirefoxWebP.png used on input line 651.
 (pdftex.def)             Requested size: 308.95663pt x 168.6313pt.
- <site1.png, id=444, 1284.8pt x 706.64pt>
+ <site1.png, id=484, 1284.8pt x 706.64pt>
 File: site1.png Graphic file (type png)
 
 <use site1.png>
-Package pdftex.def Info: site1.png used on input line 594.
+Package pdftex.def Info: site1.png used on input line 659.
 (pdftex.def)             Requested size: 321.19922pt x 176.65956pt.
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.ab
-stract.5.5}) has been already used, duplicate ignored
+ [38pdfTeX warning (ext4): destination with the same identifier (name{figure.ab
+stract.5.8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.599 
+l.662 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-abstract.5.6}) has been already used, duplicate ignored
+abstract.5.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.599 
-       <./HTML5CanvasFirefoxWebP.png> <./site1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 608--608
+l.662 
+       <./FirefoxComWebP.png> <./HTML5CanvasFirefoxWebP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 673--673
 []\OT1/ptm/b/n/12 Tempo Site
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 608--609
+Underfull \hbox (badness 4872) in paragraph at lines 673--674
 []\OT1/ptm/b/n/12 Bytes Site
  []
 
 
-Overfull \hbox (13.39626pt too wide) in paragraph at lines 606--620
+Overfull \hbox (13.39626pt too wide) in paragraph at lines 671--685
  [][] 
  []
 
-<site2.png, id=451, 1284.8pt x 706.64pt>
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.692 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.a
+bstract.5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.692 
+       <./site1.png>] <site2.png, id=496, 1284.8pt x 706.64pt>
 File: site2.png Graphic file (type png)
  <use site2.png>
-Package pdftex.def Info: site2.png used on input line 630.
+Package pdftex.def Info: site2.png used on input line 695.
 (pdftex.def)             Requested size: 321.19922pt x 176.65956pt.
- [36pdfTeX warning (ext4): destination with the same identifier (name{table.abs
-tract.5.3}) has been already used, duplicate ignored
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.633 
-      ]
-Underfull \hbox (badness 10000) in paragraph at lines 642--642
+Underfull \hbox (badness 10000) in paragraph at lines 707--707
 []\OT1/ptm/b/n/12 Tempo Site
  []
 
 
-Underfull \hbox (badness 4872) in paragraph at lines 642--643
+Underfull \hbox (badness 4872) in paragraph at lines 707--708
 []\OT1/ptm/b/n/12 Bytes Site
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--645
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
 []\OT1/ptm/m/n/12 1,3 Me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
 []\OT1/ptm/m/n/12 1,3 Me-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
 []\OT1/ptm/m/n/12 1,3 Me-
  []
 
 
-Overfull \hbox (13.39626pt too wide) in paragraph at lines 640--654
+Overfull \hbox (13.39626pt too wide) in paragraph at lines 705--719
  [][] 
  []
 
-[37pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
-tract.5.7}) has been already used, duplicate ignored
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.656 \chapter
+l.721 \chapter
               {Conclusões e Trabalhos Futuros}pdfTeX warning (ext4): destinati
 on with the same identifier (name{table.abstract.5.4}) has been already used, d
 uplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.656 \chapter
+l.721 \chapter
               {Conclusões e Trabalhos Futuros} <./site2.png>]
 Cap\'{\i }tulo 6.
-[38
+[41
 
-] (./proposta.bbl [39] [40
+] (./proposta.bbl [42] [43
 
 ])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 672.
-[41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 672.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 739.
+[44]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 739.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 672.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 672.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 739.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 739.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
-(rerunfilecheck)             Checksum: 415F89FA9BAC43700FBF0E532940F7E5;2360.
+(rerunfilecheck)             Checksum: D4F557B733DEA1BA06788BB95C79B55A;2434.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 672.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 739.
  ) 
 Here is how much of TeX's memory you used:
- 7288 strings out of 493488
- 109966 string characters out of 3141326
- 203932 words of memory out of 3000000
- 10242 multiletter control sequences out of 15000+200000
+ 7337 strings out of 493488
+ 110790 string characters out of 3141326
+ 204198 words of memory out of 3000000
+ 10273 multiletter control sequences out of 15000+200000
  34154 words of font info for 63 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 30i,13n,41p,1018b,506s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,13n,41p,1018b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -1263,10 +1344,10 @@ texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on proposta.pdf (42 pages, 4821017 bytes).
+Output written on proposta.pdf (45 pages, 5100800 bytes).
 PDF statistics:
- 591 PDF objects out of 1000 (max. 8388607)
- 512 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 639 PDF objects out of 1000 (max. 8388607)
+ 549 compressed objects within 6 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 364 words of extra memory for PDF output out of 10000 (max. 10000000)
 

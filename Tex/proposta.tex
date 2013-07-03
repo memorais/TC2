@@ -16,7 +16,7 @@
 \orientador{Isabel H. Manssour}
 \instituicao{Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)}
 \local{Porto Alegre}
-\data{\Data$Date: 2013/06/17 $}
+\data{\Data$Date: 17/06/2013 $}
 
 
 %\begin{comment}    Comentários no trabalho estão dentro dessas tags    %\end{comment}
@@ -86,25 +86,24 @@ Apesar de não existir nenhuma diretiva da W3C para qual método de compressão 
 
 A necessidade pela busca da informação cresceu exponencialmente de alguns anos pra cá. O crescente avanço tecnológico, trazendo consigo a popularização dos smartphones e a facilidade no acesso à informação, contribuiu de forma expressiva para que cada vez mais as pessoas estejam conectadas em todos os lugares. Da mesma forma que a disponibilidade dessas informações e o acesso à elas deve ser feito de forma cada vez mais rápida.
 
-O desenvolvimento do codificador e decodificador do formato \ingles{WebP} no \ingles{Mozilla Firefox}, trará de imediato a melhora no tempo de resposta na exibição das imagens dentro do navegador, visto que o tamanho dos arquivos no servidor será reduzido. Se considerar que mais de 60\% do tamanho total de um \ingles{website} são imagens, os benefícios podem ser substanciais. 
+O desenvolvimento do codificador e do decodificador do formato WebP no \ingles{Mozilla Firefox} contribui com a popularização deste novo formato, visto que o Firefox está entre os navegadores mais utilizados atualmente e ainda não suporta nativamente o formato WebP.
 
-É importante ressaltar que a utilização em massa deste novo formato contribui, consequentemente, na diminuição do trafego de rede na internet de maneira global, isso resulta diretamente em maior vazão para outros recursos que possuem um maior consumo de banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
+De acordo com os estudos feitos pela Google, o WebP mostrou-se eficiente quando comparado com outros formatos mais popularmente utilizados na \ingles{web}. A utilização em larga escala do WebP, traz benefícios econômicos para empresas que possuem a necessidade de diminuir o volume total de dados trafegados.
 
-\newpage
-Um \ingles{case} de utilização do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com o Gerente de Produto do Google, Stephen Konig \cite{ChromiumBlog}:
+Um \ingles{case} de adoção do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com o Gerente de Produto do Google, Stephen Konig \cite{ChromiumBlog}:
 \begin{citacao}
 	\ingles{By converting PNGs and JPEGs to WebP, the Chrome Web Store was able to reduce image sizes by about 30\% on average. Given the number of requests Chrome Web Store serves, this adds up to several terabytes of savings every day.}
 \end{citacao}
 
 \section{Objetivo}
 
-O objetivo principal deste trabalho é desenvolver uma solução que habilite o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. 
+O objetivo principal deste trabalho é integrar ao código nativo do Mozilla Firefox, o uso da biblioteca \ingles{libwebp} para que o navegador possa realizar a decodificação e codificação de imagens no formato WebP em tempo de execução, sem que seja necessário a utilização de plug-ins ou ferramentas adicionais.
 
-A implementação do decodificador irá permitir ao usuário acessar e exibir, através do navegador, qualquer imagem que estiver no formato WebP. Já o codificador irá possibilitar que \ingles{sites} desenvolvidos utilizando tecnologia HTML5, e que possuam a funcionalidade \ingles{canvas}, possam gerar gráficos no formato WebP através do próprio navegador, sem que seja necessário a utilização de qualquer software adicional \cite{pfeiffer2010definitive}.
+A implementação do decodificador é fundamental para que o navegador consiga realizar a exibição de imagens que estiverem no formato WebP. Já a implementação do codificador, possibilita que \ingles{sites} escritos na linguagem HTML5 e que possuem a funcionalidade \ingles{canvas}, possam gerar gráficos no formato WebP.
 
 Embora a implementação do suporte ao \ingles{WebP} esteja disponível somente para dois navegadores (Chrome e Opera), estes constituem um percentual de uso de cerca de 42,38\% de todos os navegadores utilizados dentro da internet nos dias de hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 62,14\%, já que cerca de 19,76\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
 
-O trabalho desenvolvido foi entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não está no foco do projeto. O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox, mas somente em contribuir com o desenvolvimento da renderização nativa do formato WebP dentro do navegador.
+A contribuição com o desenvolvimento de uma ferramenta Open Source se dá como objetivo secundário deste trabalho. O código implementado foi submetido à comunidade do Firefox e os \ingles{feedbacks} recebidos entrarão como proposta para trabalhos e revisões futuras.
 
 \section{Organização do Texto}
 
@@ -253,7 +252,7 @@ O suporte à codificação e decodificação do WebP está disponível nos naveg
 
 O formato WebP foi disponibilizado em 2010 mas ainda não foi integrado ao Mozilla Firefox. Inclusive, na época, um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo, a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todas as considerações dadas tenham sido atendidas, ainda não há uma clara razão do por que ele ainda não foi implementado no Mozilla Firefox. 
 
-Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porém estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta deste trabalho é que o navegador seja capaz de realizar a renderização nativamente.
+Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, como é o caso do projeto webp-npapi-linux \cite{webp-npapi-linux}, porém estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta deste trabalho é que o navegador seja capaz de realizar a renderização nativamente.
 
 Pelo que se pode averiguar, parece que há uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada devido ao grande sucesso do navegador concorrente. Entretanto, pelo que foi pesquisado dentro da comunidade, há alguma chance de que caso uma boa implementação seja feita, ela possa ser aceita dentro do código oficial.
 
@@ -270,7 +269,7 @@ A figura 3.1 ilustra o formato simples com compressão \ingles{lossy} (a), o for
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.5]{LossyLossLessExtended.png}
-  \caption{Formato simples com compressão \ingles{lossy}, formato simples com a compressão \ingles{lossless} e formato estendido}
+  \caption{Formato simples com compressão \ingles{lossy}, formato simples com a compressão \ingles{lossless} e formato estendido \cite{WebPContainer}}
 \end{figure}
 
 A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossless} está no pedaço VP8 que por padrão faz a compactação com perda de dados, enquanto que o pedaço VP8L utiliza a compactação sem perda. Já o formato estendido é composto por um pedaço VP8X, mais a informação do canal \ingles{alpha} (L) e o \ingles{bitstream} VP8 ou VP8L. Caso o \ingles{bit alpha} seja setado com valor 1 no formato estendido, será acrescentado um pedaço adicional para a transparência, como mostra a figura 3.2.
@@ -395,13 +394,62 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \section{O Primeiro Patch para o Firefox}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. 
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Devido aos problemas descritos, este trabalho foi direcionado para criação de um novo \ingles{patch} que conseguisse endereçar estas lacunas.
 
-Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora. Como o primeiro \ingles{patch} não conseguiu sequer ser compilado dentro do Firefox, não foi possível medir as diferenças entre a implementação criada dentro do trabalho e este primeiro \ingles{patch}.
+
+\section{Libwebpjs}
+
+O projeto libwebpjs \cite{libwebpjs} se propõem a implementar um codificador e um decodificador de imagens no formato WebP utilizando somente a linguagem de programação JavaScript. A última versão da implementação disponível é a 0.1.3 de agosto de 2011. Foi observado que a implementação se baseia em premissas inicialmente propostas na primeira versão da especificação do formato WebP e que já não existem mais nas últimas versões. Os testes mostraram que nem todas as figuras conseguem ser renderizadas corretamente e em alguns navegadores, como o Opera por exemplo, as imagens são repetidamente distorcidas durante a navegação no site, conforme mostra a figura X.X.
+
+A implementação da renderização de imagens usando JavaScript tem a praticidade de não envolver todos os detalhes existentes no caso de uma abordagem para codificação e decodificação nativa dentro do \ingles{browser}. Não é preciso conhecer os subsistemas para manipulação de imagem que um navegador possui. A praticidade no desenvolvimento possui uma contrapartida que é a realização do
+ processo por uma linguagem interpretada, resultando em uma queda de performance na codificação e decodificação, quando comparado ao mesmo processo sendo executado por uma linguagem compilada. Outro fator relevante é que via de regra, as implementações nos processos de renderização de imagens são realizadas internamente dentro dos navegadores, nunca por \ingles{plugins} adicionais ou por meios externos, justamente pelas questões de performance e segurança.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{Erro_webpjs.png}
+  \caption{Distorções na exibição das imagens no formato WebP}
+\end{figure}
 
 \chapter{Descrição do Projeto}
 
 Conforme apresentado na seção 1.3, o objetivo deste trabalho é apresentar o projeto e implementação de uma solução para habilitar o suporte à codificação e decodificação de imagens no formato WebP dentro do navegador Mozilla Firefox. A partir da utilização da biblioteca libwebp criada pela empresa Google Inc, foi elaborada e implementada uma solução que integra esta biblioteca ao código nativo do navegador, possibilitando que o navegador, em tempo de execução, exiba as imagens neste formato sem que seja necessário o uso de \ingles{plug-ins} ou ferramentas adicionais.
+
+Na fase de iniciação do projeto, foi feito um levantamento das atividades que seriam executadas no decorrer do projeto, e foram divididas em duas fases. A fase 1, consiste no estudo e concepção das tecnologias que estão relacionadas diretamente com o que foi desenvolvido. As atividades que englobam esta fase estão listadas a seguir, e o cronograma de execução é representado pela Figura X.
+
+\begin{itemize}
+	\item Atividade 1: Estudo do formato WebP e da biblioteca libwebp;
+	\item Atividade 2: Estudo e análise do código do Mozilla Firefox;
+	\item Atividade 3: Estudo dos padrões de codificação do Mozilla Firefox;
+	\item Atividade 4: Estudo da viabilidade de implementação;
+	\item Atividade 5: Estudo do patch proposto em 2010;
+\end{itemize}	
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{fase1.png}
+  \caption{Cronograma de atividades da fase 1.}
+\end{figure}
+
+Para a segunda fase do desenvolvimento do projeto, com base nos estudos realizados na fase anterior, foi possível compreender o funcionamento modular do Firefox e as necessidades de implementação. As atividades envolvidas na fase 2 estão listadas a seguir e representadas pelo cronograma conforme a Figura X.
+
+\begin{itemize}
+	\item Atividade 1: Criação de um fork da última versão do projeto no repositório;
+	\item Atividade 2: Inclusão da biblioteca libwebp no código Mozilla Firefox;
+	\item Atividade 3: Desenvolvimento do decodificador;
+	\item Atividade 4: Criação dos arquivos para compilação do decodificador;
+	\item Atividade 5: Desenvolvimento do codificador;
+	\item Atividade 6: Criação dos arquivos para compilação do codificador;
+	\item Atividade 7: Criação dos mecanismos de carregamento e inicialização das imagens;
+	\item Atividade 8: Teste da implementação;
+	\item Atividade 9: Avaliação dos resultados;
+\end{itemize}	
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{fase2.png}
+  \caption{Cronograma de atividades da fase 2.}
+\end{figure}
 
 As seções seguintes descrevem a arquitetura do navegador Mozilla Firefox, bem como seu sistema de compilação e a descrição das implementações desenvolvidas para o codificador e decodificador.
 
@@ -500,13 +548,22 @@ Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDec
 \begin{algorithmic}
 	\STATE Execução do método InitInternal(\ingles{buffer})
 	\STATE Execução do método WriteInternal
-	\FOR{Ler linha a linha do \ingles{buffer} até a última}
+	\FOR{Para cada linha a linha do \ingles{buffer}}
 	\STATE Decodificar a linha do \ingles{buffer} WebP
 	\STATE Executar o método gfxPackedPixel para preencher cada pixel da imagem
 	\ENDFOR
 	\STATE Execução do método FinishInternal para liberação de memória.
 \end{algorithmic}
 \end{algorithm}
+
+Através do diagrama de classes do decodificador mostrado na figura X.X, é possível observar toda a estrutura hierárquica que compõem estes recursos. A classe nsWEBPDecoder herda os principais métodos da classe Decoder, esta classe por sua vez possui 3 dependências com as classes RasterImage, ImageMetadata e imgFrame.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{nsWEBPDecoder_UML.png}
+  \caption{Diagrama de classes UML para a classe nsWEBPEncoder}
+\end{figure}
+
 
 Como se pode observar, em nenhum momento é necessário saber quais são os algoritmos utilizados para realizar a decodificação. Toda esta complexidade fica encapsulada dentro da libwebp que é instrumentada pelas classes criadas para realizar o processo.
 
@@ -549,12 +606,20 @@ Dos 13 métodos listados a interação com a libwebp foi criada dentro dos méto
 \begin{algorithmic}
         \STATE Execução do método InitFromData(\ingles{buffer})
         \STATE Execução do método AddImageFrame
-        \FOR{Ler linha a linha do \ingles{buffer} até a última}
+        \FOR{Para cada linha a linha do \ingles{buffer}}
         \STATE Codifica a linha no formato WebP através do método WebPMemoryWrite no tipo WebPPicture
         \ENDFOR
         \STATE Execução do método EndImageEncode para liberação de memória.
 \end{algorithmic}
 \end{algorithm}
+
+Através do diagrama de classes do codificador mostrado na figura X.X, é possível observar toda a estrutura hierárquica existente neste processo. A classe nsWEBPEncoder herda os principais métodos da classe imgIEncoder, que por sua vez tem dependência de mais 3 outras classes sendo elas, nsSupports, nsIEventTarget e nsIAsyncInputStream respectivamente.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{nsWEBPEncoder_UML.png}
+  \caption{Diagrama de classes UML para a classe nsWEBPEncoder}
+\end{figure}
 
 Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem já está devidamente codificada no formato WebP.
 \newpage
@@ -666,6 +731,8 @@ Mesmo com a evolução constante realizada pela equipe de desenvolvimento do Web
 O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
 
 A versão 0.3.0 da libwebp, utilizada no desenvolvimento do trabalho, oferece suporte à animação de imagens quadro a quadro, semelhante ao processo realizado pelo formato GIF. Entretanto este tipo de implementação não foi realizada no desenvolvimento do codificador e do decodificador, ficando como referência para trabalhos futuros que devem ser realizados. A criação de um \ingles{script} para realizar testes automatizados de funcionalidade para codificação e decodificação ao final do processo de compilação, também é uma necessidade para trabalhos futuros.
+
+Com o \ingles{patch} elaborado dentro do trabalho submetido à comunidade, será preciso avaliar futuramente, os comentários dos desenvolvedores que serão dados com relação a implementação. Os \ingles{feedbacks} reportados dentro do chamado vão fazer parte de trabalhos futuros para evolução e possíveis ajustes da implementação.
 
 \bibliography{proposta}
 
