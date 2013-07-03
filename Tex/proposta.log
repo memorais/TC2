@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 JUL 2013 02:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 JUL 2013 02:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,40 +1055,22 @@ Cap\'{\i }tulo 5.
 File: fase1.png Graphic file (type png)
  <use fase1.png>
 Package pdftex.def Info: fase1.png used on input line 430.
-(pdftex.def)             Requested size: 585.3878pt x 169.43321pt.
+(pdftex.def)             Requested size: 365.86598pt x 105.89536pt.
+ [29
 
-Overfull \hbox (130.14369pt too wide) in paragraph at lines 430--431
- [][] 
- []
+pdfTeX warning (ext4): destination with the same identifier (name{figure.abstra
+ct.5.1}) has been already used, duplicate ignored
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29
-
-] <fase2.png, id=420, 855.195pt x 284.06125pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.435 
+       <./fase1.png>] <fase2.png, id=420, 855.195pt x 284.06125pt>
 File: fase2.png Graphic file (type png)
- <use fase2.png>
+
+<use fase2.png>
 Package pdftex.def Info: fase2.png used on input line 450.
-(pdftex.def)             Requested size: 684.15695pt x 227.24928pt.
+(pdftex.def)             Requested size: 427.59647pt x 142.03026pt.
 
-Overfull \hbox (228.91284pt too wide) in paragraph at lines 450--451
- [][] 
- []
-
-[30pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
-tract.5.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.455 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-abstract.5.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.455 
-       <./fase1.png> <./fase2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 475--476
 []\OT1/ptm/m/n/12 Ferramenta uti-li-zada para ge-ren-ci-a-mento das re-fer[]enc
 ias des-cri-tas na
@@ -1099,9 +1081,16 @@ Overfull \hbox (28.102pt too wide) in paragraph at lines 465--491
  [][] 
  []
 
-<Arquitetura.png, id=426, 975.645pt x 406.51875pt>
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.496 
+       <./fase2.png>] <Arquitetura.png, id=426, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
- <use Arquitetura.png>
+
+<use Arquitetura.png>
 Package pdftex.def Info: Arquitetura.png used on input line 503.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
 
@@ -1113,13 +1102,13 @@ ract.5.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.508 
+l.512 
       ] [32pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.abstract.5.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.521 
+l.523 
        <./Arquitetura.png>]
 <BuildSystem.png, id=439, 387.4475pt x 316.18124pt>
 File: BuildSystem.png Graphic file (type png)
@@ -1132,8 +1121,9 @@ tract.5.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.538 \end{itemize}
-                    <./BuildSystem.png>]
+l.542 D
+       entro do método WriteInternal o \ingles{buffer} é passado para o ti...
+ <./BuildSystem.png>]
 Overfull \hbox (2.37144pt too wide) in paragraph at lines 542--543
 \OT1/ptm/m/n/12 da cha-mada do m[]etodo Web-PI-Dec-Ge-tRGB da classe de-code.h 
 do WEBP, cap-tura as informa[][]oes
@@ -1151,26 +1141,19 @@ Package pdftex.def Info: nsWEBPDecoder_UML.png used on input line 563.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34] [35pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.abstract.5.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.595 A
-       ssim como no desenvolvimento do decodificador, a criação do codific...
-pdfTeX warning (ext4): destination with the same identifier (name{table.abstrac
-t.5.2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.595 A
-       ssim como no desenvolvimento do decodificador, a criação do codific...
- <./nsWEBPDecoder_UML.png>]
+[34]
 Overfull \hbox (14.9583pt too wide) in paragraph at lines 598--599
 []\OT1/ptm/m/n/12 InitFromData, Star-tI-ma-ge-En-code, Ge-tI-ma-ge-Buf-fe-rU-se
 d, Ge-tI-ma-ge-Buf-fer, Ad-dI-ma-ge-Frame,
  []
 
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.abs
+tract.5.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.602 
+       <./nsWEBPDecoder_UML.png>]
 <nsWEBPEncoder_UML.png, id=462, 928.97063pt x 555.57562pt>
 File: nsWEBPEncoder_UML.png Graphic file (type png)
 
@@ -1181,7 +1164,13 @@ Package pdftex.def Info: nsWEBPEncoder_UML.png used on input line 620.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36] <FirefoxSemWebP.png, id=475, 995.72pt x 618.31pt>
+[36pdfTeX warning (ext4): destination with the same identifier (name{table.abst
+ract.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.625 \newpage
+              ] <FirefoxSemWebP.png, id=475, 995.72pt x 618.31pt>
 File: FirefoxSemWebP.png Graphic file (type png)
 
 <use FirefoxSemWebP.png>
@@ -1355,7 +1344,7 @@ texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on proposta.pdf (45 pages, 5100610 bytes).
+Output written on proposta.pdf (45 pages, 5100804 bytes).
 PDF statistics:
  639 PDF objects out of 1000 (max. 8388607)
  549 compressed objects within 6 object streams
