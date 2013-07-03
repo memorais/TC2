@@ -88,7 +88,7 @@ A necessidade pela busca da informação cresceu exponencialmente de alguns anos
 
 O desenvolvimento do codificador e do decodificador do formato WebP no \ingles{Mozilla Firefox} contribui com a popularização deste novo formato, visto que o Firefox está entre os navegadores mais utilizados atualmente e ainda não suporta nativamente o formato WebP.
 
-De acordo com os estudos feitos pela Google, o WebP mostrou-se eficiente quando comparado com outros formatos mais popularmente utilizados na \ingles{web}. A utilização em larga escala do WebP, traz benefícios econômicos para empresas que possuem a necessidade de diminuir o volume total de dados trafegados.
+De acordo com os estudos feitos pela Google, o WebP mostrou-se eficiente quando comparado com outros formatos mais popularmente utilizados na \ingles{web}. A utilização em larga escala do WebP, traz benefícios econômicos para empresas que possuem a necessidade de diminuir o volume total de dados trafegados. Tamanho de arquivos menores são exibidos pelo navegador de forma mais rápida, consequentemente consumindo menos banda.
 
 Um \ingles{case} de adoção do novo formato, é o da própria \ingles{Google}, que substituiu as imagens, de formato PNGs e JPEGs para WebP, em sua \ingles{Web Store} do navegador Chrome, diminuindo a utilização de banda dirária, de acordo com o Gerente de Produto do Google, Stephen Konig \cite{ChromiumBlog}:
 \begin{citacao}
@@ -400,7 +400,7 @@ Esta primeira tentativa também utilizava diversas estruturas e padrões obsolet
 
 \section{Libwebpjs}
 
-O projeto libwebpjs \cite{libwebpjs} se propõem a implementar um codificador e um decodificador de imagens no formato WebP utilizando somente a linguagem de programação JavaScript. A última versão da implementação disponível é a 0.1.3 de agosto de 2011. Foi observado que a implementação se baseia em premissas inicialmente propostas na primeira versão da especificação do formato WebP e que já não existem mais nas últimas versões. Os testes mostraram que nem todas as figuras conseguem ser renderizadas corretamente e em alguns navegadores, como o Firefox por exemplo, as imagens são repetidamente distorcidas durante a navegação no site, conforme mostra a figura 4.1.
+O projeto libwebpjs \cite{libwebpjs} se propõem a implementar um codificador e um decodificador de imagens no formato WebP utilizando somente a linguagem de programação JavaScript. A última versão da implementação disponível é a 0.1.3 de agosto de 2011. Foi observado que a implementação se baseia em premissas inicialmente propostas na primeira versão da especificação do formato WebP e que já não existem mais nas últimas versões. Os testes mostraram que nem todas as figuras conseguem ser renderizadas corretamente e em alguns navegadores, como o Opera por exemplo, as imagens são repetidamente distorcidas durante a navegação no site, conforme mostra a figura 4.1.
 
 \begin{figure}[h]
   \centering
@@ -415,7 +415,7 @@ A implementação da renderização de imagens usando JavaScript tem a praticida
 
 Conforme apresentado na seção 1.3, o objetivo deste trabalho é apresentar o projeto e implementação de uma solução para habilitar o suporte à codificação e decodificação de imagens no formato WebP dentro do navegador Mozilla Firefox. A partir da utilização da biblioteca libwebp criada pela empresa Google Inc, foi elaborada e implementada uma solução que integra esta biblioteca ao código nativo do navegador, possibilitando que o navegador, em tempo de execução, exiba as imagens neste formato sem que seja necessário o uso de \ingles{plug-ins} ou ferramentas adicionais.
 
-Na fase de iniciação do projeto, foi feito um levantamento das atividades que seriam executadas no decorrer do projeto, e foram divididas em duas fases. A fase 1, consiste no estudo e concepção das tecnologias que estão relacionadas diretamente com o que foi desenvolvido. As atividades que englobam esta fase estão listadas a seguir, e o cronograma de execução é representado pela Figura 5.1.
+Na fase de iniciação do projeto, foi feito um levantamento das atividades que seriam executadas no decorrer do projeto, e foram divididas em duas fases. A fase 1, consiste no estudo e concepção das tecnologias que estão relacionadas diretamente com o que foi desenvolvido. As atividades que englobam esta fase estão listadas a seguir, e o cronograma de execução é representado pela Figura X.
 
 \begin{itemize}
 	\item Atividade 1: Estudo do formato WebP e da biblioteca libwebp;
@@ -431,7 +431,7 @@ Na fase de iniciação do projeto, foi feito um levantamento das atividades que 
   \caption{Cronograma de atividades da fase 1.}
 \end{figure}
 
-Para a segunda fase do desenvolvimento do projeto, com base nos estudos realizados na fase anterior, foi possível compreender o funcionamento modular do Firefox e as necessidades de implementação. As atividades envolvidas na fase 2 estão listadas a seguir e representadas pelo cronograma conforme a Figura 5.2.
+Para a segunda fase do desenvolvimento do projeto, com base nos estudos realizados na fase anterior, foi possível compreender o funcionamento modular do Firefox e as necessidades de implementação. As atividades envolvidas na fase 2 estão listadas a seguir e representadas pelo cronograma conforme a Figura X.
 
 \begin{itemize}
 	\item Atividade 1: Criação de um fork da última versão do projeto no repositório;
@@ -498,11 +498,11 @@ A arquitetura de desenvolvimento do Mozilla Firefox permite a extensão de funci
 
 De uma maneira geral, o núcleo alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Com o codificador e o decodificador implementados, foi necessário fazer alterações nestes módulos para que o navegador pudesse nativamente manipular as imagens no formato WebP. 
 
-Na figura 5.3 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
+Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.3]{ComponentesArquitetura.png}
+    \includegraphics[scale=0.55]{ComponentesArquitetura.png}
   \caption{Diagrama dos componentes e suas relações}
 \end{figure}
 
@@ -521,7 +521,7 @@ O sistema de compilação ou o \ingles{build system} do Firefox, é o mesmo util
 
 Na primeira fase o \ingles{autoconf} é invocado para que as características do sistema e do compilador utilizados possam ser determinadas. Aqui também é realizada toda verificação por dependências necessárias para realização do \ingles{build}. A segunda fase na verdade consiste na aplicação da configuração encontrada na primeira fase para todo o código fonte existente que será compilado. A terceira e última fase é quando ocorre efetivamente a compilação do código e a criação dos \ingles{links} entre os binários gerados, baseando-se nas configurações definidas nas fases anteriores. Ao final da terceira fase são executados os testes automatizados para validar a funcionalidade de cada item compilado. Desta forma o processo pode ser definido como uma árvore, caso qualquer uma das fases falhe, a próxima etapa não será iniciada.
 
-Toda orquestração do processo de compilação é baseada no arquivo moz.build existente dentro de cada diretório que contém um código-fonte a ser compilado ou a ser exportado como referência (arquivos de cabeçalho por exemplo). A sintaxe de definição do arquivo moz.build obedece as regras regidas pela linguagem Python. Na figura 5.4 é possível observar como a hierarquia está montada e como cada software está envolvido dentro do processo. Como existem várias linguagens de programação existentes dentro do Firefox, a fase de preparação fica responsável por acionar o compilador correto para cada fonte.
+Toda orquestração do processo de compilação é baseada no arquivo moz.build existente dentro de cada diretório que contém um código-fonte a ser compilado ou a ser exportado como referência (arquivos de cabeçalho por exemplo). A sintaxe de definição do arquivo moz.build obedece as regras regidas pela linguagem Python. Na figura 5.2 é possível observar como a hierarquia está montada e como cada software está envolvido dentro do processo. Como existem várias linguagens de programação existentes dentro do Firefox, a fase de preparação fica responsável por acionar o compilador correto para cada fonte.
 
 \begin{figure}[h]
   \centering
@@ -550,7 +550,7 @@ Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDec
 \begin{algorithmic}
 	\STATE Execução do método InitInternal(\ingles{buffer})
 	\STATE Execução do método WriteInternal
-	\FOR{Para cada linha do \ingles{buffer}}
+	\FOR{Para cada linha a linha do \ingles{buffer}}
 	\STATE Decodificar a linha do \ingles{buffer} WebP
 	\STATE Executar o método gfxPackedPixel para preencher cada pixel da imagem
 	\ENDFOR
@@ -558,7 +558,7 @@ Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDec
 \end{algorithmic}
 \end{algorithm}
 
-Através do diagrama de classes do decodificador mostrado na figura 5.5, é possível observar toda a estrutura hierárquica que compõem estes recursos. A classe nsWEBPDecoder herda os principais métodos da classe Decoder, esta classe por sua vez possui 3 dependências com as classes RasterImage, ImageMetadata e imgFrame.
+Através do diagrama de classes do decodificador mostrado na figura X.X, é possível observar toda a estrutura hierárquica que compõem estes recursos. A classe nsWEBPDecoder herda os principais métodos da classe Decoder, esta classe por sua vez possui 3 dependências com as classes RasterImage, ImageMetadata e imgFrame.
 
 \begin{figure}[h]
   \centering
@@ -608,14 +608,14 @@ Dos 13 métodos listados a interação com a libwebp foi criada dentro dos méto
 \begin{algorithmic}
         \STATE Execução do método InitFromData(\ingles{buffer})
         \STATE Execução do método AddImageFrame
-        \FOR{Para cada linha do \ingles{buffer}}
+        \FOR{Para cada linha a linha do \ingles{buffer}}
         \STATE Codifica a linha no formato WebP através do método WebPMemoryWrite no tipo WebPPicture
         \ENDFOR
         \STATE Execução do método EndImageEncode para liberação de memória.
 \end{algorithmic}
 \end{algorithm}
 
-Através do diagrama de classes do codificador mostrado na figura 5.6, é possível observar toda a estrutura hierárquica existente neste processo. A classe nsWEBPEncoder herda os principais métodos da classe imgIEncoder, que por sua vez tem dependência de mais 3 outras classes sendo elas, nsSupports, nsIEventTarget e nsIAsyncInputStream respectivamente.
+Através do diagrama de classes do codificador mostrado na figura X.X, é possível observar toda a estrutura hierárquica existente neste processo. A classe nsWEBPEncoder herda os principais métodos da classe imgIEncoder, que por sua vez tem dependência de mais 3 outras classes sendo elas, nsSupports, nsIEventTarget e nsIAsyncInputStream respectivamente.
 
 \begin{figure}[h]
   \centering
@@ -627,7 +627,7 @@ Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem 
 \newpage
 \section{Resultados Obtidos}
 
-A implementação realizada e descrita neste trabalho permitiu ao Firefox codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.7, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.8 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. 
+A implementação realizada e descrita neste trabalho permitiu ao Firefox codificar e decodificar o formato WebP com sucesso. Como pode ser observado na figura 5.3, está disposta uma página que possui uma imagem no formato WebP em um Firefox sem a implementação, consequentemente a imagem não é exibida. Já na figura 5.4 é possível verificar que a mesma imagem no formato WebP é exibida corretamente, dentro de um Firefox que possui a implementação do decodificador. 
 
 \begin{figure}[h]
   \centering
@@ -641,7 +641,7 @@ A implementação realizada e descrita neste trabalho permitiu ao Firefox codifi
   \caption{Firefox com a implementação do trabalho}
 \end{figure}
 
-Na figura 5.9 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens, pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. 
+Na figura 5.5 foi criado um HTML que utiliza o método \ingles{canvas} para desenhar uma figura no navegador. O método \ingles{toDataURL} é executado com o parâmetro \ingles{image/webp} para fazer com a imagem seja renderizada no formato WebP. Para este caso especificamente não há como mostrar uma diferença clara através de imagens, pois no Firefox sem a implementação do codificador, quando o método \ingles{toDataURL} é utilizado com o parâmetro \ingles{image/webp}, ele simplesmente realiza a renderização da imagem no formato PNG por não possuir o suporte ao WebP. 
 
 Esta substituição de formatos na exibição ocorre conforme orientação no rascunho da especificação do elemento \ingles{canvas} para o HTML5 \cite{CanvasElement}:
 \begin{citacao}
@@ -654,7 +654,7 @@ Esta substituição de formatos na exibição ocorre conforme orientação no ra
   \caption{Firefox com a implementação do trabalho usando o elemento \ingles{canvas}}
 \end{figure}
 
-Como forma de avaliar o desempenho da solução de maneira prática, foi desenvolvido um \ingles{site} composto de imagens no formato PNG e JPEG, e um segundo site exatamente igual ao primeiro, apenas com as imagens convertidas de PNG e JPEG para WebP. O site completo em sua formação original possui tamanho total de 5953K, e após a conversão das imagens para WebP, o tamanho total passou a ser de 907K. A figura 5.10 apresenta a página inicial do \ingles{site} criado para teste.
+Como forma de avaliar o desempenho da solução de maneira prática, foi desenvolvido um \ingles{site} composto de imagens no formato PNG e JPEG, e um segundo site exatamente igual ao primeiro, apenas com as imagens convertidas de PNG e JPEG para WebP. O site completo em sua formação original possui tamanho total de 5953K, e após a conversão das imagens para WebP, o tamanho total passou a ser de 907K. A figura 5.6 apresenta a página inicial do \ingles{site} criado para teste.
 
 \begin{figure}[H]
   \centering
@@ -690,7 +690,7 @@ O teste consistiu apenas na entrada da página principal, não houve nenhuma nav
 
 Posteriormente, um segundo caso de teste foi feito, seguindo as mesmas premissas do teste anterior. Foi criado outro \ingles{site} para execução de casos de teste, porém com uma quantidade maior de imagens apresentadas na página inicial. Da mesma forma que o teste anterior, não houve navegação entre as páginas, e as métricas coletadas foram somente no acesso à página inicial, na qual contempla desde a solicitação até o carregamento total da página. 
 
-O site completo em sua formação original possui tamanho total de 12452K, e após a conversão das imagens para WebP, o tamanho total passou a ser de 2107K. A figura 5.11 apresenta a página inicial do segundo \ingles{site} criado para teste.
+O site completo em sua formação original possui tamanho total de 12452K, e após a conversão das imagens para WebP, o tamanho total passou a ser de 2107K. A figura 5.7 apresenta a página inicial do segundo \ingles{site} criado para teste.
 
 \begin{figure}[H]
   \centering
