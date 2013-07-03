@@ -16,7 +16,7 @@
 \orientador{Isabel H. Manssour}
 \instituicao{Pontifícia Universidade Católica do Rio Grande do Sul (PUCRS)}
 \local{Porto Alegre}
-\data{\Data$Date: 2013/06/17 $}
+\data{\Data$Date: 17/06/2013 $}
 
 
 %\begin{comment}    Comentários no trabalho estão dentro dessas tags    %\end{comment}
@@ -394,9 +394,9 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \section{O Primeiro Patch para o Firefox}
 
-Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. 
+Em 2010 o engenheiro do Google Vikas Arora criou um \ingles{patch} para dar suporte apenas ao processo de decodificação do WebP dentro do Mozilla Firefox \cite{FirefoxBug}. Esse \ingles{patch} foi submetido à equipe de desenvolvimento com o objetivo de ser incluído oficialmente dentro do código fonte do Firefox. Entretanto, o \ingles{patch} não estava funcionando corretamente, havia problemas no processo de compilação e utilizava a versão 0.1 da libwebp, que estava em fase inicial de desenvolvimento e possuía inúmeros erros. Devido aos problemas descritos, este trabalho foi direcionado para criação de um novo \ingles{patch} que conseguisse endereçar estas lacunas.
 
-Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora.
+Esta primeira tentativa também utilizava diversas estruturas e padrões obsoletos que não deviam mais ser utilizadas dentro do Firefox, como por exemplo, a utilização do tipo primitivo PRUint32 ao invés do uint32\_t que é do padrão C ANSI. Estes fatores levaram na não adoção da implementação criada por Vikas Arora. Como o primeiro \ingles{patch} não conseguiu sequer ser compilado dentro do Firefox, não foi possível medir as diferenças entre a implementação criada dentro do trabalho e este primeiro \ingles{patch}.
 
 \section{Libwebpjs}
 
