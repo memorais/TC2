@@ -499,13 +499,22 @@ Dentro do método WriteInternal o \ingles{buffer} é passado para o tipo WebPDec
 \begin{algorithmic}
 	\STATE Execução do método InitInternal(\ingles{buffer})
 	\STATE Execução do método WriteInternal
-	\FOR{Ler linha a linha do \ingles{buffer} até a última}
+	\FOR{Para cada linha a linha do \ingles{buffer}}
 	\STATE Decodificar a linha do \ingles{buffer} WebP
 	\STATE Executar o método gfxPackedPixel para preencher cada pixel da imagem
 	\ENDFOR
 	\STATE Execução do método FinishInternal para liberação de memória.
 \end{algorithmic}
 \end{algorithm}
+
+Através do diagrama de classes do decodificador mostrado na figura X.X, é possível observar toda a estrutura hierárquica que compõem estes recursos. A classe nsWEBPDecoder herda os principais métodos da classe Decoder, esta classe por sua vez possui 3 dependências com as classes RasterImage, ImageMetadata e imgFrame.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{nsWEBPDecoder_UML.png}
+  \caption{Diagrama de classes UML para a classe nsWEBPEncoder}
+\end{figure}
+
 
 Como se pode observar, em nenhum momento é necessário saber quais são os algoritmos utilizados para realizar a decodificação. Toda esta complexidade fica encapsulada dentro da libwebp que é instrumentada pelas classes criadas para realizar o processo.
 
@@ -548,12 +557,20 @@ Dos 13 métodos listados a interação com a libwebp foi criada dentro dos méto
 \begin{algorithmic}
         \STATE Execução do método InitFromData(\ingles{buffer})
         \STATE Execução do método AddImageFrame
-        \FOR{Ler linha a linha do \ingles{buffer} até a última}
+        \FOR{Para cada linha a linha do \ingles{buffer}}
         \STATE Codifica a linha no formato WebP através do método WebPMemoryWrite no tipo WebPPicture
         \ENDFOR
         \STATE Execução do método EndImageEncode para liberação de memória.
 \end{algorithmic}
 \end{algorithm}
+
+Através do diagrama de classes do codificador mostrado na figura X.X, é possível observar toda a estrutura hierárquica existente neste processo. A classe nsWEBPEncoder herda os principais métodos da classe imgIEncoder, que por sua vez tem dependência de mais 3 outras classes sendo elas, nsSupports, nsIEventTarget e nsIAsyncInputStream respectivamente.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.4]{nsWEBPEncoder_UML.png}
+  \caption{Diagrama de classes UML para a classe nsWEBPEncoder}
+\end{figure}
 
 Ao fim da execução da classe nsWEBPEncoder desenvolvida no trabalho, a imagem já está devidamente codificada no formato WebP.
 \newpage
